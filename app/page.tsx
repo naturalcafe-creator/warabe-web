@@ -6,7 +6,7 @@ const features = [
     num: '01',
     title: '高い中毒性',
     sub: 'ADDICTIVE FLAVOR',
-    desc: '4種の唐辛子による多層的な刺激と、栃木しゃも鶏ガラの圧倒的旨味。鹿沼ニラが角を取り、一口目から最後まで箸が止まらない。',
+    desc: '4種の唐辛子による多層的な刺激と、栃木しゃもの圧倒的旨味。鹿沼ニラが角を取り、一口目から最後まで箸が止まらない。',
   },
   {
     num: '02',
@@ -25,9 +25,9 @@ const features = [
 const ranks = [
   { name: '町娘', level: '無辛', color: '#f0ede8' },
   { name: '小童', level: 'Lv.1', color: '#f9a825' },
-  { name: '若武者', level: 'Lv.3', color: '#fb8c00' },
-  { name: '侍', level: 'Lv.5', color: '#e53935' },
-  { name: '将軍', level: 'Lv.8', color: '#b71c1c' },
+  { name: '若武者', level: 'Lv.2', color: '#fb8c00' },
+  { name: '侍', level: 'Lv.4', color: '#e53935' },
+  { name: '大将軍', level: 'Lv.11', color: '#6a1b9a' },
   { name: '天下統一', level: 'Lv.12', color: '#7b1fa2' },
 ]
 

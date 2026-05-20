@@ -15,7 +15,7 @@ const noodles = [
   {
     name: '中華麺',
     tag: '',
-    desc: '地元製麺所の細麺。スープをしっかり吸い込んで、王道のラーメンの食感を楽しめます。',
+    desc: '地元製麺所の細麺。スープがしっかり絡んで、王道のラーメンの食感を楽しめます。',
   },
 ]
 
@@ -40,16 +40,16 @@ const soups = [
 const spiceRanks = [
   { rank: 1, name: '町娘', ruby: 'まちむすめ', level: '無辛', desc: '辛さゼロ。スープと麺本来の旨味だけを存分に楽しめる一杯。辛いものが苦手な方もぜひ。', color: '#f0ede8', highlight: true },
   { rank: 2, name: '小童', ruby: 'こわっぱ', level: 'Lv.1', desc: 'ほのかな辛味。初挑戦の方にもおすすめ。', color: '#f9e68a' },
-  { rank: 3, name: '若者', ruby: 'わかもの', level: 'Lv.2', desc: '辛さの存在感が増す。旨味と辛味のバランスが良い。', color: '#f9d04a' },
-  { rank: 4, name: '若武者', ruby: 'わかむしゃ', level: 'Lv.3', desc: '辛さが前面に出てくる。汗ばむ程度の刺激。', color: '#f9a825' },
-  { rank: 5, name: '武者', ruby: 'むしゃ', level: 'Lv.4', desc: '本格的な辛さ。辛い物好きが満足できるレベル。', color: '#fb8c00' },
-  { rank: 6, name: '侍', ruby: 'さむらい', level: 'Lv.5', desc: '強烈な辛さ。自信がある方向け。', color: '#f4511e' },
-  { rank: 7, name: '剣士', ruby: 'けんし', level: 'Lv.6', desc: '辛さが全身を駆け巡る。覚悟を持って挑め。', color: '#e53935' },
-  { rank: 8, name: '忍者', ruby: 'にんじゃ', level: 'Lv.7', desc: '激辛の域。半数以上が完食できない。', color: '#c62828' },
-  { rank: 9, name: '大名', ruby: 'だいみょう', level: 'Lv.8', desc: '上級者専用。唇が痺れる超激辛。', color: '#b71c1c' },
-  { rank: 10, name: '老中', ruby: 'ろうじゅう', level: 'Lv.9', desc: '激辛王者の領域。涙なしには食べられない。', color: '#880e4f' },
-  { rank: 11, name: '将軍', ruby: 'しょうぐん', level: 'Lv.10〜11', desc: '完食必須の出世システム。失敗すると降格。', color: '#6a1b9a', badge: '完食必須' },
-  { rank: 12, name: '天下統一', ruby: 'てんかとういつ', level: 'Lv.12', desc: '最高位。辛麺童の頂点に立つ者のみが到達できる境地。', color: '#4a148c', badge: '最高位' },
+  { rank: 3, name: '若武者', ruby: 'わかむしゃ', level: 'Lv.2', desc: '辛さが前面に出てくる。汗ばむ程度の刺激。', color: '#f9a825' },
+  { rank: 4, name: '武者', ruby: 'むしゃ', level: 'Lv.3', desc: '本格的な辛さ。辛い物好きが満足できるレベル。', color: '#fb8c00' },
+  { rank: 5, name: '侍', ruby: 'さむらい', level: 'Lv.4', desc: '強烈な辛さ。自信がある方向け。', color: '#f4511e' },
+  { rank: 6, name: '剣士', ruby: 'けんし', level: 'Lv.5', desc: '辛さが全身を駆け巡る。覚悟を持って挑め。', color: '#e53935' },
+  { rank: 7, name: '忍者', ruby: 'にんじゃ', level: 'Lv.6', desc: '激辛の域。半数以上が完食できない。', color: '#c62828' },
+  { rank: 8, name: '大名', ruby: 'だいみょう', level: 'Lv.7', desc: '上級者専用。唇が痺れる超激辛。', color: '#b71c1c' },
+  { rank: 9, name: '老中', ruby: 'ろうじゅう', level: 'Lv.8', desc: '激辛王者の領域。涙なしには食べられない。', color: '#880e4f' },
+  { rank: 10, name: '将軍', ruby: 'しょうぐん', level: 'Lv.9〜10', desc: '完食必須の出世システム。失敗すると降格。', color: '#6a1b9a', badge: '完食必須' },
+  { rank: 11, name: '大将軍', ruby: 'だいしょうぐん', level: 'Lv.11', desc: '将軍を超えた猛者のみが到達できる領域。完食必須。失敗すると降格。', color: '#4a148c', badge: '完食必須' },
+  { rank: 12, name: '天下統一', ruby: 'てんかとういつ', level: 'Lv.12', desc: '最高位。辛麺童の頂点に立つ者のみが到達できる境地。', color: '#7b1fa2', badge: '最高位' },
 ]
 
 export default function MenuPage() {
@@ -327,7 +327,7 @@ export default function MenuPage() {
               className="text-sm text-[#999] text-center mt-4"
               style={{ fontFamily: 'var(--font-noto-sans)' }}
             >
-              ※ 将軍・天下統一は完食必須。スープまで飲み干して完食が条件です。
+              ※ 将軍・大将軍・天下統一は完食必須。スープまで飲み干して完食が条件です。
             </p>
           </div>
         </div>
@@ -343,9 +343,9 @@ export default function MenuPage() {
           <div className="space-y-3 mb-12">
             {[
               { name: '新鹿沼シウマイ', price: '¥480', desc: 'こんにゃく入りのもちもち皮×玉ねぎの旨味。お腹いっぱいでも食べられる軽さ。辛麺との相性抜群。' },
-              { name: '串シウマイ', price: '¥350', desc: 'カウンターでテイクアウトも対応。' },
+              { name: '串シウマイ', price: '¥350', desc: 'テイクアウト限定！カウンターにてご提供。' },
               { name: 'ごはん食べ放題', price: '¥150', desc: 'スープにドボンして〆まで楽しめる。食べ放題なので遠慮なくどうぞ。' },
-              { name: '激辛チャレンジ「鳳凰」', price: '完食→無料 ／ 未完食→通常料金', desc: '制限時間20分。スープまで飲み干して完食が条件。誰でも挑戦できます。' },
+              { name: '激辛チャレンジ「鳳凰」', price: '完食→無料 ／ 未完食→¥2,500', desc: '制限時間20分。スープまで飲み干して完食が条件。誰でも挑戦できます。' },
             ].map((item) => (
               <div key={item.name} className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 bg-[#161616] border border-[#1f1f1f] px-6 py-4">
                 <div className="flex-1">
@@ -425,12 +425,14 @@ export default function MenuPage() {
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-xs tracking-[0.5em] text-[#c0392b] mb-3" style={{ fontFamily: 'var(--font-noto-sans)' }}>INGREDIENTS</p>
           <h2 className="text-2xl font-black text-[#f0ede8] tracking-wide mb-10" style={{ fontFamily: 'var(--font-noto-serif)' }}>食材へのこだわり</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {[
               { icon: '🐓', name: '栃木しゃも', desc: 'ひき肉を練り込んで具材として使用。食べごたえのある旨味の源泉。' },
               { icon: '🌿', name: '鹿沼ニラ', desc: 'まろやかな甘味で辛さの角を取る' },
               { icon: '⬜', name: 'こんにゃく麺', desc: '鹿沼産。もちもちの特製麺' },
               { icon: '🌶', name: '4種の唐辛子', desc: '多層的な刺激を生む独自ブレンド' },
+              { icon: '🥚', name: '鹿沼産のたまご', desc: '地元の新鮮なたまごをスープに溶き込む' },
+              { icon: '🫙', name: '熊本産の醤油', desc: '九州の伝統醤油が深みとコクを加える' },
             ].map((item) => (
               <div key={item.name} className="bg-[#161616] border border-[#1f1f1f] p-6">
                 <p className="text-3xl mb-3">{item.icon}</p>
