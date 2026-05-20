@@ -18,7 +18,17 @@ export default function Nav() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#0d0d0d]/90 backdrop-blur-sm border-b border-[#1f1f1f]">
+    <header className="fixed top-0 left-0 right-0 z-50">
+      {/* オープン告知バー */}
+      <div className="bg-[#c0392b] text-center py-1.5">
+        <p
+          className="text-xs tracking-[0.3em] text-[#f0ede8] font-bold"
+          style={{ fontFamily: 'var(--font-noto-sans)' }}
+        >
+          2026年9月中旬 GRAND OPEN
+        </p>
+      </div>
+    <div className="bg-[#0d0d0d]/90 backdrop-blur-sm border-b border-[#1f1f1f]">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           <Image
@@ -72,6 +82,7 @@ export default function Nav() {
             className={`block w-6 h-px bg-[#f0ede8] transition-all ${open ? '-rotate-45 -translate-y-2' : ''}`}
           />
         </button>
+      </div>
       </div>
 
       {/* Mobile menu */}
