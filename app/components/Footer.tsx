@@ -10,10 +10,10 @@ export default function Footer() {
             <Image
               src="/logo2.png"
               alt="鹿沼辛麺 童 わらべ"
-              width={100}
-              height={100}
+              width={180}
+              height={180}
               className="object-contain"
-              style={{ height: '100px', width: 'auto' }}
+              style={{ height: 'clamp(100px, 14vw, 180px)', width: 'auto' }}
             />
           </div>
 
