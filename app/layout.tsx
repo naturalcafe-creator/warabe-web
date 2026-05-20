@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     '栃木しゃも×鹿沼ニラ×鹿沼産こんにゃく麺。化学調味料不使用の辛麺12段階。鹿沼市銀座通りに誕生した地域循環型辛麺専門店「童（わらべ）」',
   openGraph: {
     title: '鹿沼辛麺 童（わらべ）',
-    description: '路地裏から始まる、鹿沼の「熱狂」。',
+    description: '鹿沼・末広から始まる、熱狂の一杯。',
     locale: 'ja_JP',
     type: 'website',
   },
