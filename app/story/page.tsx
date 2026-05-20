@@ -30,7 +30,7 @@ export default function StoryPage() {
           className="text-4xl md:text-5xl font-black text-[#f0ede8] tracking-wide"
           style={{ fontFamily: 'var(--font-noto-serif)' }}
         >
-          なぜ、鹿沼で辛麺なのか
+          なぜ、鹿沼で<br className="sm:hidden" />辛麺なのか
         </h1>
       </section>
 
@@ -41,7 +41,7 @@ export default function StoryPage() {
             className="text-base md:text-xl text-[#f0ede8] leading-loose tracking-wider text-center"
             style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
-            鹿沼の人がニラとこんにゃくを<br className="hidden sm:block" />
+            鹿沼の人がニラとこんにゃくを<br />
             忘れているのではないか。
           </p>
           <div className="w-16 h-px bg-[#c0392b] mx-auto my-10" />

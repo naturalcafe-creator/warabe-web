@@ -74,7 +74,8 @@ export default function Home() {
           >
             鹿沼・末広から始まる、熱狂の一杯。<br />
             栃木しゃも × 鹿沼ニラ × こんにゃく麺。<br />
-            化学調味料不使用。無辛〜12段階。お一人様大歓迎。
+            化学調味料不使用。無辛〜12段階。<br />
+            お一人様大歓迎。
           </p>
 
           <div className="flex flex-col gap-4 items-center w-full max-w-xs mx-auto">
