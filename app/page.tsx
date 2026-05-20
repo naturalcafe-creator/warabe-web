@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <>
       {/* ── HERO ── */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 md:pt-28">
         {/* 背景グリッド */}
         <div
           className="absolute inset-0 opacity-5"
