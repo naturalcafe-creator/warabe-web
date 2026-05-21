@@ -36,7 +36,7 @@ export default function ChallengePage() {
 
       {/* マーキー */}
       <Marquee
-        items={['炎に、挑め。', 'CHALLENGE THE FLAME', '完食で無料', '制限時間20分', '誰でも挑戦可能', '鳳凰', 'スープまで飲み干せ', '激辛チャレンジ']}
+        items={['炎に、挑め。', 'CHALLENGE THE FLAME', '完食で無料', '制限時間15分', '誰でも挑戦可能', '鳳凰', 'スープまで飲み干せ', '激辛チャレンジ']}
         duration={22}
       />
 
@@ -74,7 +74,7 @@ export default function ChallengePage() {
               <ul className="space-y-4">
                 {[
                   '誰でも挑戦可能（年齢・性別問わず）',
-                  '制限時間は20分',
+                  '制限時間は15分',
                   'スープまで飲み干して完食が条件',
                   '水・ドリンクは自由に飲んでOK',
                   'チャレンジの様子を撮影・投稿していただけます',
