@@ -6,6 +6,9 @@ import Nav from './components/Nav'
 import Footer from './components/Footer'
 import ScrollProgress from './components/ScrollProgress'
 import CustomCursor from './components/CustomCursor'
+import SmoothScroll from './components/SmoothScroll'
+import PageTransition from './components/PageTransition'
+import Splash from './components/Splash'
 
 const notoSerif = Noto_Serif_JP({
   weight: ['400', '500', '700', '900'],
@@ -84,6 +87,8 @@ export default function RootLayout({
             backgroundSize: '200px 200px',
           }}
         />
+        <Splash />
+        <SmoothScroll />
         <ScrollProgress />
         <CustomCursor />
         {/* 縦書き装飾テキスト（XL以上のみ） */}
@@ -104,7 +109,9 @@ export default function RootLayout({
           </p>
         </div>
         <Nav />
-        <main className="flex-1">{children}</main>
+        <PageTransition>
+          <main className="flex-1">{children}</main>
+        </PageTransition>
         <Footer />
       </body>
       <GoogleAnalytics gaId="G-PRLMM9F5ZX" />
