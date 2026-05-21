@@ -25,7 +25,7 @@ export default function StoryPage() {
         <FadeIn>
           <p
             className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
-            style={{ fontFamily: 'var(--font-noto-sans)' }}
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             STORY
           </p>
@@ -57,7 +57,7 @@ export default function StoryPage() {
           <div className="w-16 h-px bg-[#c0392b] mx-auto my-10" />
           <p
             className="text-sm text-[#ddd] leading-loose text-center"
-            style={{ fontFamily: 'var(--font-noto-sans)' }}
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             この一つの問いが、「童」の始まりだった。
           </p>
@@ -71,7 +71,7 @@ export default function StoryPage() {
             <FadeIn direction="right">
               <p
                 className="text-xs tracking-[0.5em] text-[#c0392b] mb-4"
-                style={{ fontFamily: 'var(--font-noto-sans)' }}
+                style={{ fontFamily: 'var(--font-noto-serif)' }}
               >
                 FOUNDER
               </p>
@@ -83,7 +83,7 @@ export default function StoryPage() {
               </h2>
               <p
                 className="text-xs tracking-[0.3em] text-[#888] mb-8"
-                style={{ fontFamily: 'var(--font-noto-sans)' }}
+                style={{ fontFamily: 'var(--font-noto-serif)' }}
               >
                 いまむら だん / 代表
               </p>
@@ -96,8 +96,8 @@ export default function StoryPage() {
                   { label: '事業', value: '銀座コーヒー / 鹿沼辛麺 童 / こんにゃく原料商社' },
                 ].map((item) => (
                   <div key={item.label} className="flex gap-4 border-b border-[#1f1f1f] pb-3">
-                    <span className="text-xs text-[#c0392b] w-12 shrink-0" style={{ fontFamily: 'var(--font-noto-sans)' }}>{item.label}</span>
-                    <span className="text-sm text-[#ccc]" style={{ fontFamily: 'var(--font-noto-sans)' }}>{item.value}</span>
+                    <span className="text-xs text-[#c0392b] w-12 shrink-0" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.label}</span>
+                    <span className="text-sm text-[#ccc]" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.value}</span>
                   </div>
                 ))}
               </div>
@@ -105,16 +105,16 @@ export default function StoryPage() {
 
             <FadeIn direction="left" delay={100}>
               <div className="space-y-6">
-                <p className="text-sm text-[#ddd] leading-loose" style={{ fontFamily: 'var(--font-noto-sans)' }}>
+                <p className="text-sm text-[#ddd] leading-loose" style={{ fontFamily: 'var(--font-noto-serif)' }}>
                   熊本出身。宮崎の養鶏家のもとで修行を経て、2023年に栃木県鹿沼市へ移住。
                   当社の祖業である鹿沼産こんにゃく原料の専門商社を継承する立場として鹿沼に根を張る。
                 </p>
-                <p className="text-sm text-[#ddd] leading-loose" style={{ fontFamily: 'var(--font-noto-sans)' }}>
+                <p className="text-sm text-[#ddd] leading-loose" style={{ fontFamily: 'var(--font-noto-serif)' }}>
                   2024年に未経験・知り合いゼロの状態から「銀座コーヒー」を独学で開業。
                   開店2週間で約500名が来店、その後約1年半で来店1万人を突破。
                   メディア掲載30社以上を記録し、銀座・末広エリアに人が戻ってきた。
                 </p>
-                <p className="text-sm text-[#ddd] leading-loose" style={{ fontFamily: 'var(--font-noto-sans)' }}>
+                <p className="text-sm text-[#ddd] leading-loose" style={{ fontFamily: 'var(--font-noto-serif)' }}>
                   「鹿沼で消費し、鹿沼に還す」。その思想を一杯の辛麺に集約した第2弾が「童（わらべ）」だ。
                 </p>
               </div>
@@ -127,7 +127,7 @@ export default function StoryPage() {
       <section className="py-12 md:py-20 px-6">
         <div className="max-w-3xl mx-auto">
           <FadeIn className="text-center mb-14">
-            <p className="text-xs tracking-[0.5em] text-[#c0392b] mb-3" style={{ fontFamily: 'var(--font-noto-sans)' }}>TIMELINE</p>
+            <p className="text-xs tracking-[0.5em] text-[#c0392b] mb-3" style={{ fontFamily: 'var(--font-noto-serif)' }}>TIMELINE</p>
             <h2 className="text-2xl font-black text-[#f0ede8] tracking-wide" style={{ fontFamily: 'var(--font-noto-serif)' }}>道のり</h2>
           </FadeIn>
 
@@ -137,12 +137,12 @@ export default function StoryPage() {
               <FadeIn key={i} delay={i * 80}>
                 <div className="flex gap-8 mb-10 relative">
                   <div className="w-16 shrink-0 text-right">
-                    <span className="text-xs font-bold text-[#c0392b]" style={{ fontFamily: 'var(--font-noto-sans)' }}>{item.year}</span>
+                    <span className="text-xs font-bold text-[#c0392b]" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.year}</span>
                   </div>
                   <div className="relative pl-8">
                     <div className="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-[#c0392b] -translate-x-1" />
                     <p className="text-sm font-bold text-[#f0ede8] mb-2" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.label}</p>
-                    <p className="text-xs text-[#ccc] leading-relaxed" style={{ fontFamily: 'var(--font-noto-sans)' }}>{item.desc}</p>
+                    <p className="text-xs text-[#ccc] leading-relaxed" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.desc}</p>
                   </div>
                 </div>
               </FadeIn>
@@ -155,7 +155,7 @@ export default function StoryPage() {
       <section className="py-12 md:py-20 px-6 bg-[#0a0a0a] border-y border-[#1f1f1f]">
         <div className="max-w-4xl mx-auto text-center">
           <FadeIn>
-            <p className="text-xs tracking-[0.5em] text-[#c0392b] mb-3" style={{ fontFamily: 'var(--font-noto-sans)' }}>PHILOSOPHY</p>
+            <p className="text-xs tracking-[0.5em] text-[#c0392b] mb-3" style={{ fontFamily: 'var(--font-noto-serif)' }}>PHILOSOPHY</p>
             <h2 className="text-2xl md:text-3xl font-black text-[#f0ede8] tracking-wide mb-10" style={{ fontFamily: 'var(--font-noto-serif)' }}>鹿沼で消費し、鹿沼に還す</h2>
           </FadeIn>
 
@@ -167,16 +167,16 @@ export default function StoryPage() {
             ].map((item, i) => (
               <FadeIn key={i} delay={i * 100}>
                 <div className="bg-[#161616] border border-[#1f1f1f] p-6 h-full">
-                  <p className="text-xs tracking-[0.3em] text-[#c0392b] mb-3" style={{ fontFamily: 'var(--font-noto-sans)' }}>0{i + 1}</p>
+                  <p className="text-xs tracking-[0.3em] text-[#c0392b] mb-3" style={{ fontFamily: 'var(--font-noto-serif)' }}>0{i + 1}</p>
                   <p className="text-lg font-bold text-[#f0ede8] mb-3" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.step}</p>
-                  <p className="text-xs text-[#ccc] leading-relaxed" style={{ fontFamily: 'var(--font-noto-sans)' }}>{item.desc}</p>
+                  <p className="text-xs text-[#ccc] leading-relaxed" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.desc}</p>
                 </div>
               </FadeIn>
             ))}
           </div>
 
           <FadeIn delay={300}>
-            <p className="text-sm text-[#ccc] leading-loose max-w-xl mx-auto" style={{ fontFamily: 'var(--font-noto-sans)' }}>
+            <p className="text-sm text-[#ccc] leading-loose max-w-xl mx-auto" style={{ fontFamily: 'var(--font-noto-serif)' }}>
               当社の祖業であるこんにゃく原料事業と直結した一貫サプライチェーンで、
               「童」の一杯は鹿沼の農業・製造・飲食を繋ぐ循環装置になる。
             </p>
@@ -188,7 +188,7 @@ export default function StoryPage() {
       <section className="py-12 md:py-20 px-6">
         <div className="max-w-4xl mx-auto">
           <FadeIn className="text-center mb-12">
-            <p className="text-xs tracking-[0.5em] text-[#c0392b] mb-3" style={{ fontFamily: 'var(--font-noto-sans)' }}>ROADMAP</p>
+            <p className="text-xs tracking-[0.5em] text-[#c0392b] mb-3" style={{ fontFamily: 'var(--font-noto-serif)' }}>ROADMAP</p>
             <h2 className="text-2xl font-black text-[#f0ede8] tracking-wide" style={{ fontFamily: 'var(--font-noto-serif)' }}>鹿沼を"東の辛麺の聖地"へ</h2>
           </FadeIn>
 
@@ -202,13 +202,13 @@ export default function StoryPage() {
             ].map((item, i) => (
               <FadeIn key={item.phase} delay={i * 60}>
                 <div className={`flex gap-4 p-5 border ${item.current ? 'border-[#c0392b]/40 bg-[#c0392b]/5' : item.done ? 'border-[#2a2a2a] bg-[#161616] opacity-60' : 'border-[#1f1f1f] bg-[#161616]'}`}>
-                  <span className={`text-xs w-12 shrink-0 mt-0.5 ${item.current ? 'text-[#c0392b]' : 'text-[#777]'}`} style={{ fontFamily: 'var(--font-noto-sans)' }}>{item.phase}</span>
+                  <span className={`text-xs w-12 shrink-0 mt-0.5 ${item.current ? 'text-[#c0392b]' : 'text-[#777]'}`} style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.phase}</span>
                   <div>
                     <p className={`text-sm font-bold mb-1 ${item.current ? 'text-[#f0ede8]' : 'text-[#ddd]'}`} style={{ fontFamily: 'var(--font-noto-serif)' }}>
                       {item.title}
-                      {item.current && <span className="ml-3 text-xs text-[#c0392b] border border-[#c0392b] px-2 py-0.5 align-middle" style={{ fontFamily: 'var(--font-noto-sans)' }}>NOW</span>}
+                      {item.current && <span className="ml-3 text-xs text-[#c0392b] border border-[#c0392b] px-2 py-0.5 align-middle" style={{ fontFamily: 'var(--font-noto-serif)' }}>NOW</span>}
                     </p>
-                    <p className="text-xs text-[#888]" style={{ fontFamily: 'var(--font-noto-sans)' }}>{item.desc}</p>
+                    <p className="text-xs text-[#888]" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.desc}</p>
                   </div>
                 </div>
               </FadeIn>
@@ -220,10 +220,10 @@ export default function StoryPage() {
       {/* CTA */}
       <section className="py-16 px-6 text-center border-t border-[#1f1f1f]">
         <FadeIn className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/menu" className="inline-block px-10 py-4 bg-[#c0392b] text-[#f0ede8] text-xs tracking-[0.3em] font-bold hover:bg-[#e74c3c] transition-colors" style={{ fontFamily: 'var(--font-noto-sans)', clipPath: 'polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%)' }}>
+          <Link href="/menu" className="inline-block px-10 py-4 bg-[#c0392b] text-[#f0ede8] text-xs tracking-[0.3em] font-bold hover:bg-[#e74c3c] transition-colors" style={{ fontFamily: 'var(--font-noto-serif)', clipPath: 'polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%)' }}>
             メニューを見る
           </Link>
-          <Link href="/access" className="inline-block px-10 py-4 border border-[#c0392b] text-[#c0392b] text-xs tracking-[0.3em] font-bold hover:bg-[#c0392b]/10 transition-colors" style={{ fontFamily: 'var(--font-noto-sans)' }}>
+          <Link href="/access" className="inline-block px-10 py-4 border border-[#c0392b] text-[#c0392b] text-xs tracking-[0.3em] font-bold hover:bg-[#c0392b]/10 transition-colors" style={{ fontFamily: 'var(--font-noto-serif)' }}>
             アクセス
           </Link>
         </FadeIn>

@@ -97,14 +97,14 @@ export default function Home() {
             <Link
               href="/menu"
               className="block w-full text-center py-4 bg-[#c0392b] text-[#f0ede8] text-sm tracking-[0.2em] font-bold hover:bg-[#e74c3c] transition-colors"
-              style={{ fontFamily: 'var(--font-noto-sans)' }}
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               メニューを見る
             </Link>
             <Link
               href="/challenge"
               className="block w-full text-center py-4 border border-[#c0392b] text-[#c0392b] text-sm tracking-[0.2em] font-bold hover:bg-[#c0392b]/10 transition-colors"
-              style={{ fontFamily: 'var(--font-noto-sans)' }}
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               鳳凰チャレンジ
             </Link>
@@ -113,7 +113,7 @@ export default function Home() {
 
         {/* スクロール矢印 */}
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-          <span className="text-xs tracking-[0.3em] text-[#666]" style={{ fontFamily: 'var(--font-noto-sans)' }}>
+          <span className="text-xs tracking-[0.3em] text-[#666]" style={{ fontFamily: 'var(--font-noto-serif)' }}>
             SCROLL
           </span>
           <div className="w-px h-12 bg-gradient-to-b from-[#c0392b] to-transparent" />
@@ -129,7 +129,7 @@ export default function Home() {
           <FadeIn className="text-center mb-10 md:mb-16">
             <p
               className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
-              style={{ fontFamily: 'var(--font-noto-sans)' }}
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               CONCEPT
             </p>
@@ -155,7 +155,7 @@ export default function Home() {
                 </p>
                 <p
                   className="text-xs tracking-[0.3em] text-[#c0392b] mb-2"
-                  style={{ fontFamily: 'var(--font-noto-sans)' }}
+                  style={{ fontFamily: 'var(--font-noto-serif)' }}
                 >
                   {f.sub}
                 </p>
@@ -167,7 +167,7 @@ export default function Home() {
                 </h3>
                 <p
                   className="text-sm text-[#ddd] leading-loose"
-                  style={{ fontFamily: 'var(--font-noto-sans)' }}
+                  style={{ fontFamily: 'var(--font-noto-serif)' }}
                 >
                   {f.desc}
                 </p>
@@ -185,7 +185,7 @@ export default function Home() {
             <FadeIn className="md:w-1/2" direction="right">
               <p
                 className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
-                style={{ fontFamily: 'var(--font-noto-sans)' }}
+                style={{ fontFamily: 'var(--font-noto-serif)' }}
               >
                 OUR STORY
               </p>
@@ -197,7 +197,7 @@ export default function Home() {
               </h2>
               <p
                 className="text-sm text-[#ddd] leading-loose mb-6 md:mb-8"
-                style={{ fontFamily: 'var(--font-noto-sans)' }}
+                style={{ fontFamily: 'var(--font-noto-serif)' }}
               >
                 26歳の代表が鹿沼に惚れ込み、地域の農家・製麺所と手を組んで生まれた一杯。
                 食べるたびに地域にお金が還る、循環型の辛麺を目指しています。
@@ -205,7 +205,7 @@ export default function Home() {
               <Link
                 href="/story"
                 className="text-xs tracking-[0.3em] text-[#c0392b] border-b border-[#c0392b]/40 pb-1 hover:border-[#c0392b] transition-colors"
-                style={{ fontFamily: 'var(--font-noto-sans)' }}
+                style={{ fontFamily: 'var(--font-noto-serif)' }}
               >
                 ストーリーを読む →
               </Link>
@@ -232,7 +232,7 @@ export default function Home() {
                   </p>
                   <p
                     className="text-xs text-[#888] mt-2 tracking-wider"
-                    style={{ fontFamily: 'var(--font-noto-sans)' }}
+                    style={{ fontFamily: 'var(--font-noto-serif)' }}
                   >
                     {item.label}
                   </p>
@@ -251,7 +251,7 @@ export default function Home() {
             <FadeIn className="md:w-1/2" direction="right">
               <p
                 className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
-                style={{ fontFamily: 'var(--font-noto-sans)' }}
+                style={{ fontFamily: 'var(--font-noto-serif)' }}
               >
                 SPICE RANK
               </p>
@@ -263,7 +263,7 @@ export default function Home() {
               </h2>
               <p
                 className="text-sm text-[#ddd] leading-loose mb-6 md:mb-8"
-                style={{ fontFamily: 'var(--font-noto-sans)' }}
+                style={{ fontFamily: 'var(--font-noto-serif)' }}
               >
                 「町娘（無辛）」から「天下統一（Lv.12）」まで。
                 あなたの器量を試せ。将軍以上は完食必須の出世システム。
@@ -271,7 +271,7 @@ export default function Home() {
               <Link
                 href="/menu"
                 className="text-xs tracking-[0.3em] text-[#c0392b] border-b border-[#c0392b]/40 pb-1 hover:border-[#c0392b] transition-colors"
-                style={{ fontFamily: 'var(--font-noto-sans)' }}
+                style={{ fontFamily: 'var(--font-noto-serif)' }}
               >
                 全メニューを見る →
               </Link>
@@ -287,7 +287,7 @@ export default function Home() {
                   <p
                     className="text-sm font-bold tracking-wider mb-2"
                     style={{
-                      fontFamily: 'var(--font-noto-sans)',
+                      fontFamily: 'var(--font-noto-serif)',
                       color: r.color,
                     }}
                   >
@@ -312,7 +312,7 @@ export default function Home() {
         <FadeIn className="max-w-3xl mx-auto text-center">
           <p
             className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
-            style={{ fontFamily: 'var(--font-noto-sans)' }}
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             CHALLENGE
           </p>
@@ -332,7 +332,7 @@ export default function Home() {
               </p>
               <p
                 className="text-xs text-[#ddd] mt-1 tracking-wider"
-                style={{ fontFamily: 'var(--font-noto-sans)' }}
+                style={{ fontFamily: 'var(--font-noto-serif)' }}
               >
                 時間内に完食した場合
               </p>
@@ -340,7 +340,7 @@ export default function Home() {
           </div>
           <p
             className="text-sm text-[#ddd] leading-loose mb-8 md:mb-10"
-            style={{ fontFamily: 'var(--font-noto-sans)' }}
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             誰でも挑戦可能。鹿沼・末広の激辛チャレンジ。<br />
             果たして、あなたは地獄の炎に勝てるか。
@@ -349,7 +349,7 @@ export default function Home() {
             href="/challenge"
             className="inline-block px-12 py-5 bg-[#c0392b] text-[#f0ede8] text-xs tracking-[0.3em] font-bold hover:bg-[#e74c3c] transition-colors"
             style={{
-              fontFamily: 'var(--font-noto-sans)',
+              fontFamily: 'var(--font-noto-serif)',
               clipPath: 'polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%)',
             }}
           >
@@ -363,7 +363,7 @@ export default function Home() {
         <FadeIn className="max-w-3xl mx-auto text-center">
           <p
             className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
-            style={{ fontFamily: 'var(--font-noto-sans)' }}
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             LOCATION
           </p>
@@ -375,14 +375,14 @@ export default function Home() {
           </h2>
           <p
             className="text-sm text-[#ccc] mb-8"
-            style={{ fontFamily: 'var(--font-noto-sans)' }}
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             洋菓子店エトワール跡地。姉妹店「<a href="https://www.ginzacoffee.net/" target="_blank" rel="noopener noreferrer" className="text-[#c0392b] hover:text-[#e74c3c] transition-colors">銀座コーヒー</a>」より徒歩1分。
           </p>
           <Link
             href="/access"
             className="text-xs tracking-[0.3em] text-[#c0392b] border-b border-[#c0392b]/40 pb-1 hover:border-[#c0392b] transition-colors"
-            style={{ fontFamily: 'var(--font-noto-sans)' }}
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             アクセスを確認する →
           </Link>
@@ -391,7 +391,7 @@ export default function Home() {
           <div className="mt-12 bg-[#161616] border border-[#1f1f1f] p-6 md:p-8 text-left">
             <p
               className="text-xs tracking-[0.4em] text-[#c0392b] mb-4"
-              style={{ fontFamily: 'var(--font-noto-sans)' }}
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               ROASTERY
             </p>
@@ -403,7 +403,7 @@ export default function Home() {
             </p>
             <p
               className="text-sm text-[#ddd] leading-loose mb-6"
-              style={{ fontFamily: 'var(--font-noto-sans)' }}
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               お店の奥に、姉妹店「銀座コーヒー」の焙煎所を設けています。
               客席からガラス張りで焙煎の様子が見える仕掛けになっており、
@@ -414,7 +414,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs tracking-[0.2em] text-[#c0392b] border-b border-[#c0392b]/40 pb-1 hover:border-[#c0392b] transition-colors"
-              style={{ fontFamily: 'var(--font-noto-sans)' }}
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               銀座コーヒー公式サイト →
             </a>

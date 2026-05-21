@@ -67,7 +67,7 @@ export default function Splash() {
           />
           <p
             className="text-[10px] tracking-[0.6em] text-[#c0392b]"
-            style={{ fontFamily: 'var(--font-noto-sans)' }}
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             KANUMA SPICY RAMEN
           </p>

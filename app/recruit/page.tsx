@@ -15,7 +15,7 @@ export default function RecruitPage() {
         <FadeIn>
           <p
             className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
-            style={{ fontFamily: 'var(--font-noto-sans)' }}
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             RECRUIT
           </p>
@@ -27,7 +27,7 @@ export default function RecruitPage() {
           </h1>
           <p
             className="text-sm text-[#ddd]"
-            style={{ fontFamily: 'var(--font-noto-sans)' }}
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             新しいチームメンバーを募集しています
           </p>
@@ -46,7 +46,7 @@ export default function RecruitPage() {
           <FadeIn>
             <p
               className="text-xs tracking-[0.5em] text-[#c0392b] mb-4"
-              style={{ fontFamily: 'var(--font-noto-sans)' }}
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               MESSAGE
             </p>
@@ -60,7 +60,7 @@ export default function RecruitPage() {
             <div className="w-16 h-px bg-[#c0392b] mx-auto mb-8" />
             <p
               className="text-sm text-[#ddd] leading-loose"
-              style={{ fontFamily: 'var(--font-noto-sans)' }}
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               地域循環型の辛麺専門店として、鹿沼の農家・製麺所と手を組みながら
               地域に根ざした飲食を作っています。<br />
@@ -76,7 +76,7 @@ export default function RecruitPage() {
           <FadeIn className="text-center mb-12">
             <p
               className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
-              style={{ fontFamily: 'var(--font-noto-sans)' }}
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               HOW TO APPLY
             </p>
@@ -92,7 +92,7 @@ export default function RecruitPage() {
             <div className="bg-[#161616] border border-[#1f1f1f] p-6 md:p-10 mb-8">
               <p
                 className="text-sm text-[#ddd] leading-loose mb-6"
-                style={{ fontFamily: 'var(--font-noto-sans)' }}
+                style={{ fontFamily: 'var(--font-noto-serif)' }}
               >
                 インスタグラムのDMにてお待ちしております。<br />
                 下記４点をご記入の上ご連絡ください。<br />
@@ -109,7 +109,7 @@ export default function RecruitPage() {
                   <li key={i} className="flex gap-4 items-start">
                     <span
                       className="text-[#c0392b] text-xs mt-0.5 shrink-0"
-                      style={{ fontFamily: 'var(--font-noto-sans)' }}
+                      style={{ fontFamily: 'var(--font-noto-serif)' }}
                     >
                       0{i + 1}
                     </span>
@@ -129,7 +129,7 @@ export default function RecruitPage() {
           <FadeIn delay={200} className="text-center">
             <p
               className="text-xs text-[#888] mb-4"
-              style={{ fontFamily: 'var(--font-noto-sans)' }}
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               応募・お問い合わせはこちら
             </p>
@@ -139,7 +139,7 @@ export default function RecruitPage() {
               rel="noopener noreferrer"
               className="inline-block px-10 py-4 bg-[#c0392b] text-[#f0ede8] text-xs tracking-[0.3em] font-bold hover:bg-[#e74c3c] transition-colors"
               style={{
-                fontFamily: 'var(--font-noto-sans)',
+                fontFamily: 'var(--font-noto-serif)',
                 clipPath: 'polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%)',
               }}
             >
@@ -147,7 +147,7 @@ export default function RecruitPage() {
             </a>
             <p
               className="text-xs text-[#666] mt-4"
-              style={{ fontFamily: 'var(--font-noto-sans)' }}
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               @warabe_kanuma_karamen
             </p>

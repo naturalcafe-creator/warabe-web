@@ -28,7 +28,7 @@ export default function AccessPage() {
         <FadeIn>
           <p
             className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
-            style={{ fontFamily: 'var(--font-noto-sans)' }}
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             ACCESS
           </p>
@@ -40,7 +40,7 @@ export default function AccessPage() {
           </h1>
           <p
             className="text-sm text-[#ddd]"
-            style={{ fontFamily: 'var(--font-noto-sans)' }}
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             栃木県鹿沼市 末広町
           </p>
@@ -61,7 +61,7 @@ export default function AccessPage() {
               <div className="text-center">
                 <p
                   className="text-sm text-[#ddd] mb-4"
-                  style={{ fontFamily: 'var(--font-noto-sans)' }}
+                  style={{ fontFamily: 'var(--font-noto-serif)' }}
                 >
                   〒322-0083 栃木県鹿沼市末広町１９１６−１<br />
                   WARABASE 1F
@@ -71,7 +71,7 @@ export default function AccessPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block px-6 py-3 border border-[#c0392b] text-[#c0392b] text-xs tracking-[0.2em] hover:bg-[#c0392b]/10 transition-colors"
-                  style={{ fontFamily: 'var(--font-noto-sans)' }}
+                  style={{ fontFamily: 'var(--font-noto-serif)' }}
                 >
                   Google マップで開く →
                 </a>
@@ -87,7 +87,7 @@ export default function AccessPage() {
           <FadeIn>
             <p
               className="text-xs tracking-[0.5em] text-[#c0392b] mb-8"
-              style={{ fontFamily: 'var(--font-noto-sans)' }}
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               SHOP INFO
             </p>
@@ -100,7 +100,7 @@ export default function AccessPage() {
                 >
                   <span
                     className="text-sm text-[#c0392b] w-28 shrink-0"
-                    style={{ fontFamily: 'var(--font-noto-sans)' }}
+                    style={{ fontFamily: 'var(--font-noto-serif)' }}
                   >
                     {item.label}
                   </span>
@@ -110,14 +110,14 @@ export default function AccessPage() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-sm text-[#ddd] hover:text-[#f0ede8] transition-colors underline underline-offset-4"
-                      style={{ fontFamily: 'var(--font-noto-sans)' }}
+                      style={{ fontFamily: 'var(--font-noto-serif)' }}
                     >
                       {item.value}
                     </a>
                   ) : (
                     <span
                       className={`text-sm ${item.pending ? 'text-[#555] italic' : 'text-[#ddd]'}`}
-                      style={{ fontFamily: 'var(--font-noto-sans)' }}
+                      style={{ fontFamily: 'var(--font-noto-serif)' }}
                     >
                       {item.value}
                     </span>
@@ -130,7 +130,7 @@ export default function AccessPage() {
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 border-b border-[#1a1a1a] pb-5">
                 <span
                   className="text-sm text-[#c0392b] w-28 shrink-0"
-                  style={{ fontFamily: 'var(--font-noto-sans)' }}
+                  style={{ fontFamily: 'var(--font-noto-serif)' }}
                 >
                   Instagram
                 </span>
@@ -139,7 +139,7 @@ export default function AccessPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-[#ddd] hover:text-[#f0ede8] transition-colors underline underline-offset-4"
-                  style={{ fontFamily: 'var(--font-noto-sans)' }}
+                  style={{ fontFamily: 'var(--font-noto-serif)' }}
                 >
                   @warabe_kanuma_karamen
                 </a>
@@ -155,7 +155,7 @@ export default function AccessPage() {
           <FadeIn>
             <p
               className="text-xs tracking-[0.5em] text-[#c0392b] mb-8"
-              style={{ fontFamily: 'var(--font-noto-sans)' }}
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               HOW TO GET THERE
             </p>
@@ -190,7 +190,7 @@ export default function AccessPage() {
                   </p>
                   <p
                     className="text-sm text-[#ddd] leading-relaxed"
-                    style={{ fontFamily: 'var(--font-noto-sans)' }}
+                    style={{ fontFamily: 'var(--font-noto-serif)' }}
                   >
                     {item.desc}
                   </p>
@@ -200,7 +200,7 @@ export default function AccessPage() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block mt-3 text-xs text-[#c0392b] hover:text-[#e74c3c] transition-colors underline underline-offset-4"
-                      style={{ fontFamily: 'var(--font-noto-sans)' }}
+                      style={{ fontFamily: 'var(--font-noto-serif)' }}
                     >
                       公式サイト →
                     </a>
@@ -218,7 +218,7 @@ export default function AccessPage() {
           <FadeIn className="text-center mb-10">
             <p
               className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
-              style={{ fontFamily: 'var(--font-noto-sans)' }}
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               ROASTERY
             </p>
@@ -233,7 +233,7 @@ export default function AccessPage() {
             <div className="bg-[#161616] border border-[#1f1f1f] p-6 md:p-10">
               <p
                 className="text-sm text-[#ddd] leading-loose mb-6"
-                style={{ fontFamily: 'var(--font-noto-sans)' }}
+                style={{ fontFamily: 'var(--font-noto-serif)' }}
               >
                 お店の奥に、姉妹店「銀座コーヒー」の焙煎所を設けています。<br />
                 客席からガラス張りで焙煎の様子が見える仕掛けになっており、
@@ -245,13 +245,13 @@ export default function AccessPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block px-8 py-3 border border-[#c0392b] text-[#c0392b] text-xs tracking-[0.2em] font-bold hover:bg-[#c0392b]/10 transition-colors"
-                  style={{ fontFamily: 'var(--font-noto-sans)' }}
+                  style={{ fontFamily: 'var(--font-noto-serif)' }}
                 >
                   銀座コーヒー公式サイト →
                 </a>
                 <p
                   className="text-xs text-[#666]"
-                  style={{ fontFamily: 'var(--font-noto-sans)' }}
+                  style={{ fontFamily: 'var(--font-noto-serif)' }}
                 >
                   童より徒歩1分・鹿沼市銀座通り
                 </p>
@@ -266,13 +266,13 @@ export default function AccessPage() {
         <FadeIn>
           <p
             className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
-            style={{ fontFamily: 'var(--font-noto-sans)' }}
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             INSTAGRAM
           </p>
           <p
             className="text-base text-[#ccc] mb-3"
-            style={{ fontFamily: 'var(--font-noto-sans)' }}
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             最新の営業情報はInstagramでご確認ください
           </p>
@@ -281,7 +281,7 @@ export default function AccessPage() {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-lg text-[#c0392b] hover:text-[#e74c3c] transition-colors mb-10 tracking-wider"
-            style={{ fontFamily: 'var(--font-noto-sans)' }}
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             @warabe_kanuma_karamen
           </a>
@@ -290,7 +290,7 @@ export default function AccessPage() {
               href="/menu"
               className="inline-block px-10 py-4 bg-[#c0392b] text-[#f0ede8] text-sm tracking-[0.2em] font-bold hover:bg-[#e74c3c] transition-colors"
               style={{
-                fontFamily: 'var(--font-noto-sans)',
+                fontFamily: 'var(--font-noto-serif)',
                 clipPath: 'polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%)',
               }}
             >
@@ -299,7 +299,7 @@ export default function AccessPage() {
             <Link
               href="/challenge"
               className="inline-block px-10 py-4 border border-[#c0392b] text-[#c0392b] text-sm tracking-[0.2em] font-bold hover:bg-[#c0392b]/10 transition-colors"
-              style={{ fontFamily: 'var(--font-noto-sans)' }}
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               鳳凰チャレンジ
             </Link>

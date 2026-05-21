@@ -95,7 +95,7 @@ export default function RootLayout({
         <div className="fixed left-3 top-1/2 -translate-y-1/2 z-50 pointer-events-none hidden xl:block select-none">
           <p
             className="text-[9px] tracking-[0.9em] text-[#c0392b]/20"
-            style={{ writingMode: 'vertical-rl', textOrientation: 'mixed', fontFamily: 'var(--font-noto-sans)' }}
+            style={{ writingMode: 'vertical-rl', textOrientation: 'mixed', fontFamily: 'var(--font-noto-serif)' }}
           >
             鹿沼辛麺　童　わらべ
           </p>
@@ -103,7 +103,7 @@ export default function RootLayout({
         <div className="fixed right-3 top-1/2 -translate-y-1/2 z-50 pointer-events-none hidden xl:block select-none">
           <p
             className="text-[9px] tracking-[0.9em] text-[#c0392b]/20"
-            style={{ writingMode: 'vertical-rl', textOrientation: 'mixed', fontFamily: 'var(--font-noto-sans)' }}
+            style={{ writingMode: 'vertical-rl', textOrientation: 'mixed', fontFamily: 'var(--font-noto-serif)' }}
           >
             KANUMA　KARAMEN　WARABE
           </p>

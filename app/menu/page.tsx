@@ -63,7 +63,7 @@ export default function MenuPage() {
         <FadeIn>
           <p
             className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
-            style={{ fontFamily: 'var(--font-noto-sans)' }}
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             MENU
           </p>
@@ -75,7 +75,7 @@ export default function MenuPage() {
           </h1>
           <p
             className="text-sm text-[#ddd] tracking-wider"
-            style={{ fontFamily: 'var(--font-noto-sans)' }}
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             すべて化学調味料不使用 ／ お一人様大歓迎
           </p>
@@ -94,7 +94,7 @@ export default function MenuPage() {
           <FadeIn direction="right" className="text-center md:text-left md:flex-1">
             <p
               className="text-xs tracking-[0.4em] text-[#c0392b] mb-2"
-              style={{ fontFamily: 'var(--font-noto-sans)' }}
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               RECOMMEND FOR BEGINNERS
             </p>
@@ -106,7 +106,7 @@ export default function MenuPage() {
             </h2>
             <p
               className="text-sm text-[#ddd] leading-loose"
-              style={{ fontFamily: 'var(--font-noto-sans)' }}
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               「辛いお店だから自分には無理かな」——そう思っていませんか？<br />
               辛さゼロの <strong className="text-[#f0ede8]">「町娘（無辛）」</strong> は、
@@ -119,7 +119,7 @@ export default function MenuPage() {
             <div className="bg-[#0d0d0d] border border-[#f0ede8]/20 p-8 text-center shrink-0">
               <p
                 className="text-xs tracking-[0.4em] text-[#f0ede8]/60 mb-2"
-                style={{ fontFamily: 'var(--font-noto-sans)' }}
+                style={{ fontFamily: 'var(--font-noto-serif)' }}
               >
                 辛さ 無辛
               </p>
@@ -131,7 +131,7 @@ export default function MenuPage() {
               </p>
               <p
                 className="text-xs text-[#bbb] tracking-wider"
-                style={{ fontFamily: 'var(--font-noto-sans)' }}
+                style={{ fontFamily: 'var(--font-noto-serif)' }}
               >
                 まちむすめ
               </p>
@@ -146,7 +146,7 @@ export default function MenuPage() {
           <FadeIn className="text-center mb-10 md:mb-14">
             <p
               className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
-              style={{ fontFamily: 'var(--font-noto-sans)' }}
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               CUSTOMIZE YOUR BOWL
             </p>
@@ -158,7 +158,7 @@ export default function MenuPage() {
             </h2>
             <p
               className="text-sm text-[#ddd]"
-              style={{ fontFamily: 'var(--font-noto-sans)' }}
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               3つの組み合わせで、あなただけの一杯に。
             </p>
@@ -196,7 +196,7 @@ export default function MenuPage() {
                       {n.tag && (
                         <span
                           className="text-xs px-2 py-0.5 bg-[#c0392b] text-[#f0ede8] tracking-wider"
-                          style={{ fontFamily: 'var(--font-noto-sans)' }}
+                          style={{ fontFamily: 'var(--font-noto-serif)' }}
                         >
                           {n.tag}
                         </span>
@@ -204,7 +204,7 @@ export default function MenuPage() {
                     </div>
                     <p
                       className="text-sm text-[#ddd] leading-loose"
-                      style={{ fontFamily: 'var(--font-noto-sans)' }}
+                      style={{ fontFamily: 'var(--font-noto-serif)' }}
                     >
                       {n.desc}
                     </p>
@@ -239,7 +239,7 @@ export default function MenuPage() {
                     <div className="flex items-center gap-2 mb-1">
                       <span
                         className="text-xs text-[#c0392b] tracking-wider"
-                        style={{ fontFamily: 'var(--font-noto-sans)' }}
+                        style={{ fontFamily: 'var(--font-noto-serif)' }}
                       >
                         {s.tag}
                       </span>
@@ -252,7 +252,7 @@ export default function MenuPage() {
                     </p>
                     <p
                       className="text-sm text-[#ddd] leading-loose"
-                      style={{ fontFamily: 'var(--font-noto-sans)' }}
+                      style={{ fontFamily: 'var(--font-noto-serif)' }}
                     >
                       {s.desc}
                     </p>
@@ -285,7 +285,7 @@ export default function MenuPage() {
                     <div className="w-14 text-right shrink-0">
                       <span
                         className="text-xs font-bold"
-                        style={{ color: r.color, fontFamily: 'var(--font-noto-sans)' }}
+                        style={{ color: r.color, fontFamily: 'var(--font-noto-serif)' }}
                       >
                         {r.level}
                       </span>
@@ -301,14 +301,14 @@ export default function MenuPage() {
                         </span>
                         <span
                           className="text-xs text-[#888]"
-                          style={{ fontFamily: 'var(--font-noto-sans)' }}
+                          style={{ fontFamily: 'var(--font-noto-serif)' }}
                         >
                           {r.ruby}
                         </span>
                         {r.highlight && (
                           <span
                             className="text-xs px-2 py-0.5 border border-[#f0ede8]/40 text-[#f0ede8] tracking-wider"
-                            style={{ fontFamily: 'var(--font-noto-sans)' }}
+                            style={{ fontFamily: 'var(--font-noto-serif)' }}
                           >
                             辛さゼロ・お子様にも
                           </span>
@@ -316,7 +316,7 @@ export default function MenuPage() {
                         {r.badge && (
                           <span
                             className="text-xs px-2 py-0.5 border border-[#c0392b] text-[#c0392b] tracking-wider"
-                            style={{ fontFamily: 'var(--font-noto-sans)' }}
+                            style={{ fontFamily: 'var(--font-noto-serif)' }}
                           >
                             {r.badge}
                           </span>
@@ -324,7 +324,7 @@ export default function MenuPage() {
                       </div>
                       <p
                         className="text-sm text-[#aaa] mt-1 hidden sm:block"
-                        style={{ fontFamily: 'var(--font-noto-sans)' }}
+                        style={{ fontFamily: 'var(--font-noto-serif)' }}
                       >
                         {r.desc}
                       </p>
@@ -335,7 +335,7 @@ export default function MenuPage() {
             </div>
             <p
               className="text-sm text-[#999] text-center mt-4"
-              style={{ fontFamily: 'var(--font-noto-sans)' }}
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               ※ 将軍・大将軍・天下統一は完食必須。スープまで飲み干して完食が条件です。
             </p>
@@ -347,7 +347,7 @@ export default function MenuPage() {
       <section className="py-12 md:py-20 px-6 bg-[#0a0a0a] border-y border-[#1f1f1f]">
         <div className="max-w-4xl mx-auto">
           <FadeIn className="mb-10 text-center">
-            <p className="text-xs tracking-[0.5em] text-[#c0392b] mb-3" style={{ fontFamily: 'var(--font-noto-sans)' }}>SIDE MENU</p>
+            <p className="text-xs tracking-[0.5em] text-[#c0392b] mb-3" style={{ fontFamily: 'var(--font-noto-serif)' }}>SIDE MENU</p>
             <h2 className="text-3xl font-black text-[#f0ede8] tracking-wide" style={{ fontFamily: 'var(--font-noto-serif)' }}>サイドメニュー</h2>
           </FadeIn>
           <div className="space-y-3 mb-12">
@@ -361,7 +361,7 @@ export default function MenuPage() {
                 <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 bg-[#161616] border border-[#1f1f1f] px-6 py-4">
                   <div className="flex-1">
                     <p className="text-sm font-bold text-[#f0ede8] mb-1" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.name}</p>
-                    <p className="text-xs md:text-sm text-[#ddd] leading-relaxed" style={{ fontFamily: 'var(--font-noto-sans)' }}>{item.desc}</p>
+                    <p className="text-xs md:text-sm text-[#ddd] leading-relaxed" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.desc}</p>
                   </div>
                   <p className="text-sm font-bold text-[#c9a84c] shrink-0" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.price}</p>
                 </div>
@@ -371,7 +371,7 @@ export default function MenuPage() {
 
           {/* トッピング */}
           <FadeIn>
-            <p className="text-xs tracking-[0.5em] text-[#c0392b] mb-6 text-center" style={{ fontFamily: 'var(--font-noto-sans)' }}>TOPPING</p>
+            <p className="text-xs tracking-[0.5em] text-[#c0392b] mb-6 text-center" style={{ fontFamily: 'var(--font-noto-serif)' }}>TOPPING</p>
             <div className="grid grid-cols-2 gap-3">
               {[
                 { name: '麺大盛り', price: '＋¥100' },
@@ -385,7 +385,7 @@ export default function MenuPage() {
             </div>
           </FadeIn>
 
-          <p className="text-sm text-[#999] text-center mt-8" style={{ fontFamily: 'var(--font-noto-sans)' }}>
+          <p className="text-sm text-[#999] text-center mt-8" style={{ fontFamily: 'var(--font-noto-serif)' }}>
             ※ 価格は税込。メニュー・価格は予告なく変更する場合があります。
           </p>
         </div>
@@ -395,7 +395,7 @@ export default function MenuPage() {
       <section className="py-12 md:py-20 px-6 border-b border-[#1f1f1f]">
         <div className="max-w-2xl mx-auto">
           <FadeIn className="text-center mb-12">
-            <p className="text-xs tracking-[0.5em] text-[#c0392b] mb-3" style={{ fontFamily: 'var(--font-noto-sans)' }}>HOW TO EAT</p>
+            <p className="text-xs tracking-[0.5em] text-[#c0392b] mb-3" style={{ fontFamily: 'var(--font-noto-serif)' }}>HOW TO EAT</p>
             <h2 className="text-3xl font-black text-[#f0ede8] tracking-wide mb-4" style={{ fontFamily: 'var(--font-noto-serif)' }}>おすすめの食べ方</h2>
             <div className="w-12 h-px bg-[#c0392b] mx-auto" />
           </FadeIn>
@@ -415,7 +415,7 @@ export default function MenuPage() {
                     <p className="text-sm font-bold text-[#f0ede8]" style={{ fontFamily: 'var(--font-noto-serif)' }}>
                       {step.num} {step.title}
                     </p>
-                    <p className="text-sm text-[#ddd] mt-1" style={{ fontFamily: 'var(--font-noto-sans)' }}>
+                    <p className="text-sm text-[#ddd] mt-1" style={{ fontFamily: 'var(--font-noto-serif)' }}>
                       → {step.sub}
                     </p>
                   </div>
@@ -426,7 +426,7 @@ export default function MenuPage() {
 
           <FadeIn delay={100} className="mt-10">
             <div className="bg-[#161616] border border-[#1f1f1f] px-6 py-5">
-              <p className="text-sm text-[#ddd] leading-loose text-center" style={{ fontFamily: 'var(--font-noto-sans)' }}>
+              <p className="text-sm text-[#ddd] leading-loose text-center" style={{ fontFamily: 'var(--font-noto-serif)' }}>
                 辛麺とは、ひき肉・唐辛子・にら・ニンニク・卵などでスープを作り、こんにゃく麺を使用した九州発祥のラーメンです。<br />
                 これらの食材を鹿沼でアップデートした「鹿沼辛麺 童（わらべ）」をお楽しみください。
               </p>
@@ -439,7 +439,7 @@ export default function MenuPage() {
       <section className="py-12 md:py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <FadeIn>
-            <p className="text-xs tracking-[0.5em] text-[#c0392b] mb-3" style={{ fontFamily: 'var(--font-noto-sans)' }}>INGREDIENTS</p>
+            <p className="text-xs tracking-[0.5em] text-[#c0392b] mb-3" style={{ fontFamily: 'var(--font-noto-serif)' }}>INGREDIENTS</p>
             <h2 className="text-2xl font-black text-[#f0ede8] tracking-wide mb-10" style={{ fontFamily: 'var(--font-noto-serif)' }}>食材へのこだわり</h2>
           </FadeIn>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
@@ -454,7 +454,7 @@ export default function MenuPage() {
               <FadeIn key={item.name} delay={i * 60}>
                 <div className="bg-[#161616] border border-[#1f1f1f] p-6 h-full">
                   <p className="text-sm font-bold text-[#f0ede8] mb-2" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.name}</p>
-                  <p className="text-sm text-[#ddd] leading-relaxed" style={{ fontFamily: 'var(--font-noto-sans)' }}>{item.desc}</p>
+                  <p className="text-sm text-[#ddd] leading-relaxed" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -475,7 +475,7 @@ export default function MenuPage() {
             href="/challenge"
             className="inline-block px-10 py-4 bg-[#c0392b] text-[#f0ede8] text-sm tracking-[0.2em] font-bold hover:bg-[#e74c3c] transition-colors"
             style={{
-              fontFamily: 'var(--font-noto-sans)',
+              fontFamily: 'var(--font-noto-serif)',
               clipPath: 'polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%)',
             }}
           >

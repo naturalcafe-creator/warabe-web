@@ -29,7 +29,7 @@ export default function Footer() {
                 key={l.href}
                 href={l.href}
                 className="text-xs tracking-[0.2em] text-[#888] hover:text-[#f0ede8] transition-colors"
-                style={{ fontFamily: 'var(--font-noto-sans)' }}
+                style={{ fontFamily: 'var(--font-noto-serif)' }}
               >
                 {l.label}
               </Link>
@@ -38,7 +38,7 @@ export default function Footer() {
 
           <div
             className="text-xs text-[#aaa] space-y-2 leading-relaxed"
-            style={{ fontFamily: 'var(--font-noto-sans)' }}
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             <p>〒322-0083 栃木県鹿沼市末広町１９１６−１</p>
             <p>WARABASE 1F（洋菓子店エトワール跡地）</p>
@@ -65,7 +65,7 @@ export default function Footer() {
         <div className="border-t border-[#1f1f1f] pt-6 text-center">
           <p
             className="text-xs tracking-widest text-[#666]"
-            style={{ fontFamily: 'var(--font-noto-sans)' }}
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             © 2026 鹿沼辛麺 童 / The Nature District LLC. All rights reserved.
           </p>
