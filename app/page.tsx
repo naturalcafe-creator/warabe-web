@@ -334,7 +334,7 @@ export default function Home() {
                 className="text-xs text-[#ddd] mt-1 tracking-wider"
                 style={{ fontFamily: 'var(--font-noto-sans)' }}
               >
-                完食した場合
+                時間内に完食した場合
               </p>
             </div>
           </div>
