@@ -196,7 +196,7 @@ export default function AccessPage() {
             >
               お店の奥に、姉妹店「銀座コーヒー」の焙煎所を設けています。<br />
               客席からガラス張りで焙煎の様子が見える仕掛けになっており、
-              辛麺を食べながら珈琲の香りと職人の仕事を間近に感じることができます。
+              タイミングが合えば、辛麺を食べながら焙煎士の仕事を間近に感じることができます。
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
               <a
