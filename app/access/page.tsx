@@ -122,7 +122,7 @@ export default function AccessPage() {
                 href="https://www.instagram.com/warabe_kanuma_karamen/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-[#c0392b] hover:text-[#e74c3c] transition-colors underline underline-offset-4"
+                className="text-sm text-[#ddd] hover:text-[#f0ede8] transition-colors underline underline-offset-4"
                 style={{ fontFamily: 'var(--font-noto-sans)' }}
               >
                 @warabe_kanuma_karamen
