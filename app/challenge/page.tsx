@@ -60,7 +60,7 @@ export default function ChallengePage() {
             </FadeIn>
             <FadeIn delay={100}>
               <div className="bg-[#161616] border border-[#c0392b]/30 p-4 md:p-8 text-center h-full">
-                <p className="text-xs tracking-[0.1em] md:tracking-[0.3em] text-[#ddd] mb-3 md:mb-4" style={{ fontFamily: 'var(--font-noto-sans)' }}>未完食の場合</p>
+                <p className="text-xs tracking-[0.1em] md:tracking-[0.3em] text-[#ddd] mb-3 md:mb-4" style={{ fontFamily: 'var(--font-noto-sans)' }}>時間切れの場合</p>
                 <p className="text-xl md:text-3xl font-black text-[#c0392b]" style={{ fontFamily: 'var(--font-noto-serif)' }}>通常料金</p>
                 <p className="text-xs text-[#bbb] mt-2 md:mt-3" style={{ fontFamily: 'var(--font-noto-sans)' }}>¥2,500</p>
               </div>

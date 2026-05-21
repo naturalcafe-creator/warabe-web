@@ -355,7 +355,7 @@ export default function MenuPage() {
               { name: '新鹿沼シウマイ', price: '¥480', desc: 'こんにゃく入りのもちもち皮×玉ねぎの旨味。お腹いっぱいでも食べられる軽さ。辛麺との相性抜群。' },
               { name: '串シウマイ', price: '¥350', desc: 'テイクアウト限定！カウンターにてご提供。' },
               { name: 'ごはん食べ放題', price: '¥150', desc: 'スープにドボンして〆まで楽しめる。食べ放題なので遠慮なくどうぞ。' },
-              { name: '激辛チャレンジ「鳳凰」', price: '完食→無料 ／ 未完食→¥2,500', desc: '制限時間20分。スープまで飲み干して完食が条件。誰でも挑戦できます。' },
+              { name: '激辛チャレンジ「鳳凰」', price: '完食→無料 ／ 時間切れ→¥2,500', desc: '制限時間20分。スープまで飲み干して完食が条件。誰でも挑戦できます。' },
             ].map((item, i) => (
               <FadeIn key={item.name} delay={i * 60}>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 bg-[#161616] border border-[#1f1f1f] px-6 py-4">
