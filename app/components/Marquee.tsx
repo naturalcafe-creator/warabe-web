@@ -16,7 +16,7 @@ type Props = {
   duration?: number // seconds
 }
 
-export default function Marquee({ items = DEFAULT_ITEMS, duration = 18 }: Props) {
+export default function Marquee({ items = DEFAULT_ITEMS, duration = 24 }: Props) {
   const content = items.map((item, i) => (
     <span key={i} className="text-xs tracking-[0.25em] text-[#444]" style={{ fontFamily: 'var(--font-noto-sans)' }}>
       {item}

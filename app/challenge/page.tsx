@@ -37,7 +37,7 @@ export default function ChallengePage() {
       {/* マーキー */}
       <Marquee
         items={['炎に、挑め。', 'CHALLENGE THE FLAME', '完食で無料', '制限時間20分', '誰でも挑戦可能', '鳳凰', 'スープまで飲み干せ', '激辛チャレンジ']}
-        duration={16}
+        duration={22}
       />
 
       {/* 鳳凰チャレンジ */}
