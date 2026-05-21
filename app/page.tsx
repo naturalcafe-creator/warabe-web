@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import FadeIn from './components/FadeIn'
 
 const features = [
   {
@@ -108,7 +109,7 @@ export default function Home() {
       {/* ── 3つの独自価値 ── */}
       <section className="py-14 md:py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-10 md:mb-16">
+          <FadeIn className="text-center mb-10 md:mb-16">
             <p
               className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
               style={{ fontFamily: 'var(--font-noto-sans)' }}
@@ -121,13 +122,13 @@ export default function Home() {
             >
               童が届ける3つの価値
             </h2>
-          </div>
+          </FadeIn>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {features.map((f) => (
+            {features.map((f, i) => (
+              <FadeIn key={f.num} delay={i * 100}>
               <div
-                key={f.num}
-                className="bg-[#161616] border border-[#1f1f1f] p-5 md:p-8 hover:border-[#c0392b]/40 transition-colors"
+                className="bg-[#161616] border border-[#1f1f1f] p-5 md:p-8 hover:border-[#c0392b]/40 transition-colors h-full"
               >
                 <p
                   className="text-5xl font-black text-[#c0392b]/60 mb-4"
@@ -154,6 +155,7 @@ export default function Home() {
                   {f.desc}
                 </p>
               </div>
+              </FadeIn>
             ))}
           </div>
         </div>
@@ -163,7 +165,7 @@ export default function Home() {
       <section className="py-14 md:py-24 px-6 bg-[#0a0a0a] border-y border-[#1f1f1f]">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
-            <div className="md:w-1/2">
+            <FadeIn className="md:w-1/2" direction="right">
               <p
                 className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
                 style={{ fontFamily: 'var(--font-noto-sans)' }}
@@ -190,9 +192,10 @@ export default function Home() {
               >
                 ストーリーを読む →
               </Link>
-            </div>
+            </FadeIn>
 
-            <div className="md:w-1/2 grid grid-cols-2 gap-4">
+            <FadeIn className="md:w-1/2" direction="left">
+            <div className="grid grid-cols-2 gap-4">
               {[
                 { num: '2026', unit: '年', label: '鹿沼・末広に創業' },
                 { num: '4', unit: '種', label: '唐辛子のブレンド' },
@@ -216,6 +219,7 @@ export default function Home() {
                 </div>
               ))}
             </div>
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -224,7 +228,7 @@ export default function Home() {
       <section className="py-14 md:py-24 px-6 border-b border-[#1f1f1f]">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
-            <div className="md:w-1/2">
+            <FadeIn className="md:w-1/2" direction="right">
               <p
                 className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
                 style={{ fontFamily: 'var(--font-noto-sans)' }}
@@ -251,9 +255,10 @@ export default function Home() {
               >
                 全メニューを見る →
               </Link>
-            </div>
+            </FadeIn>
 
-            <div className="md:w-1/2 grid grid-cols-3 gap-3 w-full">
+            <FadeIn className="md:w-1/2 w-full" direction="left">
+            <div className="grid grid-cols-3 gap-3">
               {ranks.map((r) => (
                 <div
                   key={r.name}
@@ -277,13 +282,14 @@ export default function Home() {
                 </div>
               ))}
             </div>
+            </FadeIn>
           </div>
         </div>
       </section>
 
       {/* ── 鳳凰チャレンジ CTA ── */}
       <section className="py-14 md:py-24 px-6">
-        <div className="max-w-3xl mx-auto text-center">
+        <FadeIn className="max-w-3xl mx-auto text-center">
           <p
             className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
             style={{ fontFamily: 'var(--font-noto-sans)' }}
@@ -329,12 +335,12 @@ export default function Home() {
           >
             チャレンジ詳細を見る
           </Link>
-        </div>
+        </FadeIn>
       </section>
 
       {/* ── アクセス導線 ── */}
       <section className="py-14 md:py-24 px-6">
-        <div className="max-w-3xl mx-auto text-center">
+        <FadeIn className="max-w-3xl mx-auto text-center">
           <p
             className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
             style={{ fontFamily: 'var(--font-noto-sans)' }}
@@ -393,7 +399,7 @@ export default function Home() {
               銀座コーヒー公式サイト →
             </a>
           </div>
-        </div>
+        </FadeIn>
       </section>
     </>
   )
