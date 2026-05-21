@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: '鹿沼辛麺 童の所在地・営業時間・アクセス情報。栃木県鹿沼市末広町WARABASE 1F。',
 }
 
-const info: { label: string; value: string; pending?: boolean }[] = [
+const info: { label: string; value: string; pending?: boolean; link?: string }[] = [
   { label: '店名', value: '鹿沼辛麺 童（かぬまからめん わらべ）' },
   { label: '住所', value: '〒322-0083 栃木県鹿沼市末広町１９１６−１ WARABASE 1F（洋菓子店エトワール跡地）' },
   { label: '営業時間', value: '準備中', pending: true },
@@ -14,7 +14,7 @@ const info: { label: string; value: string; pending?: boolean }[] = [
   { label: '席数', value: 'カウンター・テーブル・個室' },
   { label: '駐車場', value: 'お店隣に約10台（無料）' },
   { label: 'テイクアウト', value: '串シウマイ等　カウンターにて提供' },
-  { label: '姉妹店', value: '銀座コーヒー（徒歩1分）' },
+  { label: '姉妹店', value: '銀座コーヒー（徒歩1分）', link: 'https://www.ginzacoffee.net/' },
   { label: '運営', value: '合同会社ネイチャーディストリクト' },
 ]
 
@@ -90,12 +90,24 @@ export default function AccessPage() {
                 >
                   {item.label}
                 </span>
-                <span
-                  className={`text-sm ${item.pending ? 'text-[#555] italic' : 'text-[#ddd]'}`}
-                  style={{ fontFamily: 'var(--font-noto-sans)' }}
-                >
-                  {item.value}
-                </span>
+                {item.link ? (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-[#c0392b] hover:text-[#e74c3c] transition-colors underline underline-offset-4"
+                    style={{ fontFamily: 'var(--font-noto-sans)' }}
+                  >
+                    {item.value}
+                  </a>
+                ) : (
+                  <span
+                    className={`text-sm ${item.pending ? 'text-[#555] italic' : 'text-[#ddd]'}`}
+                    style={{ fontFamily: 'var(--font-noto-sans)' }}
+                  >
+                    {item.value}
+                  </span>
+                )}
               </div>
             ))}
             {/* Instagram リンク */}
