@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import FadeIn from '../components/FadeIn'
 
 export const metadata: Metadata = {
   title: '採用情報 | 鹿沼辛麺 童',
@@ -10,58 +11,62 @@ export default function RecruitPage() {
     <>
       {/* ヘッダー */}
       <section className="pt-32 pb-16 px-6 text-center border-b border-[#1f1f1f]">
-        <p
-          className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
-          style={{ fontFamily: 'var(--font-noto-sans)' }}
-        >
-          RECRUIT
-        </p>
-        <h1
-          className="text-4xl md:text-5xl font-black text-[#f0ede8] tracking-wide mb-4"
-          style={{ fontFamily: 'var(--font-noto-serif)' }}
-        >
-          採用情報
-        </h1>
-        <p
-          className="text-sm text-[#ddd]"
-          style={{ fontFamily: 'var(--font-noto-sans)' }}
-        >
-          新しいチームメンバーを募集しています
-        </p>
+        <FadeIn>
+          <p
+            className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
+            style={{ fontFamily: 'var(--font-noto-sans)' }}
+          >
+            RECRUIT
+          </p>
+          <h1
+            className="text-4xl md:text-5xl font-black text-[#f0ede8] tracking-wide mb-4"
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
+          >
+            採用情報
+          </h1>
+          <p
+            className="text-sm text-[#ddd]"
+            style={{ fontFamily: 'var(--font-noto-sans)' }}
+          >
+            新しいチームメンバーを募集しています
+          </p>
+        </FadeIn>
       </section>
 
       {/* メッセージ */}
       <section className="py-14 md:py-24 px-6">
         <div className="max-w-2xl mx-auto text-center">
-          <p
-            className="text-xs tracking-[0.5em] text-[#c0392b] mb-4"
-            style={{ fontFamily: 'var(--font-noto-sans)' }}
-          >
-            MESSAGE
-          </p>
-          <p
-            className="text-xl md:text-2xl font-black text-[#f0ede8] leading-loose tracking-wide mb-8"
-            style={{ fontFamily: 'var(--font-noto-serif)' }}
-          >
-            鹿沼から、<br />
-            日本を熱くする仲間を探しています。
-          </p>
-          <div className="w-16 h-px bg-[#c0392b] mx-auto mb-8" />
-          <p
-            className="text-sm text-[#ddd] leading-loose"
-            style={{ fontFamily: 'var(--font-noto-sans)' }}
-          >
-            地域循環型の辛麺専門店として、鹿沼の農家・製麺所と手を組みながら
-            地域に根ざした飲食を作っています。<br />
-            一緒に鹿沼を盛り上げてくれる方のご応募をお待ちしています。
-          </p>
+          <FadeIn>
+            <p
+              className="text-xs tracking-[0.5em] text-[#c0392b] mb-4"
+              style={{ fontFamily: 'var(--font-noto-sans)' }}
+            >
+              MESSAGE
+            </p>
+            <p
+              className="text-xl md:text-2xl font-black text-[#f0ede8] leading-loose tracking-wide mb-8"
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
+            >
+              鹿沼から、<br />
+              日本を熱くする仲間を探しています。
+            </p>
+            <div className="w-16 h-px bg-[#c0392b] mx-auto mb-8" />
+            <p
+              className="text-sm text-[#ddd] leading-loose"
+              style={{ fontFamily: 'var(--font-noto-sans)' }}
+            >
+              地域循環型の辛麺専門店として、鹿沼の農家・製麺所と手を組みながら
+              地域に根ざした飲食を作っています。<br />
+              一緒に鹿沼を盛り上げてくれる方のご応募をお待ちしています。
+            </p>
+          </FadeIn>
         </div>
       </section>
 
       {/* 応募方法 */}
       <section className="py-14 md:py-24 px-6 bg-[#0a0a0a] border-y border-[#1f1f1f]">
         <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-12">
+          <FadeIn className="text-center mb-12">
             <p
               className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
               style={{ fontFamily: 'var(--font-noto-sans)' }}
@@ -74,45 +79,47 @@ export default function RecruitPage() {
             >
               応募方法
             </h2>
-          </div>
+          </FadeIn>
 
-          <div className="bg-[#161616] border border-[#1f1f1f] p-6 md:p-10 mb-8">
-            <p
-              className="text-sm text-[#ddd] leading-loose mb-6"
-              style={{ fontFamily: 'var(--font-noto-sans)' }}
-            >
-              インスタグラムのDMにてお待ちしております。<br />
-              下記４点をご記入の上ご連絡ください。<br />
-              メッセージのやり取り後、面談日程を確定させていただきます。
-            </p>
+          <FadeIn delay={100}>
+            <div className="bg-[#161616] border border-[#1f1f1f] p-6 md:p-10 mb-8">
+              <p
+                className="text-sm text-[#ddd] leading-loose mb-6"
+                style={{ fontFamily: 'var(--font-noto-sans)' }}
+              >
+                インスタグラムのDMにてお待ちしております。<br />
+                下記４点をご記入の上ご連絡ください。<br />
+                メッセージのやり取り後、面談日程を確定させていただきます。
+              </p>
 
-            <ul className="space-y-4">
-              {[
-                'お名前',
-                '生年月日',
-                '連絡先',
-                'なぜ童に興味を持ったか',
-              ].map((item, i) => (
-                <li key={i} className="flex gap-4 items-start">
-                  <span
-                    className="text-[#c0392b] text-xs mt-0.5 shrink-0"
-                    style={{ fontFamily: 'var(--font-noto-sans)' }}
-                  >
-                    0{i + 1}
-                  </span>
-                  <p
-                    className="text-sm text-[#f0ede8] font-bold"
-                    style={{ fontFamily: 'var(--font-noto-serif)' }}
-                  >
-                    {item}
-                  </p>
-                </li>
-              ))}
-            </ul>
-          </div>
+              <ul className="space-y-4">
+                {[
+                  'お名前',
+                  '生年月日',
+                  '連絡先',
+                  'なぜ童に興味を持ったか',
+                ].map((item, i) => (
+                  <li key={i} className="flex gap-4 items-start">
+                    <span
+                      className="text-[#c0392b] text-xs mt-0.5 shrink-0"
+                      style={{ fontFamily: 'var(--font-noto-sans)' }}
+                    >
+                      0{i + 1}
+                    </span>
+                    <p
+                      className="text-sm text-[#f0ede8] font-bold"
+                      style={{ fontFamily: 'var(--font-noto-serif)' }}
+                    >
+                      {item}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </FadeIn>
 
           {/* Instagramリンク */}
-          <div className="text-center">
+          <FadeIn delay={200} className="text-center">
             <p
               className="text-xs text-[#888] mb-4"
               style={{ fontFamily: 'var(--font-noto-sans)' }}
@@ -137,7 +144,7 @@ export default function RecruitPage() {
             >
               @warabe_kanuma_karamen
             </p>
-          </div>
+          </FadeIn>
         </div>
       </section>
     </>
