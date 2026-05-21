@@ -1,6 +1,6 @@
 'use client'
 
-const ITEMS = [
+const DEFAULT_ITEMS = [
   '鹿沼辛麺 童',
   'KANUMA SPICY RAMEN',
   '炎に、挑め。',
@@ -11,8 +11,13 @@ const ITEMS = [
   'LOCAL CIRCULATION',
 ]
 
-export default function Marquee() {
-  const content = ITEMS.map((item, i) => (
+type Props = {
+  items?: string[]
+  duration?: number // seconds
+}
+
+export default function Marquee({ items = DEFAULT_ITEMS, duration = 18 }: Props) {
+  const content = items.map((item, i) => (
     <span key={i} className="text-xs tracking-[0.25em] text-[#444]" style={{ fontFamily: 'var(--font-noto-sans)' }}>
       {item}
       <span className="mx-6 md:mx-10 text-[#c0392b]/60">—</span>
@@ -23,7 +28,7 @@ export default function Marquee() {
     <div className="overflow-hidden border-y border-[#1a1a1a] bg-[#080808] py-4 select-none">
       <div
         className="flex whitespace-nowrap"
-        style={{ animation: 'marquee 18s linear infinite' }}
+        style={{ animation: `marquee ${duration}s linear infinite` }}
       >
         <div className="flex shrink-0">{content}</div>
         <div className="flex shrink-0" aria-hidden="true">{content}</div>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeIn from '../components/FadeIn'
+import Marquee from '../components/Marquee'
 
 export const metadata: Metadata = {
   title: 'アクセス | 鹿沼辛麺 童',
@@ -45,6 +46,12 @@ export default function AccessPage() {
           </p>
         </FadeIn>
       </section>
+
+      {/* マーキー */}
+      <Marquee
+        items={['鹿沼市末広町', 'WARABASE 1F', '駐車場10台無料', '東武新鹿沼駅 徒歩15分', '銀座コーヒーより徒歩1分', '洋菓子店エトワール跡地', '栃木県鹿沼市']}
+        duration={22}
+      />
 
       {/* マップエリア */}
       <section className="py-8 md:py-12 px-6">

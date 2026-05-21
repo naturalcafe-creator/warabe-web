@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeIn from '../components/FadeIn'
+import Marquee from '../components/Marquee'
+import SpiceRankItem from '../components/SpiceRankItem'
 
 export const metadata: Metadata = {
   title: 'メニュー | 鹿沼辛麺 童',
@@ -79,6 +81,12 @@ export default function MenuPage() {
           </p>
         </FadeIn>
       </section>
+
+      {/* マーキー */}
+      <Marquee
+        items={['こんにゃく麺', '中華麺', '元祖辛麺', 'トマト辛麺', '味噌辛麺', '化学調味料不使用', '無辛 〜 Lv.12', '栃木しゃも × 鹿沼ニラ', 'お一人様大歓迎']}
+        duration={22}
+      />
 
       {/* 無辛推し バナー */}
       <section className="py-12 px-6 bg-[#161616] border-b border-[#2a2a2a]">
@@ -273,13 +281,7 @@ export default function MenuPage() {
             <div className="space-y-2">
               {spiceRanks.map((r, i) => (
                 <FadeIn key={r.rank} delay={i * 40}>
-                  <div
-                    className={`flex items-center gap-4 px-6 py-4 border transition-colors ${
-                      r.highlight
-                        ? 'bg-[#f0ede8]/5 border-[#f0ede8]/20 hover:border-[#f0ede8]/40'
-                        : 'bg-[#161616] border-[#1f1f1f] hover:border-[#c0392b]/30'
-                    }`}
-                  >
+                  <SpiceRankItem color={r.color} highlight={r.highlight}>
                     <div className="w-14 text-right shrink-0">
                       <span
                         className="text-xs font-bold"
@@ -327,7 +329,7 @@ export default function MenuPage() {
                         {r.desc}
                       </p>
                     </div>
-                  </div>
+                  </SpiceRankItem>
                 </FadeIn>
               ))}
             </div>

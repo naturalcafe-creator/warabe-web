@@ -6,9 +6,10 @@ type Props = {
   end: number
   duration?: number
   className?: string
+  suffix?: string
 }
 
-export default function CountUp({ end, duration = 1800, className = '' }: Props) {
+export default function CountUp({ end, duration = 1800, className = '', suffix = '' }: Props) {
   const [count, setCount] = useState(0)
   const ref = useRef<HTMLSpanElement>(null)
   const started = useRef(false)
@@ -39,5 +40,9 @@ export default function CountUp({ end, duration = 1800, className = '' }: Props)
     return () => observer.disconnect()
   }, [end, duration])
 
-  return <span ref={ref} className={className}>{count}</span>
+  return (
+    <span ref={ref} className={className}>
+      {count.toLocaleString()}{suffix}
+    </span>
+  )
 }

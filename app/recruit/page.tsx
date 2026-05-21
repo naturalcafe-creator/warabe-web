@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import FadeIn from '../components/FadeIn'
+import Marquee from '../components/Marquee'
 
 export const metadata: Metadata = {
   title: '採用情報 | 鹿沼辛麺 童',
@@ -32,6 +33,12 @@ export default function RecruitPage() {
           </p>
         </FadeIn>
       </section>
+
+      {/* マーキー */}
+      <Marquee
+        items={['新しいチームメンバーを募集', 'RECRUIT', 'Instagram DM にてご応募', '鹿沼を盛り上げる仲間へ', '地域循環型飲食', '鹿沼から日本を熱くする']}
+        duration={20}
+      />
 
       {/* メッセージ */}
       <section className="py-14 md:py-24 px-6">
