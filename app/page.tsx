@@ -94,24 +94,20 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col gap-4 items-center w-full max-w-xs mx-auto">
-            <MagneticButton className="w-full">
-              <Link
-                href="/menu"
-                className="block w-full text-center py-4 bg-[#c0392b] text-[#f0ede8] text-sm tracking-[0.2em] font-bold hover:bg-[#e74c3c] transition-colors"
-                style={{ fontFamily: 'var(--font-noto-sans)' }}
-              >
-                メニューを見る
-              </Link>
-            </MagneticButton>
-            <MagneticButton className="w-full">
-              <Link
-                href="/challenge"
-                className="block w-full text-center py-4 border border-[#c0392b] text-[#c0392b] text-sm tracking-[0.2em] font-bold hover:bg-[#c0392b]/10 transition-colors"
-                style={{ fontFamily: 'var(--font-noto-sans)' }}
-              >
-                鳳凰チャレンジ
-              </Link>
-            </MagneticButton>
+            <Link
+              href="/menu"
+              className="block w-full text-center py-4 bg-[#c0392b] text-[#f0ede8] text-sm tracking-[0.2em] font-bold hover:bg-[#e74c3c] transition-colors"
+              style={{ fontFamily: 'var(--font-noto-sans)' }}
+            >
+              メニューを見る
+            </Link>
+            <Link
+              href="/challenge"
+              className="block w-full text-center py-4 border border-[#c0392b] text-[#c0392b] text-sm tracking-[0.2em] font-bold hover:bg-[#c0392b]/10 transition-colors"
+              style={{ fontFamily: 'var(--font-noto-sans)' }}
+            >
+              鳳凰チャレンジ
+            </Link>
           </div>
         </div>
 
