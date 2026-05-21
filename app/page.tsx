@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import FadeIn from './components/FadeIn'
+import Marquee from './components/Marquee'
+import CountUp from './components/CountUp'
 
 const features = [
   {
@@ -106,6 +108,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── マーキー ── */}
+      <Marquee />
+
       {/* ── 3つの独自価値 ── */}
       <section className="py-14 md:py-24 px-6">
         <div className="max-w-5xl mx-auto">
@@ -128,7 +133,7 @@ export default function Home() {
             {features.map((f, i) => (
               <FadeIn key={f.num} delay={i * 100}>
               <div
-                className="bg-[#161616] border border-[#1f1f1f] p-5 md:p-8 hover:border-[#c0392b]/40 transition-colors h-full"
+                className="bg-[#161616] border border-[#1f1f1f] p-5 md:p-8 hover:border-[#c0392b]/50 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(192,57,43,0.12)] transition-all duration-300 h-full"
               >
                 <p
                   className="text-5xl font-black text-[#c0392b]/60 mb-4"
@@ -197,17 +202,20 @@ export default function Home() {
             <FadeIn className="md:w-1/2" direction="left">
             <div className="grid grid-cols-2 gap-4">
               {[
-                { num: '2026', unit: '年', label: '鹿沼・末広に創業' },
-                { num: '4', unit: '種', label: '唐辛子のブレンド' },
-                { num: '12', unit: '段階', label: '辛さの選択肢' },
-                { num: '0', unit: '使用', label: '化学調味料' },
+                { num: 2026, unit: '年', label: '鹿沼・末広に創業', static: true },
+                { num: 4,    unit: '種', label: '唐辛子のブレンド' },
+                { num: 12,   unit: '段階', label: '辛さの選択肢' },
+                { num: 0,    unit: '使用', label: '化学調味料', static: true },
               ].map((item) => (
-                <div key={item.label} className="bg-[#161616] border border-[#1f1f1f] p-6 text-center">
+                <div key={item.label} className="bg-[#161616] border border-[#1f1f1f] p-6 text-center hover:border-[#c0392b]/40 hover:-translate-y-0.5 transition-all duration-300">
                   <p
                     className="text-4xl font-black text-[#f0ede8] leading-none"
                     style={{ fontFamily: 'var(--font-noto-serif)' }}
                   >
-                    {item.num}
+                    {item.static
+                      ? item.num
+                      : <CountUp end={item.num} duration={1600} />
+                    }
                     <span className="text-base text-[#c0392b] ml-1">{item.unit}</span>
                   </p>
                   <p
@@ -262,7 +270,7 @@ export default function Home() {
               {ranks.map((r) => (
                 <div
                   key={r.name}
-                  className="bg-[#161616] border border-[#1f1f1f] p-4 text-center"
+                  className="bg-[#161616] border border-[#1f1f1f] p-4 text-center hover:border-[#c0392b]/40 hover:-translate-y-1 transition-all duration-300"
                 >
                   <p
                     className="text-sm font-bold tracking-wider mb-2"
