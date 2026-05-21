@@ -214,9 +214,9 @@ export default function Home() {
             <FadeIn className="md:w-1/2" direction="left">
             <div className="grid grid-cols-2 gap-4">
               {[
-                { num: 2026, unit: '年', label: '鹿沼・末広に創業', static: true },
-                { num: 4,    unit: '種', label: '唐辛子のブレンド' },
                 { num: 12,   unit: '段階', label: '辛さの選択肢' },
+                { num: 4,    unit: '種', label: '唐辛子のブレンド' },
+                { num: 2026, unit: '年', label: '鹿沼・末広に創業', static: true },
                 { num: 0,    unit: '使用', label: '化学調味料', static: true },
               ].map((item) => (
                 <div key={item.label} className="bg-[#161616] border border-[#1f1f1f] p-6 text-center hover:border-[#c0392b]/40 hover:-translate-y-0.5 transition-all duration-300">
