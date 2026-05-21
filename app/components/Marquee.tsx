@@ -23,7 +23,7 @@ export default function Marquee() {
     <div className="overflow-hidden border-y border-[#1a1a1a] bg-[#080808] py-4 select-none">
       <div
         className="flex whitespace-nowrap"
-        style={{ animation: 'marquee 40s linear infinite' }}
+        style={{ animation: 'marquee 28s linear infinite' }}
       >
         <div className="flex shrink-0">{content}</div>
         <div className="flex shrink-0" aria-hidden="true">{content}</div>
