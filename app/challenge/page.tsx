@@ -12,7 +12,7 @@ const allRanks = [
   { name: '町娘',   ruby: 'まちむすめ',     level: '無辛',  desc: '旅のはじまり。辛さを知らぬ者の出発点。' },
   { name: '小童',   ruby: 'こわっぱ',       level: 'Lv.1',  desc: '少しだけ辛さに触れた新入り。' },
   { name: '足軽',   ruby: 'あしがる',       level: 'Lv.2',  desc: '辛さに立ち向かう意志を持つ者。' },
-  { name: '御家人', ruby: 'ごけにん',       level: 'Lv.3',  desc: '辛さを恐れぬ者。' },
+  { name: '侍', ruby: 'さむらい',       level: 'Lv.3',  desc: '辛さを恐れぬ者。' },
   { name: '武士',   ruby: 'ぶし',           level: 'Lv.4',  desc: '一定の辛さを制した猛者。' },
   { name: '旗本',   ruby: 'はたもと',       level: 'Lv.5',  desc: '鍛え上げられた辛さへの耐性。' },
   { name: '家老',   ruby: 'かろう',         level: 'Lv.6',  desc: '影で辛さと戦い続ける者。' },

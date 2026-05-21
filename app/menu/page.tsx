@@ -47,7 +47,7 @@ const spiceRanks = [
   { rank: 0,  name: '町娘',   ruby: 'まちむすめ',   level: '無辛',  desc: '辛さゼロ。スープと麺本来の旨味だけを存分に楽しめる一杯。辛いものが苦手な方もぜひ。', color: '#f0ede8', highlight: true, price: '¥920' },
   { rank: 1,  name: '小童',   ruby: 'こわっぱ',     level: 'Lv.1',  desc: 'ほのかな辛味。初挑戦の方にもおすすめ。',                             color: '#f9e68a', price: '¥950' },
   { rank: 2,  name: '足軽',   ruby: 'あしがる',     level: 'Lv.2',  desc: '辛さが前面に出てくる。汗ばむ程度の刺激。',                           color: '#f9a825', price: '¥950' },
-  { rank: 3,  name: '御家人', ruby: 'ごけにん',     level: 'Lv.3',  desc: '本格的な辛さ。辛い物好きが満足できるレベル。',                       color: '#fb8c00', price: '¥980' },
+  { rank: 3,  name: '侍', ruby: 'さむらい',     level: 'Lv.3',  desc: '本格的な辛さ。辛い物好きが満足できるレベル。',                       color: '#fb8c00', price: '¥980' },
   { rank: 4,  name: '武士',   ruby: 'ぶし',         level: 'Lv.4',  desc: '強烈な辛さ。自信がある方向け。',                                     color: '#f4511e', price: '¥980' },
   { rank: 5,  name: '旗本',   ruby: 'はたもと',     level: 'Lv.5',  desc: '辛さが全身を駆け巡る。覚悟を持って挑め。',                           color: '#e53935', price: '¥1,000' },
   { rank: 6,  name: '家老',   ruby: 'かろう',       level: 'Lv.6',  desc: '激辛の域。半数以上がクリアできない。',                                 color: '#c62828', price: '¥1,000' },
