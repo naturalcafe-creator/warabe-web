@@ -49,6 +49,17 @@ export default function Home() {
           }}
         />
 
+        {/* ノイズテクスチャ */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E\")",
+            backgroundRepeat: 'repeat',
+            backgroundSize: '200px 200px',
+            opacity: 0.06,
+          }}
+        />
+
         {/* 赤い縦ライン装飾 */}
         <div className="absolute left-12 top-0 bottom-0 w-px bg-[#c0392b]/20 hidden lg:block" />
         <div className="absolute right-12 top-0 bottom-0 w-px bg-[#c0392b]/20 hidden lg:block" />
