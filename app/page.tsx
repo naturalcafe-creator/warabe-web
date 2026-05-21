@@ -360,6 +360,30 @@ export default function Home() {
           >
             アクセスを確認する →
           </Link>
+
+          {/* 焙煎所案内 */}
+          <div className="mt-12 bg-[#161616] border border-[#1f1f1f] p-6 md:p-8 text-left">
+            <p
+              className="text-xs tracking-[0.4em] text-[#c0392b] mb-4"
+              style={{ fontFamily: 'var(--font-noto-sans)' }}
+            >
+              ROASTERY
+            </p>
+            <p
+              className="text-sm font-bold text-[#f0ede8] mb-3"
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
+            >
+              焙煎所
+            </p>
+            <p
+              className="text-sm text-[#ddd] leading-loose"
+              style={{ fontFamily: 'var(--font-noto-sans)' }}
+            >
+              お店の奥に、姉妹店「銀座コーヒー」の焙煎所を設けています。
+              客席からガラス張りで焙煎の様子が見える仕掛けになっており、
+              タイミングが合えば、辛麺を食べながら焙煎士の仕事を間近に感じることができます。
+            </p>
+          </div>
         </div>
       </section>
     </>
