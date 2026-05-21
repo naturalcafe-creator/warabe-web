@@ -145,6 +145,7 @@ export default function AccessPage() {
                 icon: '☕',
                 method: '銀座コーヒーから',
                 desc: '姉妹店「銀座コーヒー」から徒歩約1分。相互クーポンをご利用いただけます。',
+                link: 'https://www.ginzacoffee.net/',
               },
               {
                 icon: '🅿️',
@@ -166,6 +167,17 @@ export default function AccessPage() {
                 >
                   {item.desc}
                 </p>
+                {'link' in item && (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-3 text-xs text-[#c0392b] hover:text-[#e74c3c] transition-colors underline underline-offset-4"
+                    style={{ fontFamily: 'var(--font-noto-sans)' }}
+                  >
+                    公式サイト →
+                  </a>
+                )}
               </div>
             ))}
           </div>

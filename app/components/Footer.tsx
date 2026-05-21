@@ -42,7 +42,14 @@ export default function Footer() {
           >
             <p>〒322-0083 栃木県鹿沼市末広町１９１６−１</p>
             <p>WARABASE 1F（洋菓子店エトワール跡地）</p>
-            <p>姉妹店：銀座コーヒー（徒歩1分）</p>
+            <a
+                href="https://www.ginzacoffee.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#f0ede8] transition-colors"
+              >
+                姉妹店：銀座コーヒー（徒歩1分）
+              </a>
             <a
               href="https://www.instagram.com/warabe_kanuma_karamen/"
               target="_blank"

@@ -351,7 +351,7 @@ export default function Home() {
             className="text-sm text-[#ccc] mb-8"
             style={{ fontFamily: 'var(--font-noto-sans)' }}
           >
-            洋菓子店エトワール跡地。姉妹店「銀座コーヒー」より徒歩1分。
+            洋菓子店エトワール跡地。姉妹店「<a href="https://www.ginzacoffee.net/" target="_blank" rel="noopener noreferrer" className="text-[#c0392b] hover:text-[#e74c3c] transition-colors">銀座コーヒー</a>」より徒歩1分。
           </p>
           <Link
             href="/access"
@@ -376,13 +376,22 @@ export default function Home() {
               焙煎所
             </p>
             <p
-              className="text-sm text-[#ddd] leading-loose"
+              className="text-sm text-[#ddd] leading-loose mb-6"
               style={{ fontFamily: 'var(--font-noto-sans)' }}
             >
               お店の奥に、姉妹店「銀座コーヒー」の焙煎所を設けています。
               客席からガラス張りで焙煎の様子が見える仕掛けになっており、
               タイミングが合えば、辛麺を食べながら焙煎士の仕事を間近に感じることができます。
             </p>
+            <a
+              href="https://www.ginzacoffee.net/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs tracking-[0.2em] text-[#c0392b] border-b border-[#c0392b]/40 pb-1 hover:border-[#c0392b] transition-colors"
+              style={{ fontFamily: 'var(--font-noto-sans)' }}
+            >
+              銀座コーヒー公式サイト →
+            </a>
           </div>
         </div>
       </section>
