@@ -221,7 +221,7 @@ export default function Home() {
               ].map((item) => (
                 <div key={item.label} className="bg-[#161616] border border-[#1f1f1f] p-6 text-center hover:border-[#c0392b]/40 hover:-translate-y-0.5 transition-all duration-300">
                   <p
-                    className="text-4xl font-black text-[#f0ede8] leading-none"
+                    className="text-4xl font-black text-[#f0ede8] leading-none whitespace-nowrap"
                     style={{ fontFamily: 'var(--font-noto-serif)' }}
                   >
                     {item.static
