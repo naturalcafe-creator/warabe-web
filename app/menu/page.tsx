@@ -6,7 +6,7 @@ import SpiceRankItem from '../components/SpiceRankItem'
 
 export const metadata: Metadata = {
   title: 'メニュー | 鹿沼辛麺 童',
-  description: '麺・スープ・辛さを自由に選べる鹿沼辛麺。無辛〜Lv.12の12段階。化学調味料不使用。一人でも気軽にどうぞ。',
+  description: '麺・スープ・辛さを自由に選べる鹿沼辛麺。Lv.1〜Lv.12の12段階。化学調味料不使用。一人でも気軽にどうぞ。',
 }
 
 const noodles = [
@@ -44,18 +44,18 @@ const soups = [
 ]
 
 const spiceRanks = [
-  { rank: 1, name: '町娘', ruby: 'まちむすめ', level: '無辛', desc: '辛さゼロ。スープと麺本来の旨味だけを存分に楽しめる一杯。辛いものが苦手な方もぜひ。', color: '#f0ede8', highlight: true, price: '¥920' },
-  { rank: 2, name: '小童', ruby: 'こわっぱ', level: 'Lv.1', desc: 'ほのかな辛味。初挑戦の方にもおすすめ。', color: '#f9e68a', price: '¥950' },
-  { rank: 3, name: '若武者', ruby: 'わかむしゃ', level: 'Lv.2', desc: '辛さが前面に出てくる。汗ばむ程度の刺激。', color: '#f9a825', price: '¥950' },
-  { rank: 4, name: '武者', ruby: 'むしゃ', level: 'Lv.3', desc: '本格的な辛さ。辛い物好きが満足できるレベル。', color: '#fb8c00', price: '¥980' },
-  { rank: 5, name: '侍', ruby: 'さむらい', level: 'Lv.4', desc: '強烈な辛さ。自信がある方向け。', color: '#f4511e', price: '¥980' },
-  { rank: 6, name: '剣士', ruby: 'けんし', level: 'Lv.5', desc: '辛さが全身を駆け巡る。覚悟を持って挑め。', color: '#e53935', price: '¥1,000' },
-  { rank: 7, name: '忍者', ruby: 'にんじゃ', level: 'Lv.6', desc: '激辛の域。半数以上が完食できない。', color: '#c62828', price: '¥1,000' },
-  { rank: 8, name: '大名', ruby: 'だいみょう', level: 'Lv.7', desc: '上級者専用。唇が痺れる超激辛。', color: '#b71c1c', price: '¥1,030' },
-  { rank: 9, name: '老中', ruby: 'ろうじゅう', level: 'Lv.8', desc: '激辛王者の領域。涙なしには食べられない。', color: '#880e4f', price: '¥1,030' },
-  { rank: 10, name: '将軍', ruby: 'しょうぐん', level: 'Lv.9〜10', desc: '完食必須の出世システム。失敗すると降格。', color: '#6a1b9a', badge: '完食必須', price: '¥1,080' },
+  { rank: 1,  name: '小童',   ruby: 'こわっぱ',     level: 'Lv.1',  desc: 'ほのかな辛味。初挑戦の方にもおすすめ。',                             color: '#f9e68a', price: '¥950' },
+  { rank: 2,  name: '足軽',   ruby: 'あしがる',     level: 'Lv.2',  desc: '辛さが前面に出てくる。汗ばむ程度の刺激。',                           color: '#f9a825', price: '¥950' },
+  { rank: 3,  name: '御家人', ruby: 'ごけにん',     level: 'Lv.3',  desc: '本格的な辛さ。辛い物好きが満足できるレベル。',                       color: '#fb8c00', price: '¥980' },
+  { rank: 4,  name: '武士',   ruby: 'ぶし',         level: 'Lv.4',  desc: '強烈な辛さ。自信がある方向け。',                                     color: '#f4511e', price: '¥980' },
+  { rank: 5,  name: '旗本',   ruby: 'はたもと',     level: 'Lv.5',  desc: '辛さが全身を駆け巡る。覚悟を持って挑め。',                           color: '#e53935', price: '¥1,000' },
+  { rank: 6,  name: '家老',   ruby: 'かろう',       level: 'Lv.6',  desc: '激辛の域。半数以上が完食できない。',                                 color: '#c62828', price: '¥1,000' },
+  { rank: 7,  name: '奉行',   ruby: 'ぶぎょう',     level: 'Lv.7',  desc: '上級者専用。唇が痺れる超激辛。',                                     color: '#b71c1c', price: '¥1,030' },
+  { rank: 8,  name: '大名',   ruby: 'だいみょう',   level: 'Lv.8',  desc: '激辛王者の領域。涙なしには食べられない。',                           color: '#880e4f', price: '¥1,030' },
+  { rank: 9,  name: '老中',   ruby: 'ろうじゅう',   level: 'Lv.9',  desc: '体制を仕切る辛さの重鎮。',                                           color: '#6a1b9a', price: '¥1,080' },
+  { rank: 10, name: '将軍',   ruby: 'しょうぐん',   level: 'Lv.10', desc: '完食必須の出世システム。失敗すると降格。',                           color: '#4a0072', badge: '完食必須', price: '¥1,080' },
   { rank: 11, name: '大将軍', ruby: 'だいしょうぐん', level: 'Lv.11', desc: '将軍を超えた猛者のみが到達できる領域。完食必須。失敗すると降格。', color: '#4a148c', badge: '完食必須', price: '¥1,130' },
-  { rank: 12, name: '天下統一', ruby: 'てんかとういつ', level: 'Lv.12', desc: '最高位。辛麺童の頂点に立つ者のみが到達できる境地。', color: '#7b1fa2', badge: '最高位', price: '¥1,200' },
+  { rank: 12, name: '天下人', ruby: 'てんかびと',   level: 'Lv.12', desc: '最高位。辛麺童の頂点に立つ者のみが到達できる境地。',               color: '#7b1fa2', badge: '最高位',  price: '¥1,200' },
 ]
 
 export default function MenuPage() {
@@ -292,7 +292,7 @@ export default function MenuPage() {
             <div className="space-y-2">
               {spiceRanks.map((r, i) => (
                 <FadeIn key={r.rank} delay={i * 40}>
-                  <SpiceRankItem color={r.color} highlight={r.highlight}>
+                  <SpiceRankItem color={r.color}>
                     <div className="w-14 text-right shrink-0">
                       <span
                         className="text-xs font-bold"
@@ -316,14 +316,6 @@ export default function MenuPage() {
                         >
                           {r.ruby}
                         </span>
-                        {r.highlight && (
-                          <span
-                            className="text-xs px-2 py-0.5 border border-[#f0ede8]/40 text-[#f0ede8] tracking-wider"
-                            style={{ fontFamily: 'var(--font-noto-serif)' }}
-                          >
-                            辛さゼロ・お子様にも
-                          </span>
-                        )}
                         {r.badge && (
                           <span
                             className="text-xs px-2 py-0.5 border border-[#c0392b] text-[#c0392b] tracking-wider"

@@ -9,18 +9,18 @@ export const metadata: Metadata = {
 }
 
 const allRanks = [
-  { name: '町娘', ruby: 'まちむすめ', level: '無辛', desc: '旅のはじまり。辛さを知らぬ者の出発点。' },
-  { name: '小童', ruby: 'こわっぱ', level: 'Lv.1', desc: '少しだけ辛さに触れた新入り。' },
-  { name: '若武者', ruby: 'わかむしゃ', level: 'Lv.2', desc: '辛さに立ち向かう意志を持つ者。' },
-  { name: '武者', ruby: 'むしゃ', level: 'Lv.3', desc: '辛さを恐れぬ者。' },
-  { name: '侍', ruby: 'さむらい', level: 'Lv.4', desc: '一定の辛さを制した猛者。' },
-  { name: '剣士', ruby: 'けんし', level: 'Lv.5', desc: '鍛え上げられた辛さへの耐性。' },
-  { name: '忍者', ruby: 'にんじゃ', level: 'Lv.6', desc: '影で辛さと戦い続ける者。' },
-  { name: '大名', ruby: 'だいみょう', level: 'Lv.7', desc: '領地を持つ辛さの支配者。' },
-  { name: '老中', ruby: 'ろうじゅう', level: 'Lv.8', desc: '体制を仕切る辛さの重鎮。' },
-  { name: '将軍', ruby: 'しょうぐん', level: 'Lv.9〜10', desc: '天下に号令を発する者。完食必須。', special: true },
+  { name: '小童',   ruby: 'こわっぱ',       level: 'Lv.1',  desc: '少しだけ辛さに触れた新入り。' },
+  { name: '足軽',   ruby: 'あしがる',       level: 'Lv.2',  desc: '辛さに立ち向かう意志を持つ者。' },
+  { name: '御家人', ruby: 'ごけにん',       level: 'Lv.3',  desc: '辛さを恐れぬ者。' },
+  { name: '武士',   ruby: 'ぶし',           level: 'Lv.4',  desc: '一定の辛さを制した猛者。' },
+  { name: '旗本',   ruby: 'はたもと',       level: 'Lv.5',  desc: '鍛え上げられた辛さへの耐性。' },
+  { name: '家老',   ruby: 'かろう',         level: 'Lv.6',  desc: '影で辛さと戦い続ける者。' },
+  { name: '奉行',   ruby: 'ぶぎょう',       level: 'Lv.7',  desc: '領地を持つ辛さの支配者。' },
+  { name: '大名',   ruby: 'だいみょう',     level: 'Lv.8',  desc: '体制を仕切る辛さの重鎮。' },
+  { name: '老中',   ruby: 'ろうじゅう',     level: 'Lv.9',  desc: '天下に号令を発する一歩手前の重鎮。' },
+  { name: '将軍',   ruby: 'しょうぐん',     level: 'Lv.10', desc: '天下に号令を発する者。完食必須。', special: true },
   { name: '大将軍', ruby: 'だいしょうぐん', level: 'Lv.11', desc: '将軍を超えた者。完食必須。', special: true },
-  { name: '天下統一', ruby: 'てんかとういつ', level: 'Lv.12', desc: '童の頂点。辛さの絶対王者。すべてを制した者のみが辿り着く境地。', special: true, top: true },
+  { name: '天下人', ruby: 'てんかびと',     level: 'Lv.12', desc: '童の頂点。辛さの絶対王者。すべてを制した者のみが辿り着く境地。', special: true, top: true },
 ]
 
 export default function ChallengePage() {
