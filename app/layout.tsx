@@ -4,6 +4,8 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 import './globals.css'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
+import ScrollProgress from './components/ScrollProgress'
+import CustomCursor from './components/CustomCursor'
 
 const notoSerif = Noto_Serif_JP({
   weight: ['400', '500', '700', '900'],
@@ -82,6 +84,25 @@ export default function RootLayout({
             backgroundSize: '200px 200px',
           }}
         />
+        <ScrollProgress />
+        <CustomCursor />
+        {/* 縦書き装飾テキスト（XL以上のみ） */}
+        <div className="fixed left-3 top-1/2 -translate-y-1/2 z-50 pointer-events-none hidden xl:block select-none">
+          <p
+            className="text-[9px] tracking-[0.9em] text-[#c0392b]/20"
+            style={{ writingMode: 'vertical-rl', textOrientation: 'mixed', fontFamily: 'var(--font-noto-sans)' }}
+          >
+            鹿沼辛麺　童　わらべ
+          </p>
+        </div>
+        <div className="fixed right-3 top-1/2 -translate-y-1/2 z-50 pointer-events-none hidden xl:block select-none">
+          <p
+            className="text-[9px] tracking-[0.9em] text-[#c0392b]/20"
+            style={{ writingMode: 'vertical-rl', textOrientation: 'mixed', fontFamily: 'var(--font-noto-sans)' }}
+          >
+            KANUMA　KARAMEN　WARABE
+          </p>
+        </div>
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />

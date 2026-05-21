@@ -30,7 +30,7 @@ export default function ChallengePage() {
       <section className="pt-32 pb-16 px-6 text-center border-b border-[#1f1f1f]">
         <FadeIn>
           <p className="text-xs tracking-[0.5em] text-[#c0392b] mb-3" style={{ fontFamily: 'var(--font-noto-sans)' }}>CHALLENGE & RANKING</p>
-          <h1 className="text-4xl md:text-5xl font-black text-[#f0ede8] tracking-wide" style={{ fontFamily: 'var(--font-noto-serif)' }}>炎に、挑め。</h1>
+          <h1 className="text-4xl md:text-5xl font-black text-[#f0ede8] tracking-wide glitch" style={{ fontFamily: 'var(--font-noto-serif)' }}>炎に、挑め。</h1>
         </FadeIn>
       </section>
 

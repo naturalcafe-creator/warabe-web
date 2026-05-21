@@ -30,7 +30,7 @@ export default function StoryPage() {
             STORY
           </p>
           <h1
-            className="text-4xl md:text-5xl font-black text-[#f0ede8] tracking-wide"
+            className="text-4xl md:text-5xl font-black text-[#f0ede8] tracking-wide glitch"
             style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             なぜ、鹿沼で<br className="sm:hidden" />辛麺なのか
