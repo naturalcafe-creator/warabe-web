@@ -29,7 +29,7 @@ export default function RecruitPage() {
             className="text-sm text-[#ddd]"
             style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
-            新しいチームメンバーを募集しています
+            チームメンバー募集中
           </p>
         </FadeIn>
       </section>
