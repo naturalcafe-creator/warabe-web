@@ -6,7 +6,7 @@ import SpiceRankItem from '../components/SpiceRankItem'
 
 export const metadata: Metadata = {
   title: 'メニュー | 鹿沼辛麺 童',
-  description: '麺・スープ・辛さを自由に選べる鹿沼辛麺。Lv.1〜Lv.12の12段階。化学調味料不使用。一人でも気軽にどうぞ。',
+  description: '麺・スープ・辛さを自由に選べる鹿沼辛麺。無辛〜Lv.12の12段階。化学調味料不使用。一人でも気軽にどうぞ。',
 }
 
 const noodles = [
@@ -44,6 +44,7 @@ const soups = [
 ]
 
 const spiceRanks = [
+  { rank: 0,  name: '町娘',   ruby: 'まちむすめ',   level: '無辛',  desc: '辛さゼロ。スープと麺本来の旨味だけを存分に楽しめる一杯。辛いものが苦手な方もぜひ。', color: '#f0ede8', highlight: true, price: '¥920' },
   { rank: 1,  name: '小童',   ruby: 'こわっぱ',     level: 'Lv.1',  desc: 'ほのかな辛味。初挑戦の方にもおすすめ。',                             color: '#f9e68a', price: '¥950' },
   { rank: 2,  name: '足軽',   ruby: 'あしがる',     level: 'Lv.2',  desc: '辛さが前面に出てくる。汗ばむ程度の刺激。',                           color: '#f9a825', price: '¥950' },
   { rank: 3,  name: '御家人', ruby: 'ごけにん',     level: 'Lv.3',  desc: '本格的な辛さ。辛い物好きが満足できるレベル。',                       color: '#fb8c00', price: '¥980' },
@@ -292,7 +293,7 @@ export default function MenuPage() {
             <div className="space-y-2">
               {spiceRanks.map((r, i) => (
                 <FadeIn key={r.rank} delay={i * 40}>
-                  <SpiceRankItem color={r.color}>
+                  <SpiceRankItem color={r.color} highlight={r.highlight}>
                     <div className="w-14 text-right shrink-0">
                       <span
                         className="text-xs font-bold"
@@ -316,6 +317,14 @@ export default function MenuPage() {
                         >
                           {r.ruby}
                         </span>
+                        {r.highlight && (
+                          <span
+                            className="text-xs px-2 py-0.5 border border-[#f0ede8]/40 text-[#f0ede8] tracking-wider"
+                            style={{ fontFamily: 'var(--font-noto-serif)' }}
+                          >
+                            辛さゼロ・お子様にも
+                          </span>
+                        )}
                         {r.badge && (
                           <span
                             className="text-xs px-2 py-0.5 border border-[#c0392b] text-[#c0392b] tracking-wider"

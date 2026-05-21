@@ -27,8 +27,8 @@ const features = [
 ]
 
 const ranks = [
+  { name: '町娘',   level: '無辛',  color: '#f0ede8' },
   { name: '小童',   level: 'Lv.1',  color: '#f9e68a' },
-  { name: '足軽',   level: 'Lv.2',  color: '#f9a825' },
   { name: '旗本',   level: 'Lv.5',  color: '#e53935' },
   { name: '大名',   level: 'Lv.8',  color: '#880e4f' },
   { name: '大将軍', level: 'Lv.11', color: '#4a148c' },
@@ -89,7 +89,7 @@ export default function Home() {
           >
             鹿沼・末広から始まる、熱狂の一杯。<br />
             栃木しゃも × 鹿沼ニラ × こんにゃく麺。<br />
-            化学調味料不使用。Lv.1〜12段階。<br />
+            化学調味料不使用。無辛〜12段階。<br />
             お一人様大歓迎。
           </p>
 

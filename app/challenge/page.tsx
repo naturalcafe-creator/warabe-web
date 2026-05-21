@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 }
 
 const allRanks = [
+  { name: '町娘',   ruby: 'まちむすめ',     level: '無辛',  desc: '旅のはじまり。辛さを知らぬ者の出発点。' },
   { name: '小童',   ruby: 'こわっぱ',       level: 'Lv.1',  desc: '少しだけ辛さに触れた新入り。' },
   { name: '足軽',   ruby: 'あしがる',       level: 'Lv.2',  desc: '辛さに立ち向かう意志を持つ者。' },
   { name: '御家人', ruby: 'ごけにん',       level: 'Lv.3',  desc: '辛さを恐れぬ者。' },
