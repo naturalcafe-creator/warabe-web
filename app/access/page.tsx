@@ -172,6 +172,53 @@ export default function AccessPage() {
         </div>
       </section>
 
+      {/* 焙煎所 */}
+      <section className="py-10 md:py-16 px-6 border-y border-[#1f1f1f]">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-10">
+            <p
+              className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
+              style={{ fontFamily: 'var(--font-noto-sans)' }}
+            >
+              ROASTERY
+            </p>
+            <h2
+              className="text-2xl font-black text-[#f0ede8] tracking-wide"
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
+            >
+              焙煎所
+            </h2>
+          </div>
+          <div className="bg-[#161616] border border-[#1f1f1f] p-6 md:p-10">
+            <p
+              className="text-sm text-[#ddd] leading-loose mb-6"
+              style={{ fontFamily: 'var(--font-noto-sans)' }}
+            >
+              お店の奥に、姉妹店「銀座コーヒー」の焙煎所を設けています。<br />
+              客席からガラス張りで焙煎の様子が見える仕掛けになっており、
+              辛麺を食べながら珈琲の香りと職人の仕事を間近に感じることができます。
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+              <a
+                href="https://www.ginzacoffee.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-3 border border-[#c0392b] text-[#c0392b] text-xs tracking-[0.2em] font-bold hover:bg-[#c0392b]/10 transition-colors"
+                style={{ fontFamily: 'var(--font-noto-sans)' }}
+              >
+                銀座コーヒー公式サイト →
+              </a>
+              <p
+                className="text-xs text-[#666]"
+                style={{ fontFamily: 'var(--font-noto-sans)' }}
+              >
+                童より徒歩1分・鹿沼市銀座通り
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SNS誘導 */}
       <section className="py-10 md:py-16 px-6 bg-[#0a0a0a] border-t border-[#1f1f1f] text-center">
         <p
