@@ -54,7 +54,8 @@ export default function RecruitPage() {
               className="text-xl md:text-2xl font-black text-[#f0ede8] leading-loose tracking-wide mb-8"
               style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
-              鹿沼を熱くする仲間を探しています。
+              鹿沼を熱くする仲間を<br />
+              探しています。
             </p>
             <div className="w-16 h-px bg-[#c0392b] mx-auto mb-8" />
             <p
