@@ -163,30 +163,25 @@ export default function AccessPage() {
           <div className="grid sm:grid-cols-2 gap-6">
             {[
               {
-                icon: '🚃',
                 method: '電車でお越しの場合',
                 desc: '東武新鹿沼駅から徒歩15分。JR鹿沼駅から徒歩18分。',
               },
               {
-                icon: '🚗',
                 method: 'お車でお越しの場合',
                 desc: 'お店隣に無料駐車場約10台あります。',
               },
               {
-                icon: '☕',
                 method: '銀座コーヒーから',
                 desc: '姉妹店「銀座コーヒー」から徒歩約1分。相互クーポンをご利用いただけます。',
                 link: 'https://www.ginzacoffee.net/',
               },
               {
-                icon: '🅿️',
                 method: '駐車場について',
                 desc: 'お店隣に約10台分の無料駐車場があります。お気軽にお越しください。',
               },
             ].map((item, i) => (
               <FadeIn key={item.method} delay={i * 80}>
                 <div className="bg-[#161616] border border-[#1f1f1f] p-6 h-full">
-                  <p className="text-2xl mb-3">{item.icon}</p>
                   <p
                     className="text-sm font-bold text-[#f0ede8] mb-2"
                     style={{ fontFamily: 'var(--font-noto-serif)' }}

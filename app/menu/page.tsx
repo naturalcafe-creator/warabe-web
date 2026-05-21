@@ -402,16 +402,15 @@ export default function MenuPage() {
 
           <div className="space-y-6">
             {[
-              { num: '①', icon: '🥄', title: 'まずはスープをひとくち', sub: '深い旨味をそのまま感じてください' },
-              { num: '②', icon: '🍜', title: '麺を食べる', sub: 'このとき具は食べすぎないのがコツ！' },
-              { num: '③', icon: '🫙', title: '味変！柚子胡椒をプラス', sub: '机の上の柚子胡椒を入れると絶品' },
-              { num: '④', icon: '🍚', title: '麺を食べ終えたら…', sub: 'ご飯をスープにドボン！' },
-              { num: '⑤', icon: '🧀', title: 'ここでチーズをトッピング', sub: 'とろけるチーズが絶妙にマッチ' },
-              { num: '⑥', icon: '🙏', title: '一滴も残さず完食！', sub: '心も体もととのいます' },
+              { num: '①', title: 'まずはスープをひとくち', sub: '深い旨味をそのまま感じてください' },
+              { num: '②', title: '麺を食べる', sub: 'このとき具は食べすぎないのがコツ！' },
+              { num: '③', title: '味変！柚子胡椒をプラス', sub: '机の上の柚子胡椒を入れると絶品' },
+              { num: '④', title: '麺を食べ終えたら…', sub: 'ご飯をスープにドボン！' },
+              { num: '⑤', title: 'ここでチーズをトッピング', sub: 'とろけるチーズが絶妙にマッチ' },
+              { num: '⑥', title: '一滴も残さず完食！', sub: '心も体もととのいます' },
             ].map((step, i) => (
               <FadeIn key={step.num} delay={i * 60}>
                 <div className="flex items-start gap-4 bg-[#161616] border border-[#1f1f1f] px-4 py-4 md:px-6 md:py-5">
-                  <span className="text-2xl md:text-3xl shrink-0">{step.icon}</span>
                   <div>
                     <p className="text-sm font-bold text-[#f0ede8]" style={{ fontFamily: 'var(--font-noto-serif)' }}>
                       {step.num} {step.title}
@@ -445,16 +444,15 @@ export default function MenuPage() {
           </FadeIn>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {[
-              { icon: '🐓', name: '栃木しゃも', desc: 'ひき肉を練り込んで具材として使用。食べごたえのある旨味の源泉。' },
-              { icon: '🌿', name: '鹿沼ニラ', desc: 'まろやかな甘味で辛さの角を取る' },
-              { icon: '⬜', name: 'こんにゃく麺', desc: '鹿沼産。もちもちの特製麺' },
-              { icon: '🌶', name: '4種の唐辛子', desc: '多層的な刺激を生む独自ブレンド' },
-              { icon: '🥚', name: '鹿沼産のたまご', desc: '地元の新鮮なたまごをスープに溶き込む' },
-              { icon: '🫙', name: '熊本産の醤油', desc: '九州の伝統醤油が深みとコクを加える' },
+              { name: '栃木しゃも', desc: 'ひき肉を練り込んで具材として使用。食べごたえのある旨味の源泉。' },
+              { name: '鹿沼ニラ', desc: 'まろやかな甘味で辛さの角を取る' },
+              { name: 'こんにゃく麺', desc: '鹿沼産。もちもちの特製麺' },
+              { name: '4種の唐辛子', desc: '多層的な刺激を生む独自ブレンド' },
+              { name: '鹿沼産のたまご', desc: '地元の新鮮なたまごをスープに溶き込む' },
+              { name: '熊本産の醤油', desc: '九州の伝統醤油が深みとコクを加える' },
             ].map((item, i) => (
               <FadeIn key={item.name} delay={i * 60}>
                 <div className="bg-[#161616] border border-[#1f1f1f] p-6 h-full">
-                  <p className="text-3xl mb-3">{item.icon}</p>
                   <p className="text-sm font-bold text-[#f0ede8] mb-2" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.name}</p>
                   <p className="text-sm text-[#ddd] leading-relaxed" style={{ fontFamily: 'var(--font-noto-sans)' }}>{item.desc}</p>
                 </div>
