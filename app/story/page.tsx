@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import FadeIn from '../components/FadeIn'
 import Marquee from '../components/Marquee'
-import CountUp from '../components/CountUp'
 
 export const metadata: Metadata = {
   title: 'ストーリー | 鹿沼辛麺 童',
@@ -63,35 +62,6 @@ export default function StoryPage() {
             この一つの問いが、「童」の始まりだった。
           </p>
         </FadeIn>
-      </section>
-
-      {/* 実績 */}
-      <section className="py-10 px-6 border-b border-[#1f1f1f]">
-        <div className="max-w-4xl mx-auto grid grid-cols-3 gap-4 text-center">
-          {[
-            { end: 10000, suffix: '人+', label: '累計来店者数', duration: 2200 },
-            { end: 30, suffix: '社+', label: 'メディア掲載実績', duration: 1600 },
-            { end: 500, suffix: '名+', label: '開業2週間での来店', duration: 1400 },
-          ].map((stat, i) => (
-            <FadeIn key={stat.label} delay={i * 80}>
-              <div className="p-4 md:p-6">
-                <p
-                  className="text-3xl md:text-4xl font-black text-[#f0ede8] leading-none mb-2"
-                  style={{ fontFamily: 'var(--font-noto-serif)' }}
-                >
-                  <CountUp end={stat.end} duration={stat.duration} />
-                  <span className="text-base md:text-lg text-[#c0392b] ml-1">{stat.suffix}</span>
-                </p>
-                <p
-                  className="text-xs text-[#666] tracking-wider"
-                  style={{ fontFamily: 'var(--font-noto-sans)' }}
-                >
-                  {stat.label}
-                </p>
-              </div>
-            </FadeIn>
-          ))}
-        </div>
       </section>
 
       {/* 代表プロフィール */}
