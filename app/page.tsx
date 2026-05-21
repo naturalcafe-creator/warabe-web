@@ -8,7 +8,7 @@ import MagneticButton from './components/MagneticButton'
 const features = [
   {
     num: '01',
-    title: '高い中毒性',
+    title: 'クセになる旨さ',
     sub: 'ADDICTIVE FLAVOR',
     desc: '4種の唐辛子による多層的な刺激と、栃木しゃもの圧倒的旨味。鹿沼ニラが角を取り、一口目から最後まで箸が止まらない。',
   },
