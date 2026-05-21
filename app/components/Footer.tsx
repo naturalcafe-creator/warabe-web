@@ -46,7 +46,7 @@ export default function Footer() {
                 href="https://www.ginzacoffee.net/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#f0ede8] transition-colors"
+                className="underline underline-offset-4 hover:text-[#f0ede8] transition-colors"
               >
                 姉妹店：銀座コーヒー（徒歩1分）
               </a>
