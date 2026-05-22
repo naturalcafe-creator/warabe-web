@@ -109,13 +109,11 @@ export default function MenuPage() {
               辛くなくても、おいしい。
             </h2>
             <p
-              className="text-sm text-[#ddd] leading-loose"
+              className="text-sm text-[#ddd] leading-loose text-left"
               style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
-              「辛いお店だから自分には無理かな」——そう思っていませんか？<br />
-              辛さゼロの <strong className="text-[#f0ede8]">「町娘（無辛）」</strong> は、
-              栃木しゃもの旨味と鹿沼ニラの甘味だけを純粋に楽しめる、
-              辛麺専門店とは思えないほど優しい一杯です。<br />
+              「辛いお店だから自分には無理かな」<br />——そう思っていませんか？<br />
+              辛さゼロの<strong className="text-[#f0ede8]">「町娘（無辛）」</strong>は、栃木しゃもの旨味と鹿沼ニラの甘味だけを純粋に楽しめる、辛麺専門店とは思えないほど優しい一杯です。<br />
               辛いものが苦手な方、一人でふらっと立ち寄りたい方も、ぜひお気軽にどうぞ。
             </p>
           </FadeIn>
@@ -321,7 +319,7 @@ export default function MenuPage() {
                         </span>
                         {r.highlight && (
                           <span
-                            className="text-xs px-2 py-0.5 border border-[#f0ede8]/40 text-[#f0ede8] tracking-wider"
+                            className="text-xs px-2 py-0.5 border border-[#f0ede8]/40 text-[#f0ede8] tracking-wider whitespace-nowrap"
                             style={{ fontFamily: 'var(--font-noto-serif)' }}
                           >
                             辛さゼロ・お子様にも

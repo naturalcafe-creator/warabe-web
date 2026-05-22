@@ -210,7 +210,7 @@ export default function FaqPage() {
             className="text-sm text-[#ccc] mb-10 leading-loose"
             style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
-            その他のご質問はInstagramのDMまたはご来店時にお気軽にどうぞ。
+            その他のご質問はInstagramのDM<br />またはご来店時にお気軽にどうぞ。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
