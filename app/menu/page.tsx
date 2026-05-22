@@ -240,28 +240,30 @@ export default function MenuPage() {
                   <div
                     className="bg-[#161616] border border-[#2a2a2a] p-4 md:p-6 hover:border-[#c0392b]/40 transition-colors h-full"
                   >
-                    <div className="flex items-center gap-2 mb-1">
+                    <div className="mb-1">
                       <span
                         className="text-xs text-[#c0392b] tracking-wider"
                         style={{ fontFamily: 'var(--font-noto-serif)' }}
                       >
                         {s.tag}
                       </span>
+                    </div>
+                    <div className="flex items-center gap-3 mb-3">
+                      <p
+                        className="text-lg font-bold text-[#f0ede8]"
+                        style={{ fontFamily: 'var(--font-noto-serif)' }}
+                      >
+                        {s.name}
+                      </p>
                       {s.surcharge && (
                         <span
-                          className="text-xs px-2 py-0.5 border border-[#c9a84c]/60 text-[#c9a84c] tracking-wider"
+                          className="text-xs px-2 py-0.5 border border-[#c9a84c]/60 text-[#c9a84c] tracking-wider shrink-0"
                           style={{ fontFamily: 'var(--font-noto-serif)' }}
                         >
                           {s.surcharge}
                         </span>
                       )}
                     </div>
-                    <p
-                      className="text-lg font-bold text-[#f0ede8] mb-3"
-                      style={{ fontFamily: 'var(--font-noto-serif)' }}
-                    >
-                      {s.name}
-                    </p>
                     <p
                       className="text-sm text-[#ddd] leading-loose"
                       style={{ fontFamily: 'var(--font-noto-serif)' }}
