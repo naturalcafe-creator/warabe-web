@@ -61,7 +61,7 @@ export default function RecruitPage() {
               className="text-sm text-[#ddd] leading-loose mb-2"
               style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
-              鹿沼の農家・製麺所と手を組みながら、<br />地域に根ざした飲食を作っています。
+              鹿沼の農家・製麺所と手を組みながら、<br />地域に根ざした一杯を届けています。
             </p>
             <p
               className="text-sm text-[#ddd] leading-loose"
