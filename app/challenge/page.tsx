@@ -141,8 +141,9 @@ export default function ChallengePage() {
               <p className="text-xs tracking-[0.4em] text-[#c0392b] mb-4" style={{ fontFamily: 'var(--font-noto-serif)' }}>ABOUT THE SYSTEM</p>
               <ul className="space-y-3">
                 {[
-                  '辛さレベルを順番に制覇していくことで昇格',
-                  '将軍・大将軍・天下人はクリアが必須。失敗すると降格',
+                  '町娘（無辛）〜老中（Lv.9）は自由に選んで注文できる',
+                  '将軍（Lv.10）以上は昇格制。老中をクリアした方が次の段階に進める',
+                  'クリアで昇格・失敗すると一つ降格。スープまで飲み干してクリアが条件',
                   '天下人達成者は「童の殿堂」に名が刻まれる（予定）',
                 ].map((text, i) => (
                   <li key={i} className="text-sm text-[#ddd] flex gap-3" style={{ fontFamily: 'var(--font-noto-serif)' }}>

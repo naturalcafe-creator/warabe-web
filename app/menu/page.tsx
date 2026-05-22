@@ -54,9 +54,9 @@ const spiceRanks = [
   { rank: 7,  name: '奉行',   ruby: 'ぶぎょう',     level: 'Lv.7',  desc: '上級者専用。唇が痺れる超激辛。',                                     color: '#b71c1c', price: '¥1,030' },
   { rank: 8,  name: '大名',   ruby: 'だいみょう',   level: 'Lv.8',  desc: '激辛王者の領域。涙なしには食べられない。',                           color: '#880e4f', price: '¥1,030' },
   { rank: 9,  name: '老中',   ruby: 'ろうじゅう',   level: 'Lv.9',  desc: '体制を仕切る辛さの重鎮。',                                           color: '#6a1b9a', price: '¥1,080' },
-  { rank: 10, name: '将軍',   ruby: 'しょうぐん',   level: 'Lv.10', desc: 'クリア必須の出世システム。失敗すると降格。',                           color: '#4a0072', badge: 'クリア必須', price: '¥1,080' },
-  { rank: 11, name: '大将軍', ruby: 'だいしょうぐん', level: 'Lv.11', desc: '将軍を超えた猛者のみが到達できる領域。クリア必須。失敗すると降格。', color: '#4a148c', badge: 'クリア必須', price: '¥1,130' },
-  { rank: 12, name: '天下人', ruby: 'てんかびと',   level: 'Lv.12', desc: '最高位。辛麺童の頂点に立つ者のみが到達できる境地。',               color: '#7b1fa2', badge: '最高位',  price: '¥1,200' },
+  { rank: 10, name: '将軍',   ruby: 'しょうぐん',   level: 'Lv.10', desc: '老中（Lv.9）をクリアした者だけが挑戦できる昇格制。クリアで大将軍へ、失敗すると老中に降格。', color: '#4a0072', badge: '昇格制', price: '¥1,080' },
+  { rank: 11, name: '大将軍', ruby: 'だいしょうぐん', level: 'Lv.11', desc: '将軍（Lv.10）をクリアした者だけが挑戦できる。クリアで天下人へ、失敗すると将軍に降格。',   color: '#4a148c', badge: '昇格制', price: '¥1,130' },
+  { rank: 12, name: '天下人', ruby: 'てんかびと',   level: 'Lv.12', desc: '大将軍（Lv.11）をクリアした者だけが辿り着ける最高位。童の頂点に立つ者のみが到達できる境地。', color: '#7b1fa2', badge: '最高位', price: '¥1,200' },
 ]
 
 export default function MenuPage() {
@@ -357,7 +357,7 @@ export default function MenuPage() {
               className="text-sm text-[#999] text-center mt-4"
               style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
-              ※ 将軍・大将軍・天下人はクリア必須。スープまで飲み干してクリアが条件です。
+              ※ 将軍（Lv.10）以上は昇格制。老中（Lv.9）からクリアした方が順番に次の段階へ挑戦できます。クリアで昇格・失敗すると一つ降格。スープまで飲み干してクリアが条件です。
             </p>
           </div>
         </div>
