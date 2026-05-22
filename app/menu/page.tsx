@@ -471,7 +471,7 @@ export default function MenuPage() {
             <div className="bg-[#161616] border border-[#1f1f1f] px-6 py-5">
               <p className="text-sm text-[#ddd] leading-loose text-center" style={{ fontFamily: 'var(--font-noto-serif)' }}>
                 辛麺とは、ひき肉・唐辛子・にら・ニンニク・卵などでスープを作り、こんにゃく麺を使用した九州発祥のラーメンです。<br />
-                これらの食材を鹿沼でアップデートした「鹿沼辛麺 童（わらべ）」をお楽しみください。
+                これらの食材を鹿沼でアップデートした「鹿沼辛麺 童（わらべ）」をお楽しみください
               </p>
             </div>
           </FadeIn>
