@@ -5,7 +5,7 @@ import Marquee from '../components/Marquee'
 
 export const metadata: Metadata = {
   title: '鳳凰チャレンジ・新童宿 | 鹿沼辛麺 童',
-  description: '完食で無料、失敗で¥3,000。激辛チャレンジ「鳳凰」と階級制度「新童宿」の詳細。',
+  description: '鹿沼のラーメン・辛麺専門店「童」の激辛チャレンジ「鳳凰」。完食で無料。制限時間15分。階級制度「新童宿」で出世を目指せ。',
 }
 
 const allRanks = [

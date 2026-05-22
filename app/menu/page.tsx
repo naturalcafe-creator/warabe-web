@@ -6,7 +6,7 @@ import SpiceRankItem from '../components/SpiceRankItem'
 
 export const metadata: Metadata = {
   title: 'メニュー | 鹿沼辛麺 童',
-  description: '麺・スープ・辛さを自由に選べる鹿沼辛麺。無辛〜Lv.12の12段階。化学調味料不使用。一人でも気軽にどうぞ。',
+  description: '鹿沼のラーメン・辛麺専門店「童」のメニュー。無辛〜Lv.12の12段階。麺・スープ・辛さを自由に選べる。化学調味料不使用。お一人様大歓迎。',
 }
 
 const noodles = [

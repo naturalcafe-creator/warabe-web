@@ -25,14 +25,17 @@ const notoSans = Noto_Sans_JP({
 })
 
 export const metadata: Metadata = {
-  title: '鹿沼辛麺 童（わらべ）| 栃木・鹿沼の地域循環型辛麺専門店',
+  title: '鹿沼辛麺 童（わらべ）| 栃木・鹿沼のラーメン・辛麺専門店',
   description:
-    '栃木しゃも×鹿沼ニラ×鹿沼産こんにゃく麺。化学調味料不使用の辛麺12段階。鹿沼市銀座通りに誕生した地域循環型辛麺専門店「童（わらべ）」',
+    '栃木県鹿沼市のラーメン・辛麺専門店。栃木しゃも×鹿沼ニラ×鹿沼産こんにゃく麺。化学調味料不使用、無辛〜Lv.12の12段階。鹿沼市末広町WARABASE 1F。',
+  keywords: ['鹿沼ラーメン', '鹿沼辛麺', '栃木ラーメン', '辛麺', '辛麺専門店', 'わらべ', '鹿沼グルメ', '栃木グルメ', 'こんにゃく麺', '激辛'],
   openGraph: {
-    title: '鹿沼辛麺 童（わらべ）',
-    description: '鹿沼・末広から始まる、熱狂の一杯。',
+    title: '鹿沼辛麺 童（わらべ）| 栃木・鹿沼のラーメン・辛麺専門店',
+    description: '栃木県鹿沼市のラーメン・辛麺専門店。鹿沼産こんにゃく麺×栃木しゃも×鹿沼ニラ。化学調味料不使用。無辛〜Lv.12の12段階。',
     locale: 'ja_JP',
     type: 'website',
+    url: 'https://warabe-kanuma.com',
+    siteName: '鹿沼辛麺 童（わらべ）',
   },
   verification: {
     google: 'npm2V423iwqqzV3ZaKF7JudBH82G-V4tqI4OAqK-AdA',
@@ -43,8 +46,9 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Restaurant',
   name: '鹿沼辛麺 童（わらべ）',
+  alternateName: ['鹿沼辛麺わらべ', 'WARABE', '童'],
   url: 'https://warabe-kanuma.com',
-  description: '栃木しゃも×鹿沼ニラ×鹿沼産こんにゃく麺。化学調味料不使用の辛麺12段階。鹿沼市末広町の地域循環型辛麺専門店。',
+  description: '栃木県鹿沼市のラーメン・辛麺専門店。栃木しゃも×鹿沼ニラ×鹿沼産こんにゃく麺。化学調味料不使用。無辛〜Lv.12の12段階。',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '末広町1916-1 WARABASE 1F',
@@ -53,10 +57,31 @@ const jsonLd = {
     postalCode: '322-0083',
     addressCountry: 'JP',
   },
-  servesCuisine: ['辛麺', '日本料理'],
-  priceRange: '¥¥',
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 36.5646,
+    longitude: 139.7399,
+  },
+  servesCuisine: ['ラーメン', '辛麺', '日本料理'],
+  priceRange: '¥920〜¥1,200',
   menu: 'https://warabe-kanuma.com/menu',
-  sameAs: ['https://www.instagram.com/warabe_kanuma'],
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+      opens: '11:30',
+      closes: '14:30',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+      opens: '17:00',
+      closes: '21:00',
+    },
+  ],
+  sameAs: [
+    'https://www.instagram.com/warabe_kanuma_karamen/',
+  ],
 }
 
 export default function RootLayout({

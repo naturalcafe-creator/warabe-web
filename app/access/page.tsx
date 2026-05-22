@@ -5,7 +5,7 @@ import Marquee from '../components/Marquee'
 
 export const metadata: Metadata = {
   title: 'アクセス | 鹿沼辛麺 童',
-  description: '鹿沼辛麺 童の所在地・営業時間・アクセス情報。栃木県鹿沼市末広町WARABASE 1F。',
+  description: '鹿沼のラーメン・辛麺専門店「童（わらべ）」へのアクセス。栃木県鹿沼市末広町WARABASE 1F。無料駐車場10台。東武新鹿沼駅徒歩15分。',
 }
 
 const info: { label: string; value: string; pending?: boolean; link?: string }[] = [
