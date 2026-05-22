@@ -375,16 +375,29 @@ export default function MenuPage() {
               { name: '新鹿沼シウマイ', price: '¥480', desc: 'こんにゃく入りのもちもち皮×玉ねぎの旨味。お腹いっぱいでも食べられる軽さ。辛麺との相性抜群。' },
               { name: '串シウマイ', price: '¥350', desc: 'テイクアウト限定！カウンターにてご提供。' },
               { name: 'ごはん食べ放題', price: '¥150', desc: 'スープにドボンして〆まで楽しめる。食べ放題なので遠慮なくどうぞ。' },
-              { name: '激辛チャレンジ「鳳凰」', price: '完食→無料 ／ 時間切れ→¥2,500', desc: '制限時間15分。スープまで飲み干して完食が条件。誰でも挑戦できます。' },
+              { name: '激辛チャレンジ「鳳凰」', price: '完食→無料 ／ 時間切れ→¥2,500', desc: '制限時間15分。スープまで飲み干して完食が条件。誰でも挑戦できます。', link: '/challenge' },
             ].map((item, i) => (
               <FadeIn key={item.name} delay={i * 60}>
-                <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 bg-[#161616] border border-[#1f1f1f] px-6 py-4">
-                  <div className="flex-1">
-                    <p className="text-sm font-bold text-[#f0ede8] mb-1" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.name}</p>
-                    <p className="text-xs md:text-sm text-[#ddd] leading-relaxed" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.desc}</p>
+                {'link' in item ? (
+                  <Link href={item.link!} className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 bg-[#161616] border border-[#c0392b]/30 px-6 py-4 hover:border-[#c0392b] transition-colors">
+                    <div className="flex-1">
+                      <p className="text-sm font-bold text-[#f0ede8] mb-1" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.name}</p>
+                      <p className="text-xs md:text-sm text-[#ddd] leading-relaxed" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.desc}</p>
+                    </div>
+                    <div className="flex items-center gap-3 shrink-0">
+                      <p className="text-sm font-bold text-[#c9a84c]" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.price}</p>
+                      <span className="text-xs text-[#c0392b] tracking-wider" style={{ fontFamily: 'var(--font-noto-serif)' }}>詳細 →</span>
+                    </div>
+                  </Link>
+                ) : (
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 bg-[#161616] border border-[#1f1f1f] px-6 py-4">
+                    <div className="flex-1">
+                      <p className="text-sm font-bold text-[#f0ede8] mb-1" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.name}</p>
+                      <p className="text-xs md:text-sm text-[#ddd] leading-relaxed" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.desc}</p>
+                    </div>
+                    <p className="text-sm font-bold text-[#c9a84c] shrink-0" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.price}</p>
                   </div>
-                  <p className="text-sm font-bold text-[#c9a84c] shrink-0" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.price}</p>
-                </div>
+                )}
               </FadeIn>
             ))}
           </div>
