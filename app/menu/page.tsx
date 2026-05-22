@@ -50,13 +50,13 @@ const spiceRanks = [
   { rank: 3,  name: '侍', ruby: 'さむらい',     level: 'Lv.3',  desc: '本格的な辛さ。辛い物好きが満足できるレベル。',                       color: '#fb8c00', price: '¥980' },
   { rank: 4,  name: '武士',   ruby: 'ぶし',         level: 'Lv.4',  desc: '強烈な辛さ。自信がある方向け。',                                     color: '#f4511e', price: '¥980' },
   { rank: 5,  name: '旗本',   ruby: 'はたもと',     level: 'Lv.5',  desc: '辛さが全身を駆け巡る。覚悟を持って挑め。',                           color: '#e53935', price: '¥1,000' },
-  { rank: 6,  name: '家老',   ruby: 'かろう',       level: 'Lv.6',  desc: '激辛の域。半数以上がクリアできない。',                                 color: '#c62828', price: '¥1,000' },
+  { rank: 6,  name: '家老',   ruby: 'かろう',       level: 'Lv.6',  desc: '激辛の域。半数以上が完食できない。',                                 color: '#c62828', price: '¥1,000' },
   { rank: 7,  name: '奉行',   ruby: 'ぶぎょう',     level: 'Lv.7',  desc: '上級者専用。唇が痺れる超激辛。',                                     color: '#b71c1c', price: '¥1,030' },
   { rank: 8,  name: '大名',   ruby: 'だいみょう',   level: 'Lv.8',  desc: '激辛王者の領域。涙なしには食べられない。',                           color: '#880e4f', price: '¥1,030' },
   { rank: 9,  name: '老中',   ruby: 'ろうじゅう',   level: 'Lv.9',  desc: '体制を仕切る辛さの重鎮。',                                           color: '#6a1b9a', price: '¥1,080' },
-  { rank: 10, name: '将軍',   ruby: 'しょうぐん',   level: 'Lv.10', desc: '老中（Lv.9）をクリアした者だけが挑戦できる昇格制。クリアで大将軍へ、失敗すると老中に降格。', color: '#4a0072', badge: '昇格制', price: '¥1,080' },
-  { rank: 11, name: '大将軍', ruby: 'だいしょうぐん', level: 'Lv.11', desc: '将軍（Lv.10）をクリアした者だけが挑戦できる。クリアで天下人へ、失敗すると将軍に降格。',   color: '#4a148c', badge: '昇格制', price: '¥1,130' },
-  { rank: 12, name: '天下人', ruby: 'てんかびと',   level: 'Lv.12', desc: '大将軍（Lv.11）をクリアした者だけが辿り着ける最高位。童の頂点に立つ者のみが到達できる境地。', color: '#7b1fa2', badge: '最高位', price: '¥1,200' },
+  { rank: 10, name: '将軍',   ruby: 'しょうぐん',   level: 'Lv.10', desc: '老中（Lv.9）を完食した者だけが挑戦できる昇格制。完食で大将軍へ、失敗すると老中に降格。', color: '#4a0072', badge: '昇格制', price: '¥1,080' },
+  { rank: 11, name: '大将軍', ruby: 'だいしょうぐん', level: 'Lv.11', desc: '将軍（Lv.10）を完食した者だけが挑戦できる。完食で天下人へ、失敗すると将軍に降格。',   color: '#4a148c', badge: '昇格制', price: '¥1,130' },
+  { rank: 12, name: '天下人', ruby: 'てんかびと',   level: 'Lv.12', desc: '大将軍（Lv.11）を完食した者だけが辿り着ける最高位。童の頂点に立つ者のみが到達できる境地。', color: '#7b1fa2', badge: '最高位', price: '¥1,200' },
 ]
 
 export default function MenuPage() {
@@ -357,7 +357,7 @@ export default function MenuPage() {
               className="text-sm text-[#999] text-center mt-4"
               style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
-              ※ 将軍（Lv.10）以上は昇格制。老中（Lv.9）からクリアした方が順番に次の段階へ挑戦できます。クリアで昇格・失敗すると一つ降格。スープまで飲み干してクリアが条件です。
+              ※ 将軍（Lv.10）以上は昇格制。老中（Lv.9）から完食した方が順番に次の段階へ挑戦できます。完食で昇格・失敗すると一つ降格。スープまで飲み干して完食が条件です。
             </p>
           </div>
         </div>
@@ -375,7 +375,7 @@ export default function MenuPage() {
               { name: '新鹿沼シウマイ', price: '¥480', desc: 'こんにゃく入りのもちもち皮×玉ねぎの旨味。お腹いっぱいでも食べられる軽さ。辛麺との相性抜群。' },
               { name: '串シウマイ', price: '¥350', desc: 'テイクアウト限定！カウンターにてご提供。' },
               { name: 'ごはん食べ放題', price: '¥150', desc: 'スープにドボンして〆まで楽しめる。食べ放題なので遠慮なくどうぞ。' },
-              { name: '激辛チャレンジ「鳳凰」', price: 'クリア→無料 ／ 時間切れ→¥2,500', desc: '制限時間15分。スープまで飲み干してクリアが条件。誰でも挑戦できます。' },
+              { name: '激辛チャレンジ「鳳凰」', price: '完食→無料 ／ 時間切れ→¥2,500', desc: '制限時間15分。スープまで飲み干して完食が条件。誰でも挑戦できます。' },
             ].map((item, i) => (
               <FadeIn key={item.name} delay={i * 60}>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 bg-[#161616] border border-[#1f1f1f] px-6 py-4">
@@ -427,7 +427,7 @@ export default function MenuPage() {
               { num: '③', title: '味変！柚子胡椒をプラス', sub: '机の上の柚子胡椒を入れると絶品' },
               { num: '④', title: '麺を食べ終えたら…', sub: 'ご飯をスープにドボン！' },
               { num: '⑤', title: 'ここでチーズをトッピング', sub: 'とろけるチーズが絶妙にマッチ' },
-              { num: '⑥', title: '一滴も残さずクリア！', sub: '心も体もととのいます' },
+              { num: '⑥', title: '一滴も残さず完食！', sub: '心も体もととのいます' },
             ].map((step, i) => (
               <FadeIn key={step.num} delay={i * 60}>
                 <div className="flex items-start gap-4 bg-[#161616] border border-[#1f1f1f] px-4 py-4 md:px-6 md:py-5">

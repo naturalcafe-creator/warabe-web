@@ -266,7 +266,7 @@ export default function Home() {
                 style={{ fontFamily: 'var(--font-noto-serif)' }}
               >
                 「町娘（無辛）」から「天下人（Lv.12）」まで。
-                あなたの器量を試せ。将軍以上はクリア必須の出世システム。
+                あなたの器量を試せ。将軍以上は完食必須の出世システム。
               </p>
               <Link
                 href="/menu"
@@ -334,7 +334,7 @@ export default function Home() {
                 className="text-xs text-[#ddd] mt-1 tracking-wider"
                 style={{ fontFamily: 'var(--font-noto-serif)' }}
               >
-                時間内にクリアした場合
+                時間内に完食した場合
               </p>
             </div>
           </div>

@@ -5,7 +5,7 @@ import Marquee from '../components/Marquee'
 
 export const metadata: Metadata = {
   title: '鳳凰チャレンジ・新童宿 | 鹿沼辛麺 童',
-  description: 'クリアで無料、失敗で¥3,000。激辛チャレンジ「鳳凰」と階級制度「新童宿」の詳細。',
+  description: '完食で無料、失敗で¥3,000。激辛チャレンジ「鳳凰」と階級制度「新童宿」の詳細。',
 }
 
 const allRanks = [
@@ -19,8 +19,8 @@ const allRanks = [
   { name: '奉行',   ruby: 'ぶぎょう',       level: 'Lv.7',  desc: '領地を持つ辛さの支配者。' },
   { name: '大名',   ruby: 'だいみょう',     level: 'Lv.8',  desc: '体制を仕切る辛さの重鎮。' },
   { name: '老中',   ruby: 'ろうじゅう',     level: 'Lv.9',  desc: '天下に号令を発する一歩手前の重鎮。' },
-  { name: '将軍',   ruby: 'しょうぐん',     level: 'Lv.10', desc: '天下に号令を発する者。クリア必須。', special: true },
-  { name: '大将軍', ruby: 'だいしょうぐん', level: 'Lv.11', desc: '将軍を超えた者。クリア必須。', special: true },
+  { name: '将軍',   ruby: 'しょうぐん',     level: 'Lv.10', desc: '天下に号令を発する者。完食必須。', special: true },
+  { name: '大将軍', ruby: 'だいしょうぐん', level: 'Lv.11', desc: '将軍を超えた者。完食必須。', special: true },
   { name: '天下人', ruby: 'てんかびと',     level: 'Lv.12', desc: '童の頂点。辛さの絶対王者。すべてを制した者のみが辿り着く境地。', special: true, top: true },
 ]
 
@@ -37,7 +37,7 @@ export default function ChallengePage() {
 
       {/* マーキー */}
       <Marquee
-        items={['炎に、挑め。', 'CHALLENGE THE FLAME', 'クリアで無料', '制限時間15分', '誰でも挑戦可能', '鳳凰', 'スープまで飲み干せ', '激辛チャレンジ']}
+        items={['炎に、挑め。', 'CHALLENGE THE FLAME', '完食で無料', '制限時間15分', '誰でも挑戦可能', '鳳凰', 'スープまで飲み干せ', '激辛チャレンジ']}
         duration={22}
       />
 
@@ -54,7 +54,7 @@ export default function ChallengePage() {
           <div className="grid grid-cols-2 gap-4 mb-10 md:mb-12">
             <FadeIn delay={0}>
               <div className="bg-[#161616] border border-[#c9a84c]/30 p-4 md:p-8 text-center h-full">
-                <p className="text-xs tracking-[0.1em] md:tracking-[0.3em] text-[#ddd] mb-3 md:mb-4" style={{ fontFamily: 'var(--font-noto-serif)' }}>クリアした場合</p>
+                <p className="text-xs tracking-[0.1em] md:tracking-[0.3em] text-[#ddd] mb-3 md:mb-4" style={{ fontFamily: 'var(--font-noto-serif)' }}>完食した場合</p>
                 <p className="text-4xl md:text-5xl font-black text-[#c9a84c]" style={{ fontFamily: 'var(--font-noto-serif)' }}>無料</p>
                 <p className="text-xs text-[#bbb] mt-2 md:mt-3" style={{ fontFamily: 'var(--font-noto-serif)' }}>全額返金</p>
               </div>
@@ -76,7 +76,7 @@ export default function ChallengePage() {
                 {[
                   '誰でも挑戦可能（年齢・性別問わず）',
                   '制限時間は15分',
-                  'スープまで飲み干してクリアが条件',
+                  'スープまで飲み干して完食が条件',
                   '水・ドリンクは自由に飲んでOK',
                   'チャレンジの様子を撮影・投稿していただけます',
                   '体調不良の方・飲食アレルギーがある方はご遠慮ください',
@@ -142,8 +142,8 @@ export default function ChallengePage() {
               <ul className="space-y-3">
                 {[
                   '町娘（無辛）〜老中（Lv.9）は自由に選んで注文できる',
-                  '将軍（Lv.10）以上は昇格制。老中をクリアした方が次の段階に進める',
-                  'クリアで昇格・失敗すると一つ降格。スープまで飲み干してクリアが条件',
+                  '将軍（Lv.10）以上は昇格制。老中を完食した方が次の段階に進める',
+                  '完食で昇格・失敗すると一つ降格。スープまで飲み干して完食が条件',
                   '天下人達成者は「童の殿堂」に名が刻まれる（予定）',
                 ].map((text, i) => (
                   <li key={i} className="text-sm text-[#ddd] flex gap-3" style={{ fontFamily: 'var(--font-noto-serif)' }}>
