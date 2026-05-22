@@ -16,6 +16,13 @@
   box-sizing: border-box;
 }
 
+/* カスタムカーソル使用時、ブラウザデフォルトの指・矢印を全て非表示 */
+@media (pointer: fine) {
+  *, *::before, *::after {
+    cursor: none !important;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }

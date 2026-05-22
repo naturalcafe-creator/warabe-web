@@ -11,6 +11,7 @@ const links = [
   { href: '/challenge', label: 'CHALLENGE' },
   { href: '/story', label: 'STORY' },
   { href: '/access', label: 'ACCESS' },
+  { href: '/faq', label: 'FAQ' },
   { href: '/recruit', label: 'RECRUIT' },
 ]
 

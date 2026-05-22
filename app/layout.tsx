@@ -25,6 +25,7 @@ const notoSans = Noto_Sans_JP({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://warabe-kanuma.com'),
   title: '鹿沼辛麺 童（わらべ）| 栃木・鹿沼のラーメン・辛麺専門店',
   description:
     '栃木県鹿沼市のラーメン・辛麺専門店。栃木しゃも×鹿沼ニラ×鹿沼産こんにゃく麺。化学調味料不使用、無辛〜Lv.12の12段階。鹿沼市末広町WARABASE 1F。',
