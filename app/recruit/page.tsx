@@ -61,7 +61,7 @@ export default function RecruitPage() {
               className="text-sm text-[#ddd] leading-loose mb-2"
               style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
-              地域循環型の辛麺専門店として、鹿沼の農家・製麺所と手を組みながら地域に根ざした飲食を作っています。
+              地域循環型の辛麺専門店として、鹿沼の農家・製麺所と手を組みながら<br />地域に根ざした飲食を作っています。
             </p>
             <p
               className="text-sm text-[#ddd] leading-loose"
