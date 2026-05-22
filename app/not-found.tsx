@@ -39,7 +39,7 @@ export default function NotFound() {
         お探しのページは見つかりませんでした。
       </p>
       <p
-        className="text-sm text-[#666] mb-12"
+        className="text-sm text-[#666] mb-12 max-w-xs"
         style={{ fontFamily: 'var(--font-noto-serif)' }}
       >
         URLが変更されたか、削除された可能性があります。
