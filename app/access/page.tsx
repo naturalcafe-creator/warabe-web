@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const info: { label: string; value: string; pending?: boolean; link?: string }[] = [
   { label: '店名', value: '鹿沼辛麺 童（かぬまからめん わらべ）' },
   { label: '住所', value: '〒322-0083 栃木県鹿沼市末広町１９１６−１ WARABASE 1F（洋菓子店エトワール跡地）' },
-  { label: '営業時間', value: '昼 11:30〜14:00（13:30 LO）\n夜 17:00〜21:00（20:30 LO）', pending: true },
+  { label: '営業時間', value: '昼 11:30〜14:30（14:00 LO）\n夜 17:00〜21:00（20:30 LO）', pending: true },
   { label: '定休日', value: '火曜', pending: true },
   { label: '席数', value: 'カウンター・テーブル・個室' },
   { label: '駐車場', value: 'お店隣に約10台（無料）' },
