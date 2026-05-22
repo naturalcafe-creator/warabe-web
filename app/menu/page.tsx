@@ -53,10 +53,10 @@ const spiceRanks = [
   { rank: 6,  name: '家老',   ruby: 'かろう',       level: 'Lv.6',  desc: '激辛の域。半数以上が完食できない。',                                 color: '#c62828', price: '¥1,000' },
   { rank: 7,  name: '奉行',   ruby: 'ぶぎょう',     level: 'Lv.7',  desc: '上級者専用。唇が痺れる超激辛。',                                     color: '#b71c1c', price: '¥1,030' },
   { rank: 8,  name: '大名',   ruby: 'だいみょう',   level: 'Lv.8',  desc: '激辛王者の領域。涙なしには食べられない。',                           color: '#880e4f', price: '¥1,030' },
-  { rank: 9,  name: '老中',   ruby: 'ろうじゅう',   level: 'Lv.9',  desc: '体制を仕切る辛さの重鎮。',                                           color: '#6a1b9a', price: '¥1,080' },
-  { rank: 10, name: '将軍',   ruby: 'しょうぐん',   level: 'Lv.10', desc: '老中（Lv.9）を完食した者だけが挑戦できる昇格制。完食で大将軍へ、失敗すると老中に降格。', color: '#4a0072', badge: '昇格制', price: '¥1,080' },
-  { rank: 11, name: '大将軍', ruby: 'だいしょうぐん', level: 'Lv.11', desc: '将軍（Lv.10）を完食した者だけが挑戦できる。完食で天下人へ、失敗すると将軍に降格。',   color: '#4a148c', badge: '昇格制', price: '¥1,130' },
-  { rank: 12, name: '天下人', ruby: 'てんかびと',   level: 'Lv.12', desc: '大将軍（Lv.11）を完食した者だけが辿り着ける最高位。童の頂点に立つ者のみが到達できる境地。', color: '#7b1fa2', badge: '最高位', price: '¥1,200' },
+  { rank: 9,  name: '老中',   ruby: 'ろうじゅう',   level: 'Lv.9',  desc: '体制を仕切る辛さの重鎮。',                                           color: '#7b1fa2', price: '¥1,080' },
+  { rank: 10, name: '将軍',   ruby: 'しょうぐん',   level: 'Lv.10', desc: '老中（Lv.9）を完食した者だけが挑戦できる昇格制。完食で大将軍へ、失敗すると老中に降格。', color: '#9c27b0', badge: '昇格制', price: '¥1,080' },
+  { rank: 11, name: '大将軍', ruby: 'だいしょうぐん', level: 'Lv.11', desc: '将軍（Lv.10）を完食した者だけが挑戦できる。完食で天下人へ、失敗すると将軍に降格。',   color: '#ba68c8', badge: '昇格制', price: '¥1,130' },
+  { rank: 12, name: '天下人', ruby: 'てんかびと',   level: 'Lv.12', desc: '大将軍（Lv.11）を完食した者だけが辿り着ける最高位。童の頂点に立つ者のみが到達できる境地。', color: '#ce93d8', badge: '最高位', price: '¥1,200' },
 ]
 
 export default function MenuPage() {

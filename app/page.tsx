@@ -31,8 +31,8 @@ const ranks = [
   { name: '小童',   level: 'Lv.1',  color: '#f9e68a' },
   { name: '旗本',   level: 'Lv.5',  color: '#e53935' },
   { name: '大名',   level: 'Lv.8',  color: '#880e4f' },
-  { name: '大将軍', level: 'Lv.11', color: '#4a148c' },
-  { name: '天下人', level: 'Lv.12', color: '#7b1fa2' },
+  { name: '大将軍', level: 'Lv.11', color: '#ba68c8' },
+  { name: '天下人', level: 'Lv.12', color: '#ce93d8' },
 ]
 
 export default function Home() {
