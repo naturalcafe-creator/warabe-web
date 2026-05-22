@@ -54,14 +54,20 @@ export default function RecruitPage() {
               className="text-xl md:text-2xl font-black text-[#f0ede8] leading-loose tracking-wide mb-8"
               style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
-              鹿沼を熱くする仲間を探しています。
+              鹿沼を熱くする仲間を<br />探しています。
             </p>
             <div className="w-16 h-px bg-[#c0392b] mx-auto mb-8" />
+            <p
+              className="text-sm text-[#ddd] leading-loose mb-2"
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
+            >
+              地域循環型の辛麺専門店として、鹿沼の農家・製麺所と手を組みながら地域に根ざした飲食を作っています。
+            </p>
             <p
               className="text-sm text-[#ddd] leading-loose"
               style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
-              地域循環型の辛麺専門店として、鹿沼の農家・製麺所と手を組みながら地域に根ざした飲食を作っています。一緒に鹿沼を盛り上げてくれる方のご応募をお待ちしています。
+              一緒に鹿沼を盛り上げてくれる方のご応募をお待ちしています。
             </p>
           </FadeIn>
         </div>
