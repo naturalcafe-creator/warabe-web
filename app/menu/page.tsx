@@ -486,12 +486,13 @@ export default function MenuPage() {
           </FadeIn>
           <div>
             {[
-              { name: '栃木しゃも',     origin: '栃木県産', desc: 'ひき肉を練り込んで具材として使用。食べごたえのある旨味の源泉。' },
-              { name: '鹿沼ニラ',       origin: '鹿沼産',   desc: 'まろやかな甘味が辛さの角を取り、スープ全体をまとめ上げる。' },
-              { name: 'こんにゃく麺',   origin: '鹿沼産',   desc: '鹿沼産こんにゃくを練り込んだ特製麺。もちもちの食感で罪悪感ゼロ。' },
+              { name: '栃木しゃも',     origin: '鹿沼産',     desc: 'ひき肉を練り込んで具材として使用。食べごたえのある旨味の源泉。' },
+              { name: '鹿沼ニラ',       origin: '鹿沼産',     desc: 'まろやかな甘味が辛さの角を取り、スープ全体をまとめ上げる。' },
+              { name: 'こんにゃく麺',   origin: '鹿沼産',     desc: '鹿沼産こんにゃくを練り込んだ特製麺。もちもちの食感で罪悪感ゼロ。' },
               { name: '4種の唐辛子',   origin: '独自ブレンド', desc: '多層的な刺激を生む独自配合。辛さの奥に旨味がある。' },
-              { name: '鹿沼産のたまご', origin: '鹿沼産',   desc: '地元の新鮮なたまごをスープに溶き込み、まろやかさをプラス。' },
-              { name: '熊本産の醤油',   origin: '熊本産',   desc: '九州伝承の醤油が深みとコクを加え、スープに骨格を与える。' },
+              { name: '鹿沼産のたまご', origin: '鹿沼産',     desc: '地元の新鮮なたまごをスープに溶き込み、まろやかさをプラス。' },
+              { name: '熊本産の醤油',   origin: '熊本産',     desc: '九州伝承の醤油が深みとコクを加え、スープに骨格を与える。' },
+              { name: '自家製麹',       origin: '自家製',     desc: '醤油麹と塩麹を自家製で仕込む。発酵の旨味がスープに奥行きをもたらす。' },
             ].map((item, i) => (
               <FadeIn key={item.name} delay={i * 60}>
                 <div className="flex gap-6 md:gap-10 items-start border-b border-[#1f1f1f] py-6 md:py-8 group hover:border-[#c0392b]/30 transition-colors cursor-default">
