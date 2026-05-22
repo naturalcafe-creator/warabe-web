@@ -429,29 +429,37 @@ export default function MenuPage() {
       {/* おすすめの食べ方 */}
       <section className="py-12 md:py-20 px-6 border-b border-[#1f1f1f]">
         <div className="max-w-2xl mx-auto">
-          <FadeIn className="text-center mb-12">
+          <FadeIn className="text-center mb-14">
             <p className="text-xs tracking-[0.5em] text-[#c0392b] mb-3" style={{ fontFamily: 'var(--font-noto-serif)' }}>HOW TO EAT</p>
             <h2 className="text-3xl font-black text-[#f0ede8] tracking-wide mb-4" style={{ fontFamily: 'var(--font-noto-serif)' }}>おすすめの食べ方</h2>
             <div className="w-12 h-px bg-[#c0392b] mx-auto" />
           </FadeIn>
 
-          <div className="space-y-6">
+          <div className="relative">
+            <div className="absolute left-8 top-0 bottom-0 w-px bg-[#1f1f1f]" />
             {[
-              { num: '①', title: 'まずはスープをひとくち', sub: '深い旨味をそのまま感じてください' },
-              { num: '②', title: '麺を食べる', sub: 'このとき具は食べすぎないのがコツ！' },
-              { num: '③', title: '味変！柚子胡椒をプラス', sub: '机の上の柚子胡椒を入れると絶品' },
-              { num: '④', title: '麺を食べ終えたら…', sub: 'ご飯をスープにドボン！' },
-              { num: '⑤', title: 'ここでチーズをトッピング', sub: 'とろけるチーズが絶妙にマッチ' },
-              { num: '⑥', title: '一滴も残さず完食！', sub: '心も体もととのいます' },
+              { title: 'まずはスープをひとくち', sub: '深い旨味をそのまま感じてください' },
+              { title: '麺を食べる', sub: 'このとき具は食べすぎないのがコツ！' },
+              { title: '味変！柚子胡椒をプラス', sub: '机の上の柚子胡椒を入れると絶品' },
+              { title: '麺を食べ終えたら…', sub: 'ご飯をスープにドボン！' },
+              { title: 'ここでチーズをトッピング', sub: 'とろけるチーズが絶妙にマッチ' },
+              { title: '一滴も残さず完食！', sub: '心も体もととのいます' },
             ].map((step, i) => (
-              <FadeIn key={step.num} delay={i * 60}>
-                <div className="flex items-start gap-4 bg-[#161616] border border-[#1f1f1f] px-4 py-4 md:px-6 md:py-5">
-                  <div>
-                    <p className="text-sm font-bold text-[#f0ede8]" style={{ fontFamily: 'var(--font-noto-serif)' }}>
-                      {step.num} {step.title}
+              <FadeIn key={i} delay={i * 60}>
+                <div className="flex gap-6 mb-8 relative">
+                  <div className="w-16 shrink-0 flex flex-col items-center">
+                    <div className="w-8 h-8 rounded-full bg-[#c0392b] flex items-center justify-center z-10">
+                      <span className="text-xs font-black text-[#f0ede8]" style={{ fontFamily: 'var(--font-noto-serif)' }}>
+                        {String(i + 1).padStart(2, '0')}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="pb-2">
+                    <p className="text-base font-bold text-[#f0ede8] mb-1" style={{ fontFamily: 'var(--font-noto-serif)' }}>
+                      {step.title}
                     </p>
-                    <p className="text-sm text-[#ddd] mt-1" style={{ fontFamily: 'var(--font-noto-serif)' }}>
-                      → {step.sub}
+                    <p className="text-sm text-[#888]" style={{ fontFamily: 'var(--font-noto-serif)' }}>
+                      {step.sub}
                     </p>
                   </div>
                 </div>
