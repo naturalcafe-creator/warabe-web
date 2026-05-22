@@ -478,25 +478,36 @@ export default function MenuPage() {
       </section>
 
       {/* 食材こだわり */}
-      <section className="py-12 md:py-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <FadeIn>
+      <section className="py-12 md:py-20 px-6 bg-[#0a0a0a] border-y border-[#1f1f1f]">
+        <div className="max-w-4xl mx-auto">
+          <FadeIn className="mb-10 md:mb-14">
             <p className="text-xs tracking-[0.5em] text-[#c0392b] mb-3" style={{ fontFamily: 'var(--font-noto-serif)' }}>INGREDIENTS</p>
-            <h2 className="text-2xl font-black text-[#f0ede8] tracking-wide mb-10" style={{ fontFamily: 'var(--font-noto-serif)' }}>食材へのこだわり</h2>
+            <h2 className="text-2xl font-black text-[#f0ede8] tracking-wide" style={{ fontFamily: 'var(--font-noto-serif)' }}>食材へのこだわり</h2>
           </FadeIn>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+          <div>
             {[
-              { name: '栃木しゃも', desc: 'ひき肉を練り込んで具材として使用。食べごたえのある旨味の源泉。' },
-              { name: '鹿沼ニラ', desc: 'まろやかな甘味で辛さの角を取る' },
-              { name: 'こんにゃく麺', desc: '鹿沼産。もちもちの特製麺' },
-              { name: '4種の唐辛子', desc: '多層的な刺激を生む独自ブレンド' },
-              { name: '鹿沼産のたまご', desc: '地元の新鮮なたまごをスープに溶き込む' },
-              { name: '熊本産の醤油', desc: '九州の伝統醤油が深みとコクを加える' },
+              { name: '栃木しゃも',     origin: '栃木県産', desc: 'ひき肉を練り込んで具材として使用。食べごたえのある旨味の源泉。' },
+              { name: '鹿沼ニラ',       origin: '鹿沼産',   desc: 'まろやかな甘味が辛さの角を取り、スープ全体をまとめ上げる。' },
+              { name: 'こんにゃく麺',   origin: '鹿沼産',   desc: '鹿沼産こんにゃくを練り込んだ特製麺。もちもちの食感で罪悪感ゼロ。' },
+              { name: '4種の唐辛子',   origin: '独自ブレンド', desc: '多層的な刺激を生む独自配合。辛さの奥に旨味がある。' },
+              { name: '鹿沼産のたまご', origin: '鹿沼産',   desc: '地元の新鮮なたまごをスープに溶き込み、まろやかさをプラス。' },
+              { name: '熊本産の醤油',   origin: '熊本産',   desc: '九州伝承の醤油が深みとコクを加え、スープに骨格を与える。' },
             ].map((item, i) => (
               <FadeIn key={item.name} delay={i * 60}>
-                <div className="bg-[#161616] border border-[#1f1f1f] p-6 h-full">
-                  <p className="text-sm font-bold text-[#f0ede8] mb-2" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.name}</p>
-                  <p className="text-sm text-[#ddd] leading-relaxed" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.desc}</p>
+                <div className="flex gap-6 md:gap-10 items-start border-b border-[#1f1f1f] py-6 md:py-8 group hover:border-[#c0392b]/30 transition-colors cursor-default">
+                  <span
+                    className="text-5xl md:text-6xl font-black text-[#c0392b]/15 group-hover:text-[#c0392b]/35 transition-colors shrink-0 leading-none"
+                    style={{ fontFamily: 'var(--font-noto-serif)' }}
+                  >
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  <div className="flex-1 min-w-0 pt-1">
+                    <div className="flex items-baseline gap-3 mb-2 flex-wrap">
+                      <p className="text-2xl md:text-3xl font-black text-[#f0ede8]" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.name}</p>
+                      <span className="text-xs tracking-wider text-[#c0392b]" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.origin}</span>
+                    </div>
+                    <p className="text-sm text-[#888] leading-relaxed" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.desc}</p>
+                  </div>
                 </div>
               </FadeIn>
             ))}
