@@ -102,11 +102,11 @@ export default function Home() {
               メニューを見る
             </Link>
             <Link
-              href="/challenge"
+              href="/access"
               className="block w-full text-center py-4 border border-[#c0392b] text-[#c0392b] text-sm tracking-[0.2em] font-bold hover:bg-[#c0392b]/10 transition-colors"
               style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
-              鳳凰チャレンジ
+              アクセス
             </Link>
           </div>
         </div>
