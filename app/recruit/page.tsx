@@ -42,16 +42,16 @@ export default function RecruitPage() {
 
       {/* メッセージ */}
       <section className="py-14 md:py-24 px-6">
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="max-w-2xl mx-auto">
           <FadeIn>
             <p
-              className="text-xs tracking-[0.5em] text-[#c0392b] mb-4"
+              className="text-xs tracking-[0.5em] text-[#c0392b] mb-4 text-center"
               style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               MESSAGE
             </p>
             <p
-              className="text-xl md:text-2xl font-black text-[#f0ede8] leading-loose tracking-wide mb-8"
+              className="text-xl md:text-2xl font-black text-[#f0ede8] leading-loose tracking-wide mb-8 text-center"
               style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               鹿沼を熱くする仲間を<br />探しています。
