@@ -42,16 +42,16 @@ export default function RecruitPage() {
 
       {/* メッセージ */}
       <section className="py-14 md:py-24 px-6">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto text-center">
           <FadeIn>
             <p
-              className="text-xs tracking-[0.5em] text-[#c0392b] mb-4 text-center"
+              className="text-xs tracking-[0.5em] text-[#c0392b] mb-4"
               style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               MESSAGE
             </p>
             <p
-              className="text-xl md:text-2xl font-black text-[#f0ede8] leading-loose tracking-wide mb-8 text-center"
+              className="text-xl md:text-2xl font-black text-[#f0ede8] leading-loose tracking-wide mb-8"
               style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               鹿沼を熱くする仲間を<br />探しています。
@@ -61,13 +61,13 @@ export default function RecruitPage() {
               className="text-sm text-[#ddd] leading-loose mb-2"
               style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
-              地域循環型の辛麺専門店として、鹿沼の農家・製麺所と手を組みながら<br />地域に根ざした飲食を作っています。
+              鹿沼の農家・製麺所と手を組みながら、<br />地域に根ざした飲食を作っています。
             </p>
             <p
               className="text-sm text-[#ddd] leading-loose"
               style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
-              一緒に鹿沼を盛り上げてくれる方のご応募をお待ちしています。
+              一緒に鹿沼を盛り上げてくれる方の<br />ご応募をお待ちしています。
             </p>
           </FadeIn>
         </div>
