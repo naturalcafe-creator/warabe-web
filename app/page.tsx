@@ -108,15 +108,6 @@ export default function Home() {
             >
               アクセス
             </Link>
-            <a
-              href="https://www.instagram.com/warabe_kanuma_karamen/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full text-center py-3 border border-[#ffffff]/20 text-[#888] text-xs tracking-[0.2em] hover:border-[#ffffff]/40 hover:text-[#ccc] transition-colors"
-              style={{ fontFamily: 'var(--font-noto-serif)' }}
-            >
-              開店通知を受け取る（Instagram）
-            </a>
           </div>
         </div>
 
@@ -131,46 +122,6 @@ export default function Home() {
 
       {/* ── マーキー ── */}
       <Marquee />
-
-      {/* ── 開店通知バナー ── */}
-      <section className="py-10 md:py-14 px-6 bg-[#0d0d0d] border-y border-[#c0392b]/20">
-        <FadeIn className="max-w-3xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div>
-              <p
-                className="text-xs tracking-[0.5em] text-[#c0392b] mb-2"
-                style={{ fontFamily: 'var(--font-noto-serif)' }}
-              >
-                GRAND OPEN — 2026年9月中旬
-              </p>
-              <p
-                className="text-lg md:text-xl font-black text-[#f0ede8]"
-                style={{ fontFamily: 'var(--font-noto-serif)' }}
-              >
-                開店日はInstagramで発表します。
-              </p>
-              <p
-                className="text-xs text-[#888] mt-1"
-                style={{ fontFamily: 'var(--font-noto-serif)' }}
-              >
-                フォローして、一番に知ってください。
-              </p>
-            </div>
-            <a
-              href="https://www.instagram.com/warabe_kanuma_karamen/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="shrink-0 inline-block px-8 py-4 bg-[#c0392b] text-[#f0ede8] text-xs tracking-[0.3em] font-bold hover:bg-[#e74c3c] transition-colors whitespace-nowrap"
-              style={{
-                fontFamily: 'var(--font-noto-serif)',
-                clipPath: 'polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%)',
-              }}
-            >
-              Instagram をフォロー
-            </a>
-          </div>
-        </FadeIn>
-      </section>
 
       {/* ── 3つの独自価値 ── */}
       <section className="py-14 md:py-24 px-6">
