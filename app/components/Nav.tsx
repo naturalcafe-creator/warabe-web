@@ -27,7 +27,7 @@ export default function Nav() {
           className="text-xs tracking-[0.3em] text-[#f0ede8] font-bold"
           style={{ fontFamily: 'var(--font-noto-sans)' }}
         >
-          2026年9月中旬 GRAND OPEN
+          2026年10月初旬 GRAND OPEN
         </p>
       </div>
     <div className="bg-[#0d0d0d]/90 backdrop-blur-sm border-b border-[#1f1f1f]">
