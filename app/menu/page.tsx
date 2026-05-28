@@ -290,6 +290,39 @@ export default function MenuPage() {
                 辛さを選ぶ
               </h3>
             </FadeIn>
+
+            {/* 新童宿 世界観 */}
+            <FadeIn delay={50}>
+              <div className="bg-[#0d0d0d] border border-[#c0392b]/20 p-6 md:p-8 mb-8">
+                <p
+                  className="text-xs tracking-[0.5em] text-[#c0392b] mb-4"
+                  style={{ fontFamily: 'var(--font-noto-serif)' }}
+                >
+                  新童宿（しんわらべじゅく）
+                </p>
+                <p
+                  className="text-lg md:text-xl font-black text-[#f0ede8] mb-4 leading-loose"
+                  style={{ fontFamily: 'var(--font-noto-serif)' }}
+                >
+                  童の一杯には、出世がある。
+                </p>
+                <p
+                  className="text-sm text-[#ccc] leading-loose mb-4"
+                  style={{ fontFamily: 'var(--font-noto-serif)' }}
+                >
+                  江戸の武家社会になぞらえた13の役職が、辛さの段階だ。誰でも自由に選べる町娘（無辛）から老中（Lv.9）まで——辛さへの向き合い方が、あなたの「格」を決める。
+                </p>
+                <div className="border-t border-[#1f1f1f] pt-4 mt-4">
+                  <p
+                    className="text-xs text-[#888] leading-loose"
+                    style={{ fontFamily: 'var(--font-noto-serif)' }}
+                  >
+                    <span className="text-[#c0392b] font-bold">将軍（Lv.10）以上は昇格制。</span>老中を完食した者だけが次の扉を叩ける。完食で昇格、失敗すると一つ降格。スープまで飲み干すことが条件。いつか天下人（Lv.12）に辿り着いたとき、あなたの名前は童の殿堂に刻まれる。
+                  </p>
+                </div>
+              </div>
+            </FadeIn>
+
             <div className="space-y-2">
               {spiceRanks.map((r, i) => (
                 <FadeIn key={r.rank} delay={i * 40}>

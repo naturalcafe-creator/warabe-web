@@ -5,16 +5,40 @@ import Marquee from '../components/Marquee'
 
 export const metadata: Metadata = {
   title: 'ストーリー | 鹿沼辛麺 童',
-  description: '熊本出身・26歳の代表が、なぜ鹿沼で辛麺専門店を開いたのか。地域循環型ビジネスの思想と起業ストーリー。',
+  description: '熊本出身・26歳の今村暖が、なぜ縁もゆかりもない鹿沼で辛麺専門店を開いたのか。養鶏修行、地域食材との出会い、銀座コーヒー開業——すべては一杯の辛麺に繋がっていた。',
 }
 
 const timeline = [
-  { year: '熊本', label: '出身', desc: '九州の食文化で育つ。辛麺との出会い。' },
-  { year: '宮崎', label: '修行', desc: '養鶏家のもとで修行。命と向き合う経験。栃木しゃもへの着眼点。' },
-  { year: '2023', label: '鹿沼へ移住', desc: '鹿沼産こんにゃく原料の専門商社を継承する立場として移住。「鹿沼の人がニラとこんにゃくを忘れているのでは」という問題意識。' },
-  { year: '2024', label: '銀座コーヒー開業', desc: '未経験・知り合いゼロから独学で開業。開店2週間で約500名来店。' },
-  { year: '2025', label: '来店1万人突破', desc: 'メディア掲載30社以上。銀座・末広エリアに人が集まるようになった。' },
-  { year: '2026', label: '童オープン', desc: '銀座コーヒーで培った"人が集まる仕掛け"の第2弾。こんにゃく事業×飲食の直結。' },
+  {
+    year: '熊本',
+    label: '原点',
+    desc: '「辛いもの」が普通においしい文化圏で育った。辛麺は九州の日常食だった。辛さの先に旨味がある、ということを子供の頃から身体で知っていた。',
+  },
+  {
+    year: '宮崎',
+    label: '修行',
+    desc: '養鶏家のもとで鶏を育てる日々。食材が命を経由して食卓に来ることを、初めて全身で理解した。栃木しゃもへの着眼はここから生まれた。',
+  },
+  {
+    year: '2023',
+    label: '鹿沼へ移住',
+    desc: '祖業であるこんにゃく原料商社を継ぐために鹿沼へ。移住して気づいた。鹿沼には世界に誇れる食材がある。なのに、地元の人が一番知らなかった。',
+  },
+  {
+    year: '2024',
+    label: '銀座コーヒー開業',
+    desc: '未経験・知り合いゼロで挑んだコーヒーショップ。開店2週間で約500名来店。「地元の素材を正直に語る」だけで人が集まることを、自分の手で証明した。',
+  },
+  {
+    year: '2025',
+    label: '来店1万人突破',
+    desc: 'メディア掲載30社以上。銀座・末広エリアに人が戻り始めた。「鹿沼、面白いじゃないか」という声が聞こえ始めた。',
+  },
+  {
+    year: '2026',
+    label: '童オープン',
+    desc: '満を持して、辛麺だ。鹿沼ニラ、こんにゃく麺、栃木しゃも——すべてここにある。銀座コーヒーで学んだすべてを、一杯に込める。',
+  },
 ]
 
 export default function StoryPage() {
@@ -30,11 +54,17 @@ export default function StoryPage() {
             STORY
           </p>
           <h1
-            className="text-4xl md:text-5xl font-black text-[#f0ede8] tracking-wide"
+            className="text-4xl md:text-5xl font-black text-[#f0ede8] tracking-wide mb-4"
             style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             なぜ、鹿沼で<br className="sm:hidden" />辛麺なのか
           </h1>
+          <p
+            className="text-sm text-[#888]"
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
+          >
+            熊本育ちの26歳が、縁もゆかりもない鹿沼に来た理由
+          </p>
         </FadeIn>
       </section>
 
@@ -44,22 +74,23 @@ export default function StoryPage() {
         duration={20}
       />
 
-      {/* メインコピー */}
-      <section className="py-12 md:py-20 px-6">
-        <FadeIn className="max-w-2xl mx-auto">
+      {/* オープニング */}
+      <section className="py-14 md:py-24 px-6">
+        <FadeIn className="max-w-2xl mx-auto text-center">
           <p
-            className="text-base md:text-xl text-[#f0ede8] leading-loose tracking-wider text-center"
+            className="text-base md:text-lg text-[#f0ede8] leading-loose tracking-wide font-bold mb-6"
             style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
-            鹿沼の人がニラとこんにゃくを<br />
-            忘れているのではないか。
+            2023年。知り合いひとりいない<br />
+            栃木県鹿沼市に、<br className="md:hidden" />熊本育ちの青年が降り立った。
           </p>
-          <div className="w-16 h-px bg-[#c0392b] mx-auto my-10" />
+          <div className="w-16 h-px bg-[#c0392b] mx-auto my-8" />
           <p
-            className="text-sm text-[#ddd] leading-loose text-center"
+            className="text-sm text-[#ddd] leading-loose"
             style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
-            この一つの問いが、「童」の始まりだった。
+            その2年後、この街に年間1万人を呼ぶとは——<br />
+            本人も、誰も、想像していなかった。
           </p>
         </FadeIn>
       </section>
@@ -106,21 +137,40 @@ export default function StoryPage() {
             <FadeIn direction="left" delay={100}>
               <div className="space-y-6">
                 <p className="text-sm text-[#ddd] leading-loose" style={{ fontFamily: 'var(--font-noto-serif)' }}>
-                  熊本出身。宮崎の養鶏家のもとで修行を経て、2023年に栃木県鹿沼市へ移住。
-                  当社の祖業である鹿沼産こんにゃく原料の専門商社を継承する立場として鹿沼に根を張る。
+                  九州で育ち、宮崎の養鶏家に弟子入りしたとき、今村は初めて「命と食べ物」の距離の近さを知った。鶏を育て、食べる。食の記憶はすべて、誰かの仕事でできていた。
                 </p>
                 <p className="text-sm text-[#ddd] leading-loose" style={{ fontFamily: 'var(--font-noto-serif)' }}>
-                  2024年に未経験・知り合いゼロの状態から「銀座コーヒー」を独学で開業。
-                  開店2週間で約500名が来店、その後約1年半で来店1万人を突破。
-                  メディア掲載30社以上を記録し、銀座・末広エリアに人が戻ってきた。
+                  2024年、未経験・知り合いゼロで銀座コーヒーを開いた。開店2週間で約500名が来店。その後1年半で来店1万人、メディア掲載30社以上——地元の素材を正直に語ることで、人は必ず動くと証明できた。
                 </p>
                 <p className="text-sm text-[#ddd] leading-loose" style={{ fontFamily: 'var(--font-noto-serif)' }}>
-                  「鹿沼で消費し、鹿沼に還す」。その思想を一杯の辛麺に集約した第2弾が「童（わらべ）」だ。
+                  次の一手が、辛麺だ。鹿沼ニラ、こんにゃく麺、栃木しゃも。全部ここにある。食べるたびに地域に還る、そういう一杯をずっと作りたかった。
                 </p>
               </div>
             </FadeIn>
           </div>
         </div>
+      </section>
+
+      {/* 引用ブロック */}
+      <section className="py-16 md:py-24 px-6 border-b border-[#1f1f1f]">
+        <FadeIn className="max-w-2xl mx-auto">
+          <div className="border-l-2 border-[#c0392b] pl-8">
+            <p
+              className="text-lg md:text-2xl font-black text-[#f0ede8] leading-loose mb-6"
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
+            >
+              「鹿沼に来て、気づいてしまった。<br />
+              この土地には、<br className="md:hidden" />世界に誇れる食材がある。<br />
+              なのに、地元の人が<br className="md:hidden" />一番知らなかった。」
+            </p>
+            <p
+              className="text-xs text-[#888] tracking-wider"
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
+            >
+              今村 暖 / 代表
+            </p>
+          </div>
+        </FadeIn>
       </section>
 
       {/* タイムライン */}
@@ -135,14 +185,14 @@ export default function StoryPage() {
             <div className="absolute left-16 top-0 bottom-0 w-px bg-[#1f1f1f]" />
             {timeline.map((item, i) => (
               <FadeIn key={i} delay={i * 80}>
-                <div className="flex gap-8 mb-10 relative">
+                <div className="flex gap-8 mb-12 relative">
                   <div className="w-16 shrink-0 text-right">
                     <span className="text-xs font-bold text-[#c0392b]" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.year}</span>
                   </div>
                   <div className="relative pl-8">
                     <div className="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-[#c0392b] -translate-x-1" />
                     <p className="text-sm font-bold text-[#f0ede8] mb-2" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.label}</p>
-                    <p className="text-xs text-[#ccc] leading-relaxed" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.desc}</p>
+                    <p className="text-sm text-[#aaa] leading-loose" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.desc}</p>
                   </div>
                 </div>
               </FadeIn>
@@ -153,32 +203,35 @@ export default function StoryPage() {
 
       {/* 地域循環コンセプト */}
       <section className="py-12 md:py-20 px-6 bg-[#0a0a0a] border-y border-[#1f1f1f]">
-        <div className="max-w-4xl mx-auto text-center">
-          <FadeIn>
+        <div className="max-w-4xl mx-auto">
+          <FadeIn className="text-center mb-10">
             <p className="text-xs tracking-[0.5em] text-[#c0392b] mb-3" style={{ fontFamily: 'var(--font-noto-serif)' }}>PHILOSOPHY</p>
-            <h2 className="text-2xl md:text-3xl font-black text-[#f0ede8] tracking-wide mb-10" style={{ fontFamily: 'var(--font-noto-serif)' }}>鹿沼で消費し、鹿沼に還す</h2>
+            <h2 className="text-2xl md:text-3xl font-black text-[#f0ede8] tracking-wide mb-4" style={{ fontFamily: 'var(--font-noto-serif)' }}>鹿沼で消費し、鹿沼に還す</h2>
+            <p className="text-sm text-[#888] max-w-lg mx-auto leading-loose" style={{ fontFamily: 'var(--font-noto-serif)' }}>
+              食べ物を食べることは、その土地の農業に投票することだと思っている。
+            </p>
           </FadeIn>
 
           <div className="grid md:grid-cols-3 gap-6 mb-10">
             {[
-              { step: '仕入れ', desc: '鹿沼市内の農家から直接仕入れ。地産地消を最大化。' },
-              { step: '製造', desc: '地元製麺所とこんにゃくシウマイ皮を共同開発。' },
-              { step: '還元', desc: '売上の地域内還流で鹿沼経済へリターン。' },
+              { step: '仕入れ', desc: '鹿沼市内の農家・製麺所から直接仕入れ。食材の顔が見える関係だけで作る。' },
+              { step: '製造', desc: '地元製麺所とこんにゃく麺を共同開発。鹿沼産こんにゃくを練り込んだ唯一の麺。' },
+              { step: '還元', desc: '売上は地域内に循環する。一杯食べるたびに、鹿沼の農業が続いていく。' },
             ].map((item, i) => (
               <FadeIn key={i} delay={i * 100}>
                 <div className="bg-[#161616] border border-[#1f1f1f] p-6 h-full">
                   <p className="text-xs tracking-[0.3em] text-[#c0392b] mb-3" style={{ fontFamily: 'var(--font-noto-serif)' }}>0{i + 1}</p>
                   <p className="text-lg font-bold text-[#f0ede8] mb-3" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.step}</p>
-                  <p className="text-xs text-[#ccc] leading-relaxed" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.desc}</p>
+                  <p className="text-sm text-[#aaa] leading-relaxed" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.desc}</p>
                 </div>
               </FadeIn>
             ))}
           </div>
 
           <FadeIn delay={300}>
-            <p className="text-sm text-[#ccc] leading-loose max-w-xl mx-auto" style={{ fontFamily: 'var(--font-noto-serif)' }}>
-              当社の祖業であるこんにゃく原料事業と直結した一貫サプライチェーンで、
-              「童」の一杯は鹿沼の農業・製造・飲食を繋ぐ循環装置になる。
+            <p className="text-sm text-[#ccc] leading-loose max-w-xl mx-auto text-center" style={{ fontFamily: 'var(--font-noto-serif)' }}>
+              当社の祖業であるこんにゃく原料事業と直結した一貫サプライチェーン。<br />
+              「童」の一杯は、鹿沼の農業・製造・飲食をつなぐ循環の装置だ。
             </p>
           </FadeIn>
         </div>
@@ -219,13 +272,29 @@ export default function StoryPage() {
 
       {/* CTA */}
       <section className="py-16 px-6 text-center border-t border-[#1f1f1f]">
-        <FadeIn className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/menu" className="inline-block px-10 py-4 bg-[#c0392b] text-[#f0ede8] text-xs tracking-[0.3em] font-bold hover:bg-[#e74c3c] transition-colors" style={{ fontFamily: 'var(--font-noto-serif)', clipPath: 'polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%)' }}>
-            メニューを見る
-          </Link>
-          <Link href="/access" className="inline-block px-10 py-4 border border-[#c0392b] text-[#c0392b] text-xs tracking-[0.3em] font-bold hover:bg-[#c0392b]/10 transition-colors" style={{ fontFamily: 'var(--font-noto-serif)' }}>
-            アクセス
-          </Link>
+        <FadeIn>
+          <p
+            className="text-sm text-[#888] mb-8 leading-loose"
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
+          >
+            この物語の続きは、食べてみてわかる。
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/menu"
+              className="inline-block px-10 py-4 bg-[#c0392b] text-[#f0ede8] text-xs tracking-[0.3em] font-bold hover:bg-[#e74c3c] transition-colors"
+              style={{ fontFamily: 'var(--font-noto-serif)', clipPath: 'polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%)' }}
+            >
+              メニューを見る
+            </Link>
+            <Link
+              href="/access"
+              className="inline-block px-10 py-4 border border-[#c0392b] text-[#c0392b] text-xs tracking-[0.3em] font-bold hover:bg-[#c0392b]/10 transition-colors"
+              style={{ fontFamily: 'var(--font-noto-serif)' }}
+            >
+              アクセス
+            </Link>
+          </div>
         </FadeIn>
       </section>
     </>
