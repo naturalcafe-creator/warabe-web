@@ -325,16 +325,16 @@ export default function Home() {
           <div className="flex justify-center gap-8 mb-8">
             <div className="text-center">
               <p
+                className="text-xs text-[#ddd] mb-2 tracking-wider"
+                style={{ fontFamily: 'var(--font-noto-serif)' }}
+              >
+                時間内に完食した場合
+              </p>
+              <p
                 className="text-3xl font-black text-[#c9a84c]"
                 style={{ fontFamily: 'var(--font-noto-serif)' }}
               >
                 無料
-              </p>
-              <p
-                className="text-xs text-[#ddd] mt-1 tracking-wider"
-                style={{ fontFamily: 'var(--font-noto-serif)' }}
-              >
-                時間内に完食した場合
               </p>
             </div>
           </div>
