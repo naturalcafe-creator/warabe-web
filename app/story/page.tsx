@@ -160,7 +160,7 @@ export default function StoryPage() {
               style={{ fontFamily: 'var(--font-noto-serif)' }}
             >
               「鹿沼に来て、気づいてしまった。<br />
-              この土地には、<br className="md:hidden" />世界に誇れる食材がある。<br />
+              この土地には、<br className="md:hidden" />いい食材が埋もれている。<br />
               なのに、地元の人が<br className="md:hidden" />一番知らなかった。」
             </p>
             <p
