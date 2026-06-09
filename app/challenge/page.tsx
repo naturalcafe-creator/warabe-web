@@ -5,14 +5,14 @@ import Marquee from '../components/Marquee'
 
 export const metadata: Metadata = {
   title: '鳳凰チャレンジ・新童宿 | 鹿沼辛麺 童',
-  description: '鹿沼のラーメン・辛麺専門店「童」の激辛チャレンジ「鳳凰」。完食で無料。制限時間15分。階級制度「新童宿」で出世を目指せ。',
+  description: '鹿沼のラーメン・辛麺専門店「童」の激辛チャレンジ「鳳凰」。完食で無料。制限時間15分。初来店の方も誰でも挑戦可能。階級制度「新童宿」で出世を目指せ。',
 }
 
 const allRanks = [
   { name: '町娘',   ruby: 'まちむすめ',     level: '無辛',  desc: '旅のはじまり。辛さを知らぬ者の出発点。' },
   { name: '小童',   ruby: 'こわっぱ',       level: 'Lv.1',  desc: '少しだけ辛さに触れた新入り。' },
   { name: '足軽',   ruby: 'あしがる',       level: 'Lv.2',  desc: '辛さに立ち向かう意志を持つ者。' },
-  { name: '侍', ruby: 'さむらい',       level: 'Lv.3',  desc: '辛さを恐れぬ者。' },
+  { name: '侍',     ruby: 'さむらい',       level: 'Lv.3',  desc: '辛さを恐れぬ者。' },
   { name: '武士',   ruby: 'ぶし',           level: 'Lv.4',  desc: '一定の辛さを制した猛者。' },
   { name: '旗本',   ruby: 'はたもと',       level: 'Lv.5',  desc: '鍛え上げられた辛さへの耐性。' },
   { name: '家老',   ruby: 'かろう',         level: 'Lv.6',  desc: '影で辛さと戦い続ける者。' },
@@ -30,39 +30,51 @@ export default function ChallengePage() {
       {/* ヘッダー */}
       <section className="pt-32 pb-16 px-6 text-center border-b border-[#1f1f1f]">
         <FadeIn>
-          <p className="text-xs tracking-[0.5em] text-[#c0392b] mb-3" style={{ fontFamily: 'var(--font-noto-serif)' }}>CHALLENGE & RANKING</p>
+          <p className="text-xs tracking-[0.5em] text-[#c9a84c] mb-3" style={{ fontFamily: 'var(--font-noto-serif)' }}>CHALLENGE & RANKING</p>
           <h1 className="text-4xl md:text-5xl font-black text-[#f0ede8] tracking-wide glitch" style={{ fontFamily: 'var(--font-noto-serif)' }}>炎に、挑め。</h1>
         </FadeIn>
       </section>
 
       {/* マーキー */}
       <Marquee
-        items={['炎に、挑め。', 'CHALLENGE THE FLAME', '完食で無料', '制限時間15分', '誰でも挑戦可能', '鳳凰', 'スープまで飲み干せ', '激辛チャレンジ']}
+        items={['炎に、挑め。', 'CHALLENGE THE FLAME', '完食で無料', '制限時間15分', '誰でも挑戦可能', '鳳凰', 'スープまで飲み干せ', '#鳳凰を喰らう', '#鳳凰に敗れり']}
         duration={22}
       />
 
-      {/* 鳳凰チャレンジ */}
-      <section className="py-14 md:py-24 px-6">
+      {/* ═══ 鳳凰チャレンジ ═══ */}
+      <section className="py-14 md:py-24 px-6" style={{ background: 'linear-gradient(180deg, #0d0b04 0%, #0a0a0a 100%)' }}>
         <div className="max-w-3xl mx-auto">
-          <FadeIn className="text-center mb-16">
-            <p className="text-xs tracking-[0.5em] text-[#c0392b] mb-4" style={{ fontFamily: 'var(--font-noto-serif)' }}>SPECIAL CHALLENGE</p>
-            <h2 className="text-6xl md:text-8xl font-black text-[#f0ede8] tracking-wide mb-2" style={{ fontFamily: 'var(--font-noto-serif)', animation: 'flicker 3.5s ease-in-out infinite' }}>鳳凰</h2>
-            <p className="text-xs tracking-[0.3em] text-[#bbb]" style={{ fontFamily: 'var(--font-noto-serif)' }}>ほうおう</p>
+
+          {/* タイトル */}
+          <FadeIn className="text-center mb-12">
+            <p className="text-xs tracking-[0.5em] text-[#c9a84c] mb-4" style={{ fontFamily: 'var(--font-noto-serif)' }}>SPECIAL CHALLENGE</p>
+            <h2
+              className="text-6xl md:text-8xl font-black tracking-wide mb-2"
+              style={{
+                fontFamily: 'var(--font-noto-serif)',
+                animation: 'flicker 3.5s ease-in-out infinite',
+                color: '#c9a84c',
+                textShadow: '0 0 60px rgba(201,168,76,0.25)',
+              }}
+            >
+              鳳凰
+            </h2>
+            <p className="text-xs tracking-[0.3em] text-[#8a7340]" style={{ fontFamily: 'var(--font-noto-serif)' }}>ほうおう</p>
           </FadeIn>
 
           {/* 結果表示 */}
           <div className="grid grid-cols-2 gap-4 mb-10 md:mb-12">
             <FadeIn delay={0}>
-              <div className="bg-[#161616] border border-[#c9a84c]/30 p-4 md:p-8 text-center h-full">
+              <div className="bg-[#0d0b04] border border-[#c9a84c]/40 p-4 md:p-8 text-center h-full">
                 <p className="text-xs tracking-[0.1em] md:tracking-[0.3em] text-[#ddd] mb-3 md:mb-4" style={{ fontFamily: 'var(--font-noto-serif)' }}>完食した場合</p>
                 <p className="text-4xl md:text-5xl font-black text-[#c9a84c]" style={{ fontFamily: 'var(--font-noto-serif)' }}>無料</p>
-                <p className="text-xs text-[#bbb] mt-2 md:mt-3" style={{ fontFamily: 'var(--font-noto-serif)' }}>全額返金</p>
+                <p className="text-xs text-[#8a7340] mt-2 md:mt-3" style={{ fontFamily: 'var(--font-noto-serif)' }}>全額返金</p>
               </div>
             </FadeIn>
             <FadeIn delay={100}>
-              <div className="bg-[#161616] border border-[#c0392b]/30 p-4 md:p-8 text-center h-full">
+              <div className="bg-[#0d0b04] border border-[#c9a84c]/20 p-4 md:p-8 text-center h-full">
                 <p className="text-xs tracking-[0.1em] md:tracking-[0.3em] text-[#ddd] mb-3 md:mb-4" style={{ fontFamily: 'var(--font-noto-serif)' }}>時間切れの場合</p>
-                <p className="text-4xl md:text-5xl font-black text-[#c0392b]" style={{ fontFamily: 'var(--font-noto-serif)' }}>¥2,500</p>
+                <p className="text-4xl md:text-5xl font-black text-[#c0392b]" style={{ fontFamily: 'var(--font-noto-serif)' }}>¥3,000</p>
                 <p className="text-xs text-[#bbb] mt-2 md:mt-3" style={{ fontFamily: 'var(--font-noto-serif)' }}>通常料金</p>
               </div>
             </FadeIn>
@@ -70,8 +82,8 @@ export default function ChallengePage() {
 
           {/* ルール */}
           <FadeIn>
-            <div className="bg-[#161616] border border-[#1f1f1f] p-5 md:p-8 mb-10 md:mb-12">
-              <h3 className="text-xs tracking-[0.4em] text-[#c0392b] mb-6" style={{ fontFamily: 'var(--font-noto-serif)' }}>RULES</h3>
+            <div className="bg-[#0d0b04] border border-[#c9a84c]/20 p-5 md:p-8 mb-6">
+              <h3 className="text-xs tracking-[0.4em] text-[#c9a84c] mb-6" style={{ fontFamily: 'var(--font-noto-serif)' }}>RULES</h3>
               <ul className="space-y-4">
                 {[
                   '誰でも挑戦可能（年齢・性別問わず）',
@@ -82,7 +94,7 @@ export default function ChallengePage() {
                   '体調不良の方・飲食アレルギーがある方はご遠慮ください',
                 ].map((rule, i) => (
                   <li key={i} className="flex gap-4">
-                    <span className="text-[#c0392b] text-xs mt-0.5 shrink-0" style={{ fontFamily: 'var(--font-noto-serif)' }}>0{i + 1}</span>
+                    <span className="text-[#c9a84c] text-xs mt-0.5 shrink-0" style={{ fontFamily: 'var(--font-noto-serif)' }}>0{i + 1}</span>
                     <p className="text-sm text-[#ccc] leading-relaxed" style={{ fontFamily: 'var(--font-noto-serif)' }}>{rule}</p>
                   </li>
                 ))}
@@ -90,16 +102,47 @@ export default function ChallengePage() {
             </div>
           </FadeIn>
 
-          <FadeIn>
-            <p className="text-xs text-[#777] text-center leading-relaxed" style={{ fontFamily: 'var(--font-noto-serif)' }}>
-              ※ 鳳凰は激辛商品です。体調に不安がある方、妊娠中・授乳中の方、お子様はご遠慮ください。<br />
-              体調が悪化した場合はスタッフにお申し付けください。
-            </p>
+{/* 同意書 */}
+          <FadeIn delay={50}>
+            <div className="bg-[#0d0b04] border border-[#c9a84c]/20 p-5 md:p-8 mb-10 md:mb-12">
+              <p className="text-xs tracking-[0.4em] text-[#c9a84c] mb-6" style={{ fontFamily: 'var(--font-noto-serif)' }}>CONSENT — 挑戦前に同意書へのご署名をお願いします</p>
+              <ul className="space-y-3 mb-6">
+                {[
+                  '鳳凰は極めて辛い商品であることを理解しています',
+                  '体調不良・アレルギー・妊娠中・授乳中でないことを確認しました',
+                  'チャレンジ中に体調が悪化した場合はスタッフへ申し出ます',
+                  '時間切れの場合、通常料金¥3,000を支払うことに同意します',
+                  'チャレンジ中の撮影・SNS投稿に同意します',
+                ].map((item, i) => (
+                  <li key={i} className="flex gap-4 items-start">
+                    <span className="text-[#c9a84c]/40 text-xs mt-0.5 shrink-0" style={{ fontFamily: 'var(--font-noto-serif)' }}>□</span>
+                    <p className="text-xs text-[#999] leading-relaxed" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item}</p>
+                  </li>
+                ))}
+              </ul>
+              <div className="border-t border-[#c9a84c]/10 pt-5 flex flex-col sm:flex-row gap-6">
+                <div className="flex-1">
+                  <p className="text-xs text-[#555] mb-2" style={{ fontFamily: 'var(--font-noto-serif)' }}>お名前</p>
+                  <div className="border-b border-[#333] pb-1">
+                    <p className="text-xs text-[#333] tracking-widest" style={{ fontFamily: 'var(--font-noto-serif)' }}>＿＿＿＿＿＿＿＿＿＿</p>
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <p className="text-xs text-[#555] mb-2" style={{ fontFamily: 'var(--font-noto-serif)' }}>署名</p>
+                  <div className="border-b border-[#333] pb-1">
+                    <p className="text-xs text-[#333] tracking-widest" style={{ fontFamily: 'var(--font-noto-serif)' }}>＿＿＿＿＿＿＿＿＿＿</p>
+                  </div>
+                </div>
+              </div>
+              <p className="text-xs text-[#444] mt-5 text-right tracking-wider" style={{ fontFamily: 'var(--font-noto-serif)' }}>
+                ——署名をもって、挑戦が始まる。
+              </p>
+            </div>
           </FadeIn>
         </div>
       </section>
 
-      {/* 新童宿 階級制度 */}
+      {/* ═══ 新童宿 階級制度 ═══ */}
       <section className="py-14 md:py-24 px-6 bg-[#0a0a0a] border-y border-[#1f1f1f]">
         <div className="max-w-4xl mx-auto">
           <FadeIn className="text-center mb-10 md:mb-16">

@@ -9,6 +9,8 @@ import CustomCursor from './components/CustomCursor'
 import SmoothScroll from './components/SmoothScroll'
 import PageTransition from './components/PageTransition'
 import Splash from './components/Splash'
+import MobileActionBar from './components/MobileActionBar'
+import PopupBanner from './components/PopupBanner'
 
 const notoSerif = Noto_Serif_JP({
   weight: ['400', '500', '700', '900'],
@@ -134,11 +136,13 @@ export default function RootLayout({
             KANUMA　KARAMEN　WARABE
           </p>
         </div>
+        <PopupBanner />
         <Nav />
         <PageTransition>
           <main className="flex-1">{children}</main>
         </PageTransition>
         <Footer />
+        <MobileActionBar />
       </body>
       <GoogleAnalytics gaId="G-PRLMM9F5ZX" />
     </html>

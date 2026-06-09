@@ -193,7 +193,7 @@ export default function Home() {
                 className="text-3xl md:text-4xl font-black text-[#f0ede8] tracking-wide mb-6"
                 style={{ fontFamily: 'var(--font-noto-serif)' }}
               >
-                鹿沼から、<br />日本を熱くする。
+                鹿沼だから、<br />辛麺を作る。
               </h2>
               <p
                 className="text-sm text-[#ddd] leading-loose mb-6 md:mb-8"

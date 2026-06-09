@@ -13,7 +13,7 @@ const noodles = [
   {
     name: 'こんにゃく麺',
     tag: 'おすすめ',
-    desc: '鹿沼産こんにゃくを練り込んだ特製麺。もちもちとした独特の食感で、カロリー控えめ。罪悪感なく楽しめます。',
+    desc: 'もちもちとした独特の食感で、カロリー控えめ。罪悪感なく楽しめます。',
   },
   {
     name: '中華麺',
@@ -405,10 +405,11 @@ export default function MenuPage() {
           </FadeIn>
           <div className="space-y-3 mb-12">
             {[
-              { name: '新鹿沼シウマイ', price: '¥480', desc: 'こんにゃく入りのもちもち皮×玉ねぎの旨味。お腹いっぱいでも食べられる軽さ。辛麺との相性抜群。' },
+              { name: 'わらべシウマイ', price: '¥480', desc: 'こんにゃく入りのもちもち皮×玉ねぎの旨味。お腹いっぱいでも食べられる軽さ。辛麺との相性抜群。' },
               { name: '串シウマイ', price: '¥350', desc: 'テイクアウト限定！カウンターにてご提供。' },
+              { name: '白いチャイぷりん', price: '¥400', desc: '銀座コーヒーの人気メニューがぷりんに！' },
               { name: 'ごはん食べ放題', price: '¥150', desc: 'スープにドボンして〆まで楽しめる。食べ放題なので遠慮なくどうぞ。' },
-              { name: '激辛チャレンジ「鳳凰」', price: '完食→無料 ／ 時間切れ→¥2,500', desc: '制限時間15分。スープまで飲み干して完食が条件。誰でも挑戦できます。', link: '/challenge' },
+              { name: '激辛チャレンジ「鳳凰」', price: '完食→無料 ／ 時間切れ→¥3,000', desc: '制限時間15分。スープまで飲み干して完食が条件。誰でも挑戦できます。', link: '/challenge' },
             ].map((item, i) => (
               <FadeIn key={item.name} delay={i * 60}>
                 {'link' in item ? (
@@ -498,13 +499,6 @@ export default function MenuPage() {
             ))}
           </div>
 
-          <FadeIn delay={100} className="mt-10">
-            <div className="bg-[#161616] border border-[#1f1f1f] px-6 py-5">
-              <p className="text-sm text-[#ddd] leading-loose" style={{ fontFamily: 'var(--font-noto-serif)' }}>
-                辛麺とは、ひき肉・唐辛子・にら・ニンニク・卵などでスープを作り、こんにゃく麺を使用した九州発祥のラーメンです。これらの食材を鹿沼でアップデートした「鹿沼辛麺 童（わらべ）」をお楽しみください。
-              </p>
-            </div>
-          </FadeIn>
         </div>
       </section>
 
@@ -519,7 +513,7 @@ export default function MenuPage() {
             {[
               { name: '栃木しゃも',     origin: '鹿沼産',     desc: 'ひき肉を練り込んで具材として使用。食べごたえのある旨味の源泉。' },
               { name: '鹿沼ニラ',       origin: '鹿沼産',     desc: 'まろやかな甘味が辛さの角を取り、スープ全体をまとめ上げる。' },
-              { name: 'こんにゃく麺',   origin: '鹿沼産',     desc: '鹿沼産こんにゃくを練り込んだ特製麺。もちもちの食感で罪悪感ゼロ。' },
+              { name: 'こんにゃく麺',   origin: '鹿沼産',     desc: 'もちもちの食感で罪悪感ゼロ。' },
               { name: '4種の唐辛子',   origin: '独自ブレンド', desc: '多層的な刺激を生む独自配合。辛さの奥に旨味がある。' },
               { name: '鹿沼産のたまご', origin: '鹿沼産',     desc: '地元の新鮮なたまごをスープに溶き込み、まろやかさをプラス。' },
               { name: '本醸造醤油',     origin: '熊本産',     desc: '九州伝承の醤油が深みとコクを加え、スープに骨格を与える。' },
