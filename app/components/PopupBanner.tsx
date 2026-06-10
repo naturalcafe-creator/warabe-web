@@ -38,7 +38,7 @@ export default function PopupBanner() {
       onClick={dismiss}
     >
       <div
-        className="relative w-full sm:max-w-md overflow-hidden"
+        className="relative w-full max-w-md overflow-hidden"
         style={{
           transform: mounted ? 'translateY(0)' : 'translateY(40px)',
           opacity: mounted ? 1 : 0,
@@ -68,26 +68,20 @@ export default function PopupBanner() {
             ポップアップ出店決定
           </p>
 
-          {/* 日付 大きく */}
-          <div className="mb-5">
-            <p
-              className="text-5xl font-black text-[#f0ede8] leading-none mb-1"
-              style={{ fontFamily: 'var(--font-noto-serif)' }}
-            >
-              6.27
-            </p>
-            <p className="text-sm text-[#888] tracking-wider" style={{ fontFamily: 'var(--font-noto-serif)' }}>
-              2026年6月27日（土）
-            </p>
-          </div>
-
           {/* メインコピー */}
-          <p className="text-base font-black text-[#f0ede8] mb-6 leading-loose" style={{ fontFamily: 'var(--font-noto-serif)' }}>
+          <p
+            className="text-3xl font-black text-[#f0ede8] leading-snug mb-5"
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
+          >
             わらべの<br />第一陣始まる。
           </p>
 
           {/* 詳細 */}
           <div className="border-t border-[#1f1f1f] pt-5 space-y-3 mb-6">
+            <div className="flex justify-between items-baseline">
+              <p className="text-xs text-[#555]" style={{ fontFamily: 'var(--font-noto-serif)' }}>日付</p>
+              <p className="text-sm text-[#f0ede8] font-bold" style={{ fontFamily: 'var(--font-noto-serif)' }}>6月27日（土）</p>
+            </div>
             <div className="flex justify-between items-baseline">
               <p className="text-xs text-[#555]" style={{ fontFamily: 'var(--font-noto-serif)' }}>場所</p>
               <p className="text-sm text-[#f0ede8] font-bold" style={{ fontFamily: 'var(--font-noto-serif)' }}>大衆酒場 くりたろう</p>
