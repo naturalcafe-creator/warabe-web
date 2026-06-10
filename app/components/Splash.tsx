@@ -57,7 +57,7 @@ export default function Splash() {
           }}
         >
           <Image
-            src="/logo2.png"
+            src="/logo3.png"
             alt="鹿沼辛麺 童"
             width={120}
             height={120}
