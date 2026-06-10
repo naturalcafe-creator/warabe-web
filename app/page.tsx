@@ -132,6 +132,7 @@ export default function Home() {
               alt="鹿沼辛麺 童 - 辛麺"
               fill
               className="object-cover"
+              style={{ objectPosition: 'center 70%' }}
               priority
               sizes="100vw"
             />
@@ -148,7 +149,7 @@ export default function Home() {
                   className="text-2xl md:text-4xl font-black text-[#f0ede8] tracking-wide"
                   style={{ fontFamily: 'var(--font-noto-serif)' }}
                 >
-                  鹿沼の、一杯。
+                  鹿沼で生まれた、一杯。
                 </p>
               </div>
             </div>
@@ -237,13 +238,13 @@ export default function Home() {
                 className="text-3xl md:text-4xl font-black text-[#f0ede8] tracking-wide mb-6"
                 style={{ fontFamily: 'var(--font-noto-serif)' }}
               >
-                店は、今、<br />作られている。
+                現在、改装中
               </h2>
               <p
                 className="text-sm text-[#ddd] leading-loose mb-6 md:mb-8"
                 style={{ fontFamily: 'var(--font-noto-serif)' }}
               >
-                洋菓子店エトワール跡地。骨組みから手をかけ、鹿沼・末広に新しい一杯のための場所を作っている。
+                長年の歴史が積み重なった内装を、１００年前に戻し、修繕し、究極の一杯のための場所を作っています。
                 <br /><br />
                 その記録は、Instagramで公開中。
               </p>
