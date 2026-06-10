@@ -54,10 +54,10 @@ export default function PopupBanner() {
           {/* 閉じる */}
           <button
             onClick={dismiss}
-            className="absolute top-5 right-5 text-[#444] hover:text-[#f0ede8] transition-colors"
+            className="absolute top-4 right-4 text-[#888] hover:text-[#f0ede8] transition-colors p-1"
             aria-label="閉じる"
           >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
               <line x1="18" y1="6" x2="6" y2="18" />
               <line x1="6" y1="6" x2="18" y2="18" />
             </svg>
@@ -77,21 +77,21 @@ export default function PopupBanner() {
           </p>
 
           {/* 詳細 */}
-          <div className="border-t border-[#1f1f1f] pt-5 space-y-3 mb-6">
+          <div className="border-t border-[#2a2a2a] pt-5 space-y-4 mb-6">
             <div className="flex justify-between items-baseline">
-              <p className="text-xs text-[#555]" style={{ fontFamily: 'var(--font-noto-serif)' }}>日付</p>
+              <p className="text-sm text-[#888]" style={{ fontFamily: 'var(--font-noto-serif)' }}>日付</p>
               <p className="text-sm text-[#f0ede8] font-bold" style={{ fontFamily: 'var(--font-noto-serif)' }}>6月27日（土）</p>
             </div>
             <div className="flex justify-between items-baseline">
-              <p className="text-xs text-[#555]" style={{ fontFamily: 'var(--font-noto-serif)' }}>場所</p>
+              <p className="text-sm text-[#888]" style={{ fontFamily: 'var(--font-noto-serif)' }}>場所</p>
               <p className="text-sm text-[#f0ede8] font-bold" style={{ fontFamily: 'var(--font-noto-serif)' }}>大衆酒場 くりたろう</p>
             </div>
             <div className="flex justify-between items-baseline">
-              <p className="text-xs text-[#555]" style={{ fontFamily: 'var(--font-noto-serif)' }}>時間</p>
+              <p className="text-sm text-[#888]" style={{ fontFamily: 'var(--font-noto-serif)' }}>時間</p>
               <p className="text-sm text-[#f0ede8] font-bold" style={{ fontFamily: 'var(--font-noto-serif)' }}>11:00 〜 14:00</p>
             </div>
             <div className="flex justify-between items-baseline">
-              <p className="text-xs text-[#555]" style={{ fontFamily: 'var(--font-noto-serif)' }}>数量</p>
+              <p className="text-sm text-[#888]" style={{ fontFamily: 'var(--font-noto-serif)' }}>数量</p>
               <p className="text-sm font-black text-[#c0392b]" style={{ fontFamily: 'var(--font-noto-serif)' }}>限定 40食</p>
             </div>
           </div>
