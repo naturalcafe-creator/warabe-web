@@ -41,15 +41,7 @@ export default function Footer() {
             style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             <p>〒322-0083 栃木県鹿沼市末広町１９１６−１</p>
-            <p>WARABASE 1F（洋菓子店エトワール跡地）</p>
-            <a
-                href="https://www.ginzacoffee.net/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-4 hover:text-[#f0ede8] transition-colors"
-              >
-                姉妹店：銀座コーヒー（徒歩1分）
-              </a>
+            <p className="mb-4">WARABASE 1F</p>
             <a
               href="https://www.instagram.com/warabe_kanuma_karamen/"
               target="_blank"
@@ -58,7 +50,17 @@ export default function Footer() {
             >
               Instagram：@warabe_kanuma_karamen
             </a>
-            <p>運営：合同会社ネイチャーディストリクト</p>
+            <div className="pt-4 border-t border-[#1f1f1f] mt-4">
+              <a
+                href="https://www.ginzacoffee.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4 hover:text-[#f0ede8] transition-colors"
+              >
+                姉妹店：銀座コーヒー（徒歩1分）
+              </a>
+            </div>
+            <p className="pt-3">運営：合同会社ネイチャーディストリクト</p>
           </div>
         </div>
 
