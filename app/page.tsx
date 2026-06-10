@@ -68,7 +68,7 @@ export default function Home() {
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto pb-40">
           <div className="flex justify-center mb-8">
             <Image
-              src="/logo2.png"
+              src="/logo3.png"
               alt="鹿沼辛麺 童 わらべ"
               width={260}
               height={260}
