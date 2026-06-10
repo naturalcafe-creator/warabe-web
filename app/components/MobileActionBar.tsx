@@ -89,7 +89,7 @@ export default function MobileActionBar() {
       <div className="grid grid-cols-4">
         {actions.map((action) => {
           const inner = (
-            <div className="flex flex-col items-center justify-center gap-1 py-3 px-1">
+            <div className="flex flex-col items-center justify-center gap-1 pt-2 pb-1.5 px-1">
               <span
                 className={`transition-colors duration-200 ${
                   action.disabled ? 'text-[#444]' : 'text-[#888] active:text-[#c0392b]'

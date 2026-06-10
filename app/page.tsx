@@ -123,6 +123,40 @@ export default function Home() {
       {/* ── マーキー ── */}
       <Marquee />
 
+      {/* ── ヒーロー写真 ── */}
+      <section className="relative w-full overflow-hidden border-y border-[#1f1f1f] pb-12 md:pb-20">
+        <FadeIn>
+          <div className="relative w-full aspect-[4/3] md:aspect-[16/9] max-h-[90vh]">
+            <Image
+              src="/hero-ramen.png"
+              alt="鹿沼辛麺 童 - 辛麺"
+              fill
+              className="object-cover"
+              style={{ objectPosition: 'center center' }}
+              priority
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d] via-transparent to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12">
+              <div className="max-w-3xl mx-auto text-center">
+                <p
+                  className="text-xs tracking-[0.5em] text-[#c0392b] mb-2"
+                  style={{ fontFamily: 'var(--font-noto-serif)' }}
+                >
+                  THE ONE BOWL
+                </p>
+                <p
+                  className="text-2xl md:text-4xl font-black text-[#f0ede8] tracking-wide"
+                  style={{ fontFamily: 'var(--font-noto-serif)' }}
+                >
+                  鹿沼辛麺、誕生。
+                </p>
+              </div>
+            </div>
+          </div>
+        </FadeIn>
+      </section>
+
       {/* ── 3つの独自価値 ── */}
       <section className="py-14 md:py-24 px-6">
         <div className="max-w-5xl mx-auto">
@@ -174,6 +208,56 @@ export default function Home() {
               </div>
               </FadeIn>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 店舗ができるまで ── */}
+      <section className="py-14 md:py-24 px-6 border-b border-[#1f1f1f]">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
+            <FadeIn className="w-full md:w-1/2" direction="right">
+              <div className="relative w-full aspect-[4/3] overflow-hidden border border-[#1f1f1f]">
+                <Image
+                  src="/construction-1.jpg"
+                  alt="改装中の店舗"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+            </FadeIn>
+            <FadeIn className="w-full md:w-1/2" direction="left">
+              <p
+                className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
+                style={{ fontFamily: 'var(--font-noto-serif)' }}
+              >
+                IN CONSTRUCTION
+              </p>
+              <h2
+                className="text-3xl md:text-4xl font-black text-[#f0ede8] tracking-wide mb-6"
+                style={{ fontFamily: 'var(--font-noto-serif)' }}
+              >
+                現在、改装中
+              </h2>
+              <p
+                className="text-sm text-[#ddd] leading-loose mb-6 md:mb-8"
+                style={{ fontFamily: 'var(--font-noto-serif)' }}
+              >
+                長年の歴史が積み重なった内装を、１００年前に戻し、修繕し、究極の一杯のための場所を作っています。
+                <br /><br />
+                その記録は、Instagramで公開中。
+              </p>
+              <a
+                href="https://www.instagram.com/dan_ima_mura/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs tracking-[0.3em] text-[#c0392b] border-b border-[#c0392b]/40 pb-1 hover:border-[#c0392b] transition-colors"
+                style={{ fontFamily: 'var(--font-noto-serif)' }}
+              >
+                お店作りを見る →
+              </a>
+            </FadeIn>
           </div>
         </div>
       </section>

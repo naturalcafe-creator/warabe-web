@@ -34,20 +34,14 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/logo2.png"
+            src="/logo-hiragana.png"
             alt="鹿沼辛麺 童 わらべ"
-            width={44}
-            height={44}
+            width={200}
+            height={60}
             className="object-contain"
-            style={{ height: '44px', width: 'auto' }}
+            style={{ height: '40px', width: 'auto' }}
             priority
           />
-          <span
-            className="text-sm tracking-[0.15em] text-[#c0392b] font-bold hidden sm:block"
-            style={{ fontFamily: 'var(--font-noto-sans)' }}
-          >
-            鹿沼辛麺専門店
-          </span>
         </Link>
 
         {/* Desktop nav */}
