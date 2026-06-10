@@ -124,7 +124,7 @@ export default function Home() {
       <Marquee />
 
       {/* ── ヒーロー写真 ── */}
-      <section className="relative w-full overflow-hidden border-y border-[#1f1f1f]">
+      <section className="relative w-full overflow-hidden border-y border-[#1f1f1f] pb-12 md:pb-20">
         <FadeIn>
           <div className="relative w-full aspect-[4/3] md:aspect-[16/9] max-h-[90vh]">
             <Image
@@ -149,7 +149,7 @@ export default function Home() {
                   className="text-2xl md:text-4xl font-black text-[#f0ede8] tracking-wide"
                   style={{ fontFamily: 'var(--font-noto-serif)' }}
                 >
-                  鹿沼で生まれた、一杯。
+                  鹿沼辛麺、誕生。
                 </p>
               </div>
             </div>
