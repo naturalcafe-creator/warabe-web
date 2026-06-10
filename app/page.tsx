@@ -215,7 +215,7 @@ export default function Home() {
       <section className="py-14 md:py-24 px-6 border-b border-[#1f1f1f]">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
-            <FadeIn className="md:w-1/2" direction="right">
+            <FadeIn className="w-full md:w-1/2" direction="right">
               <div className="relative w-full aspect-[4/3] overflow-hidden border border-[#1f1f1f]">
                 <Image
                   src="/construction-1.jpg"
@@ -226,7 +226,7 @@ export default function Home() {
                 />
               </div>
             </FadeIn>
-            <FadeIn className="md:w-1/2" direction="left">
+            <FadeIn className="w-full md:w-1/2" direction="left">
               <p
                 className="text-xs tracking-[0.5em] text-[#c0392b] mb-3"
                 style={{ fontFamily: 'var(--font-noto-serif)' }}
