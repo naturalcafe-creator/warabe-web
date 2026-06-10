@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import FadeIn from '../components/FadeIn'
 import Marquee from '../components/Marquee'
 
@@ -52,6 +53,37 @@ export default function AccessPage() {
         items={['鹿沼市末広町', 'WARABASE 1F', '無料駐車場10台', '東武新鹿沼駅 徒歩15分', '銀座コーヒーより徒歩1分', '洋菓子店エトワール跡地', '栃木県鹿沼市']}
         duration={22}
       />
+
+      {/* 店舗外観 */}
+      <section className="relative w-full overflow-hidden border-b border-[#1f1f1f]">
+        <FadeIn>
+          <div className="relative w-full aspect-[4/3] md:aspect-[16/9] max-h-[80vh]">
+            <Image
+              src="/storefront.jpeg"
+              alt="鹿沼辛麺 童 店舗外観"
+              fill
+              className="object-cover"
+              priority
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d]/60 via-transparent to-transparent" />
+            <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10">
+              <p
+                className="text-xs tracking-[0.4em] text-[#f0ede8] mb-1"
+                style={{ fontFamily: 'var(--font-noto-serif)', textShadow: '0 1px 8px rgba(0,0,0,0.6)' }}
+              >
+                WARABASE 1F
+              </p>
+              <p
+                className="text-base md:text-xl font-black text-[#f0ede8]"
+                style={{ fontFamily: 'var(--font-noto-serif)', textShadow: '0 1px 8px rgba(0,0,0,0.6)' }}
+              >
+                鹿沼市 末広町
+              </p>
+            </div>
+          </div>
+        </FadeIn>
+      </section>
 
       {/* マップエリア */}
       <section className="py-8 md:py-12 px-6">
