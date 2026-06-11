@@ -9,12 +9,7 @@ export const size = {
 
 export const contentType = 'image/png'
 
-export default async function Image() {
-  // logo3.png（背景透過版ロゴ）を取得
-  const logoData = await fetch(
-    new URL('../public/logo3.png', import.meta.url)
-  ).then((res) => res.arrayBuffer())
-
+export default function Image() {
   return new ImageResponse(
     (
       <div
@@ -58,29 +53,81 @@ export default async function Image() {
           }}
         />
 
-        {/* ロゴ画像 */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={logoData as unknown as string}
-          alt=""
-          width={420}
-          height={420}
-          style={{ objectFit: 'contain' }}
-        />
-
-        {/* 下部キャッチコピー */}
-        <p
+        {/* メインコンテンツ */}
+        <div
           style={{
-            fontSize: '44px',
-            color: '#f0ede8',
-            letterSpacing: '0.3em',
-            margin: '24px 0 0 0',
-            fontFamily: 'serif',
-            fontWeight: '900',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
           }}
         >
-          鹿沼辛麺、誕生。
-        </p>
+          {/* 小見出し */}
+          <p
+            style={{
+              fontSize: '20px',
+              letterSpacing: '0.6em',
+              color: '#c0392b',
+              margin: '0 0 32px 0',
+              fontFamily: 'serif',
+              fontWeight: '900',
+            }}
+          >
+            KANUMA KARAMEN
+          </p>
+
+          {/* 店名 童 */}
+          <p
+            style={{
+              fontSize: '220px',
+              fontWeight: '900',
+              color: '#f0ede8',
+              margin: '0',
+              lineHeight: '1',
+              fontFamily: 'serif',
+              letterSpacing: '0.05em',
+            }}
+          >
+            童
+          </p>
+
+          {/* ルビ */}
+          <p
+            style={{
+              fontSize: '24px',
+              letterSpacing: '0.8em',
+              color: '#888',
+              margin: '20px 0 36px 0',
+              fontFamily: 'serif',
+            }}
+          >
+            わらべ
+          </p>
+
+          {/* 区切り線 */}
+          <div
+            style={{
+              width: '160px',
+              height: '1px',
+              background: 'rgba(192,57,43,0.6)',
+              margin: '0 0 32px 0',
+              display: 'flex',
+            }}
+          />
+
+          {/* キャッチコピー */}
+          <p
+            style={{
+              fontSize: '44px',
+              color: '#f0ede8',
+              letterSpacing: '0.3em',
+              margin: '0',
+              fontFamily: 'serif',
+              fontWeight: '900',
+            }}
+          >
+            鹿沼辛麺、誕生。
+          </p>
+        </div>
 
         {/* 下部赤ライン */}
         <div
