@@ -9,7 +9,14 @@ export const size = {
 
 export const contentType = 'image/png'
 
-export default function Image() {
+export default async function Image() {
+  // ロゴ画像を取得して base64 データURLに変換
+  const logoData = await fetch(
+    new URL('../public/logo3.png', import.meta.url)
+  ).then((res) => res.arrayBuffer())
+  const logoBase64 = Buffer.from(logoData).toString('base64')
+  const logoSrc = `data:image/png;base64,${logoBase64}`
+
   return new ImageResponse(
     (
       <div
@@ -61,63 +68,20 @@ export default function Image() {
             alignItems: 'center',
           }}
         >
-          {/* 小見出し */}
-          <p
-            style={{
-              fontSize: '20px',
-              letterSpacing: '0.6em',
-              color: '#c0392b',
-              margin: '0 0 32px 0',
-              fontFamily: 'serif',
-              fontWeight: '900',
-            }}
-          >
-            KANUMA KARAMEN
-          </p>
-
-          {/* 店名 童 */}
-          <p
-            style={{
-              fontSize: '220px',
-              fontWeight: '900',
-              color: '#f0ede8',
-              margin: '0',
-              lineHeight: '1',
-              fontFamily: 'serif',
-              letterSpacing: '0.05em',
-            }}
-          >
-            童
-          </p>
-
-          {/* ルビ */}
-          <p
-            style={{
-              fontSize: '24px',
-              letterSpacing: '0.8em',
-              color: '#888',
-              margin: '20px 0 36px 0',
-              fontFamily: 'serif',
-            }}
-          >
-            わらべ
-          </p>
-
-          {/* 区切り線 */}
-          <div
-            style={{
-              width: '160px',
-              height: '1px',
-              background: 'rgba(192,57,43,0.6)',
-              margin: '0 0 32px 0',
-              display: 'flex',
-            }}
+          {/* ロゴ画像 */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={logoSrc}
+            alt=""
+            width={380}
+            height={380}
+            style={{ objectFit: 'contain', marginBottom: '8px' }}
           />
 
           {/* キャッチコピー */}
           <p
             style={{
-              fontSize: '44px',
+              fontSize: '40px',
               color: '#f0ede8',
               letterSpacing: '0.3em',
               margin: '0',
