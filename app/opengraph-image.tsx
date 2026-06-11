@@ -16,7 +16,7 @@ export default function Image() {
         style={{
           width: '100%',
           height: '100%',
-          background: '#0e0e0e',
+          background: '#0d0d0d',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
@@ -25,6 +25,19 @@ export default function Image() {
           fontFamily: 'serif',
         }}
       >
+        {/* 上部赤ライン */}
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            height: '6px',
+            background: '#c0392b',
+            display: 'flex',
+          }}
+        />
+
         {/* 背景の赤いグロー */}
         <div
           style={{
@@ -32,90 +45,13 @@ export default function Image() {
             top: '50%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
-            width: '600px',
-            height: '300px',
-            background: 'radial-gradient(ellipse, rgba(192,57,43,0.15) 0%, transparent 70%)',
+            width: '700px',
+            height: '400px',
+            background:
+              'radial-gradient(ellipse, rgba(192,57,43,0.18) 0%, transparent 70%)',
             display: 'flex',
           }}
         />
-
-        {/* 上部ライン */}
-        <div
-          style={{
-            position: 'absolute',
-            top: '60px',
-            left: '80px',
-            right: '80px',
-            height: '1px',
-            background: 'rgba(192,57,43,0.4)',
-            display: 'flex',
-          }}
-        />
-
-        {/* 下部ライン */}
-        <div
-          style={{
-            position: 'absolute',
-            bottom: '60px',
-            left: '80px',
-            right: '80px',
-            height: '1px',
-            background: 'rgba(192,57,43,0.4)',
-            display: 'flex',
-          }}
-        />
-
-        {/* 左側縦テキスト装飾 */}
-        <div
-          style={{
-            position: 'absolute',
-            left: '40px',
-            top: '50%',
-            transform: 'translateY(-50%)',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '6px',
-          }}
-        >
-          {'鹿沼辛麺　童'.split('').map((char, i) => (
-            <span
-              key={i}
-              style={{
-                fontSize: '11px',
-                color: 'rgba(192,57,43,0.3)',
-                letterSpacing: '0.2em',
-              }}
-            >
-              {char}
-            </span>
-          ))}
-        </div>
-
-        {/* 右側縦テキスト装飾 */}
-        <div
-          style={{
-            position: 'absolute',
-            right: '40px',
-            top: '50%',
-            transform: 'translateY(-50%)',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '6px',
-          }}
-        >
-          {'KARAMEN　WARABE'.split('').map((char, i) => (
-            <span
-              key={i}
-              style={{
-                fontSize: '11px',
-                color: 'rgba(192,57,43,0.3)',
-                letterSpacing: '0.2em',
-              }}
-            >
-              {char}
-            </span>
-          ))}
-        </div>
 
         {/* メインコンテンツ */}
         <div
@@ -123,17 +59,17 @@ export default function Image() {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            gap: '0px',
           }}
         >
           {/* 小見出し */}
           <p
             style={{
-              fontSize: '13px',
-              letterSpacing: '0.5em',
+              fontSize: '20px',
+              letterSpacing: '0.6em',
               color: '#c0392b',
-              margin: '0 0 28px 0',
+              margin: '0 0 32px 0',
               fontFamily: 'serif',
+              fontWeight: '900',
             }}
           >
             KANUMA KARAMEN
@@ -142,7 +78,7 @@ export default function Image() {
           {/* 店名 童 */}
           <p
             style={{
-              fontSize: '140px',
+              fontSize: '220px',
               fontWeight: '900',
               color: '#f0ede8',
               margin: '0',
@@ -157,10 +93,10 @@ export default function Image() {
           {/* ルビ */}
           <p
             style={{
-              fontSize: '15px',
-              letterSpacing: '0.6em',
+              fontSize: '24px',
+              letterSpacing: '0.8em',
               color: '#888',
-              margin: '12px 0 36px 0',
+              margin: '20px 0 36px 0',
               fontFamily: 'serif',
             }}
           >
@@ -170,113 +106,41 @@ export default function Image() {
           {/* 区切り線 */}
           <div
             style={{
-              width: '200px',
+              width: '160px',
               height: '1px',
-              background: 'rgba(192,57,43,0.5)',
-              margin: '0 0 36px 0',
+              background: 'rgba(192,57,43,0.6)',
+              margin: '0 0 32px 0',
               display: 'flex',
             }}
           />
 
-          {/* タグライン */}
+          {/* キャッチコピー */}
           <p
             style={{
-              fontSize: '22px',
-              color: '#ccc',
-              margin: '0 0 12px 0',
-              letterSpacing: '0.15em',
-              fontFamily: 'serif',
-            }}
-          >
-            栃木しゃも × 鹿沼ニラ × こんにゃく麺
-          </p>
-
-          {/* サブタグライン */}
-          <p
-            style={{
-              fontSize: '15px',
-              color: '#666',
-              margin: '0',
-              letterSpacing: '0.2em',
-              fontFamily: 'serif',
-            }}
-          >
-            栃木県鹿沼市 末広町 WARABASE 1F
-          </p>
-        </div>
-
-        {/* 右下 辛さ情報 */}
-        <div
-          style={{
-            position: 'absolute',
-            bottom: '80px',
-            right: '100px',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'flex-end',
-            gap: '4px',
-          }}
-        >
-          <p
-            style={{
-              fontSize: '11px',
-              color: '#c0392b',
+              fontSize: '44px',
+              color: '#f0ede8',
               letterSpacing: '0.3em',
               margin: '0',
               fontFamily: 'serif',
-            }}
-          >
-            SPICE LEVEL
-          </p>
-          <p
-            style={{
-              fontSize: '20px',
               fontWeight: '900',
-              color: '#f0ede8',
-              margin: '0',
-              letterSpacing: '0.1em',
-              fontFamily: 'serif',
             }}
           >
-            無辛 〜 Lv.12
+            鹿沼辛麺、誕生。
           </p>
         </div>
 
-        {/* 左下 化学調味料 */}
+        {/* 下部赤ライン */}
         <div
           style={{
             position: 'absolute',
-            bottom: '80px',
-            left: '100px',
+            bottom: 0,
+            left: 0,
+            right: 0,
+            height: '6px',
+            background: '#c0392b',
             display: 'flex',
-            flexDirection: 'column',
-            gap: '4px',
           }}
-        >
-          <p
-            style={{
-              fontSize: '11px',
-              color: '#c0392b',
-              letterSpacing: '0.3em',
-              margin: '0',
-              fontFamily: 'serif',
-            }}
-          >
-            NO MSG
-          </p>
-          <p
-            style={{
-              fontSize: '20px',
-              fontWeight: '900',
-              color: '#f0ede8',
-              margin: '0',
-              letterSpacing: '0.05em',
-              fontFamily: 'serif',
-            }}
-          >
-            化学調味料不使用
-          </p>
-        </div>
+        />
       </div>
     ),
     {
