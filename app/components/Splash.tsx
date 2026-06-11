@@ -59,14 +59,17 @@ export default function Splash() {
           <Image
             src="/logo3.png"
             alt="鹿沼辛麺 童"
-            width={120}
-            height={120}
-            className="object-contain mx-auto mb-5"
-            style={{ height: 'auto' }}
+            width={280}
+            height={280}
+            className="object-contain mx-auto mb-7"
+            style={{
+              height: 'auto',
+              width: 'clamp(160px, 22vw, 280px)',
+            }}
             priority
           />
           <p
-            className="text-[10px] tracking-[0.6em] text-[#c0392b]"
+            className="text-xs md:text-sm tracking-[0.6em] text-[#c0392b]"
             style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
             KANUMA SPICY RAMEN
