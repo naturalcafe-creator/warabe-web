@@ -1,6 +1,8 @@
 import { ImageResponse } from 'next/og'
+import { readFile } from 'node:fs/promises'
+import { join } from 'node:path'
 
-export const runtime = 'edge'
+export const runtime = 'nodejs'
 
 export const size = {
   width: 1200,
@@ -10,12 +12,12 @@ export const size = {
 export const contentType = 'image/png'
 
 export default async function Image() {
-  // ロゴ画像を取得して base64 データURLに変換
-  const logoData = await fetch(
-    new URL('../public/logo3.png', import.meta.url)
-  ).then((res) => res.arrayBuffer())
-  const logoBase64 = Buffer.from(logoData).toString('base64')
-  const logoSrc = `data:image/png;base64,${logoBase64}`
+  // ロゴ画像を読み込んで base64 データURLに変換
+  const logoData = await readFile(
+    join(process.cwd(), 'public/logo-og.jpg')
+  )
+  const logoBase64 = logoData.toString('base64')
+  const logoSrc = `data:image/jpeg;base64,${logoBase64}`
 
   return new ImageResponse(
     (
