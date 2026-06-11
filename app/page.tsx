@@ -128,7 +128,7 @@ export default function Home() {
         <FadeIn>
           <div className="relative w-full aspect-[4/3] md:aspect-[16/9] max-h-[90vh]">
             <Image
-              src="/hero-ramen-v2.jpg"
+              src="/hero-ramen-v3.jpg"
               alt="鹿沼辛麺 童 - 辛麺"
               fill
               className="object-cover"
