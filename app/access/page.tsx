@@ -13,7 +13,7 @@ const info: { label: string; value: string; pending?: boolean; link?: string }[]
   { label: '店名', value: '童 | 鹿沼辛麺（わらべ かぬまからめん）' },
   { label: '住所', value: '〒322-0083 栃木県鹿沼市末広町１９１６−１ WARABASE 1F' },
   { label: '営業時間', value: '昼 11:30〜14:30（14:00 LO）\n夜 17:00〜21:00（20:30 LO）', pending: true },
-  { label: '定休日', value: '火曜', pending: true },
+  { label: '定休日', value: '火曜・水曜', pending: true },
   { label: '席数', value: 'カウンター・テーブル' },
   { label: '駐車場', value: 'お店隣に約10台（無料）' },
   { label: 'テイクアウト', value: '串シウマイ等　カウンターにて提供' },
