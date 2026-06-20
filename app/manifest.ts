@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: '鹿沼辛麺 童（わらべ）',
     short_name: '童わらべ',
-    description: '栃木県鹿沼市のラーメン・辛麺専門店。栃木しゃも×鹿沼ニラ×こんにゃく麺。無辛〜Lv.12の12段階。',
+    description: '栃木県鹿沼市のラーメン・辛麺専門店。栃木しゃも×鹿沼ニラ×もちもち麺。無辛〜Lv.12の12段階。',
     start_url: '/',
     display: 'standalone',
     background_color: '#0e0e0e',
