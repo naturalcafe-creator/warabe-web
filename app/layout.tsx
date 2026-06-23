@@ -72,7 +72,7 @@ const jsonLd = {
     longitude: 139.7399,
   },
   servesCuisine: ['ラーメン', '辛麺', '日本料理'],
-  priceRange: '¥920〜¥1,200',
+  priceRange: '¥970〜¥1,500',
   menu: 'https://warabe-kanuma.com/menu',
   openingHoursSpecification: [
     {
