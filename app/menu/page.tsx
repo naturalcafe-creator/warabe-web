@@ -44,19 +44,19 @@ const soups = [
 ]
 
 const spiceRanks = [
-  { rank: 0,  name: '町娘',   ruby: 'まちむすめ',   level: '無辛',  desc: '辛さゼロ。スープと麺本来の旨味だけを存分に楽しめる一杯。辛いものが苦手な方もぜひ。', color: '#f0ede8', highlight: true, price: '¥920' },
-  { rank: 1,  name: '小童',   ruby: 'こわっぱ',     level: 'Lv.1',  desc: 'ほのかな辛味。初挑戦の方にもおすすめ。',                             color: '#f9e68a', price: '¥950' },
-  { rank: 2,  name: '足軽',   ruby: 'あしがる',     level: 'Lv.2',  desc: '辛さが前面に出てくる。汗ばむ程度の刺激。',                           color: '#f9a825', price: '¥950' },
-  { rank: 3,  name: '侍', ruby: 'さむらい',     level: 'Lv.3',  desc: '本格的な辛さ。辛い物好きが満足できるレベル。',                       color: '#fb8c00', price: '¥980' },
-  { rank: 4,  name: '武士',   ruby: 'ぶし',         level: 'Lv.4',  desc: '強烈な辛さ。自信がある方向け。',                                     color: '#f4511e', price: '¥980' },
-  { rank: 5,  name: '旗本',   ruby: 'はたもと',     level: 'Lv.5',  desc: '辛さが全身を駆け巡る。覚悟を持って挑め。',                           color: '#e53935', price: '¥1,000' },
-  { rank: 6,  name: '家老',   ruby: 'かろう',       level: 'Lv.6',  desc: '激辛の域。半数以上が完食できない。',                                 color: '#c62828', price: '¥1,000' },
-  { rank: 7,  name: '奉行',   ruby: 'ぶぎょう',     level: 'Lv.7',  desc: '上級者専用。唇が痺れる超激辛。',                                     color: '#b71c1c', price: '¥1,030' },
-  { rank: 8,  name: '大名',   ruby: 'だいみょう',   level: 'Lv.8',  desc: '激辛王者の領域。涙なしには食べられない。',                           color: '#880e4f', price: '¥1,030' },
-  { rank: 9,  name: '老中',   ruby: 'ろうじゅう',   level: 'Lv.9',  desc: '体制を仕切る辛さの重鎮。',                                           color: '#7b1fa2', price: '¥1,080' },
-  { rank: 10, name: '将軍',   ruby: 'しょうぐん',   level: 'Lv.10', desc: '老中（Lv.9）を完食した者だけが挑戦できる昇格制。完食で大将軍へ、失敗すると老中に降格。', color: '#9c27b0', badge: '昇格制', price: '¥1,080' },
-  { rank: 11, name: '大将軍', ruby: 'だいしょうぐん', level: 'Lv.11', desc: '将軍（Lv.10）を完食した者だけが挑戦できる。完食で天下人へ、失敗すると将軍に降格。',   color: '#ba68c8', badge: '昇格制', price: '¥1,130' },
-  { rank: 12, name: '天下人', ruby: 'てんかびと',   level: 'Lv.12', desc: '大将軍（Lv.11）を完食した者だけが辿り着ける最高位。童の頂点に立つ者のみが到達できる境地。', color: '#ce93d8', badge: '最高位', price: '¥1,200' },
+  { rank: 0,  name: '町娘',   ruby: 'まちむすめ',   level: '無辛',  desc: '辛さゼロ。素材の旨味だけで成立する一杯。お子様にもおすすめ。',         color: '#f0ede8', highlight: true, price: '¥970' },
+  { rank: 1,  name: '小童',   ruby: 'こわっぱ',     level: 'Lv.1',  desc: '優しい辛さ。辛さの入り口。',                                           color: '#f9e68a', price: '¥1,000' },
+  { rank: 2,  name: '足軽',   ruby: 'あしがる',     level: 'Lv.2',  desc: 'ピリッと程度の刺激。日常の辛さ。',                                     color: '#f9a825', price: '¥1,000' },
+  { rank: 3,  name: '侍', ruby: 'さむらい',     level: 'Lv.3',  desc: '中辛の入り口。じんわり辛くなる。',                                     color: '#fb8c00', price: '¥1,030' },
+  { rank: 4,  name: '武士',   ruby: 'ぶし',         level: 'Lv.4',  desc: '中辛。額に汗がにじむレベル。',                                         color: '#f4511e', price: '¥1,030' },
+  { rank: 5,  name: '旗本',   ruby: 'はたもと',     level: 'Lv.5',  desc: 'しっかり辛い。普段から辛口を選ぶ方向け。',                             color: '#e53935', price: '¥1,050' },
+  { rank: 6,  name: '家老',   ruby: 'かろう',       level: 'Lv.6',  desc: '中辛の頂点。ここからが本気の辛さ。',                                   color: '#c62828', price: '¥1,050' },
+  { rank: 7,  name: '奉行',   ruby: 'ぶぎょう',     level: 'Lv.7',  desc: '本格的な辛さ。辛い物好きが満足できる。',                               color: '#b71c1c', price: '¥1,080' },
+  { rank: 8,  name: '大名',   ruby: 'だいみょう',   level: 'Lv.8',  desc: '激辛入門。汗が止まらない。',                                           color: '#880e4f', price: '¥1,080' },
+  { rank: 9,  name: '老中',   ruby: 'ろうじゅう',   level: 'Lv.9',  desc: '激辛。覚悟を持って挑め。自由に選べる最後の段階。',                     color: '#7b1fa2', price: '¥1,130' },
+  { rank: 10, name: '将軍',   ruby: 'しょうぐん',   level: 'Lv.10', desc: '超激辛。老中（Lv.9）完食者のみ挑戦可能。完食で大将軍へ昇格、失敗で老中に降格。', color: '#9c27b0', badge: '昇格制', price: '¥1,200' },
+  { rank: 11, name: '大将軍', ruby: 'だいしょうぐん', level: 'Lv.11', desc: '極辛。将軍（Lv.10）完食者のみ。完食で天下人へ昇格、失敗で将軍に降格。', color: '#ba68c8', badge: '昇格制', price: '¥1,350' },
+  { rank: 12, name: '天下人', ruby: 'てんかびと',   level: 'Lv.12', desc: '童の頂点。大将軍（Lv.11）完食者だけが至れる最高位。殿堂入り。',       color: '#ce93d8', badge: '最高位', price: '¥1,500' },
 ]
 
 export default function MenuPage() {
@@ -407,7 +407,7 @@ export default function MenuPage() {
             {[
               { name: 'わらべシウマイ', price: '¥480', desc: 'こんにゃく入りのもちもち皮×玉ねぎの旨味。お腹いっぱいでも食べられる軽さ。辛麺との相性抜群。' },
               { name: '串シウマイ', price: '¥350', desc: 'テイクアウト限定！カウンターにてご提供。' },
-              { name: '白いチャイぷりん', price: '¥400', desc: '銀座コーヒーの人気メニューがぷりんに！' },
+              { name: '白いチャイぷりん', price: '¥350', desc: '銀座コーヒーの人気メニューがぷりんに！' },
               { name: 'ごはん食べ放題', price: '¥150', desc: 'スープにドボンして〆まで楽しめる。食べ放題なので遠慮なくどうぞ。' },
               { name: '激辛チャレンジ「鳳凰」', price: '完食→無料 ／ 時間切れ→¥3,000', desc: '制限時間15分。スープまで飲み干して完食が条件。誰でも挑戦できます。', link: '/challenge' },
             ].map((item, i) => (
