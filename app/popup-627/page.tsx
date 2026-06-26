@@ -61,35 +61,6 @@ export default function Popup627Page() {
         duration={22}
       />
 
-      {/* イベント詳細 */}
-      <section className="py-12 md:py-16 px-6 bg-[#0a0a0a] border-b border-[#1f1f1f]">
-        <div className="max-w-3xl mx-auto">
-          <FadeIn>
-            <div className="bg-[#161616] border border-[#c0392b]/30 p-6 md:p-10">
-              <p className="text-xs tracking-[0.4em] text-[#c0392b] mb-6" style={{ fontFamily: 'var(--font-noto-serif)' }}>EVENT INFO</p>
-              <div className="space-y-5">
-                <div className="flex justify-between items-baseline border-b border-[#1f1f1f] pb-4">
-                  <p className="text-sm text-[#888]" style={{ fontFamily: 'var(--font-noto-serif)' }}>日付</p>
-                  <p className="text-base text-[#f0ede8] font-bold" style={{ fontFamily: 'var(--font-noto-serif)' }}>2026年6月27日（土）</p>
-                </div>
-                <div className="flex justify-between items-baseline border-b border-[#1f1f1f] pb-4">
-                  <p className="text-sm text-[#888]" style={{ fontFamily: 'var(--font-noto-serif)' }}>時間</p>
-                  <p className="text-base text-[#f0ede8] font-bold" style={{ fontFamily: 'var(--font-noto-serif)' }}>11:00 〜 14:00</p>
-                </div>
-                <div className="flex justify-between items-baseline border-b border-[#1f1f1f] pb-4">
-                  <p className="text-sm text-[#888]" style={{ fontFamily: 'var(--font-noto-serif)' }}>場所</p>
-                  <p className="text-base text-[#f0ede8] font-bold" style={{ fontFamily: 'var(--font-noto-serif)' }}>大衆酒場 くりたろう</p>
-                </div>
-                <div className="flex justify-between items-baseline">
-                  <p className="text-sm text-[#888]" style={{ fontFamily: 'var(--font-noto-serif)' }}>数量</p>
-                  <p className="text-base text-[#c0392b] font-black" style={{ fontFamily: 'var(--font-noto-serif)' }}>限定 40食 — 売切次第終了</p>
-                </div>
-              </div>
-            </div>
-          </FadeIn>
-        </div>
-      </section>
-
       {/* メニュー注文の流れ */}
       <section className="py-14 md:py-20 px-6">
         <div className="max-w-4xl mx-auto">
