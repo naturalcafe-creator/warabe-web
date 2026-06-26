@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 
 export default function PopupBanner() {
   const [visible, setVisible] = useState(false)
@@ -65,7 +66,7 @@ export default function PopupBanner() {
 
           {/* ラベル */}
           <p className="text-sm tracking-[0.2em] text-[#c0392b] font-bold mb-5" style={{ fontFamily: 'var(--font-noto-serif)' }}>
-            ポップアップ出店決定
+            本日開催中
           </p>
 
           {/* メインコピー */}
@@ -95,6 +96,16 @@ export default function PopupBanner() {
               <p className="text-sm font-black text-[#c0392b]" style={{ fontFamily: 'var(--font-noto-serif)' }}>限定 40食</p>
             </div>
           </div>
+
+          {/* メニュー CTA */}
+          <Link
+            href="/popup-627"
+            onClick={dismiss}
+            className="flex items-center justify-center gap-2 w-full py-3 mb-3 bg-[#c0392b] text-[#f0ede8] text-xs tracking-[0.3em] font-bold hover:bg-[#e74c3c] transition-colors"
+            style={{ fontFamily: 'var(--font-noto-serif)' }}
+          >
+            メニューを見る
+          </Link>
 
           {/* Instagram CTA */}
           <a
