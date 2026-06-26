@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 
 const soups = [
   { name: '元祖辛麺', tag: 'スタンダード', desc: '栃木しゃものひき肉を具材として練り込んだ、旨味たっぷりのスープ。4種の唐辛子と鹿沼ニラが生み出す九州伝承の味を鹿沼流に再構築。', surcharge: '' },
-  { name: 'トマト辛麺', tag: 'まろやか', desc: 'トマトの酸味がスープに溶け込み、辛さがまろやかに。辛いものが少し苦手な方にも食べやすい、女性に人気のスープ。', surcharge: '＋¥80' },
-  { name: '味噌辛麺', tag: '濃厚', desc: '麹由来の深みある味噌ベース。腸活効果も期待できる、体に優しくて濃厚な一杯。', surcharge: '＋¥80' },
+  { name: 'トマト辛麺', tag: 'まろやか', desc: 'トマトの「酸味」と「辛さ」が溶け合う絶妙な味わい。リコピンたっぷりのヘルシーなトマ辛は女性に大人気。チーズトッピングがおすすめ！', surcharge: '＋¥80' },
+  { name: '味噌辛麺', tag: 'コク', desc: '麹由来の深みある味噌ベース。腸活効果も期待できる、体に優しくてコクのある一杯。', surcharge: '＋¥80' },
 ]
 
 const spiceRanks = [
@@ -148,6 +148,49 @@ export default function Popup627Page() {
                     <p className="text-xs text-[#bbb] leading-relaxed" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.desc}</p>
                   </div>
                   <p className="text-sm font-bold text-[#c9a84c] shrink-0" style={{ fontFamily: 'var(--font-noto-serif)' }}>{item.price}</p>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* おすすめの食べ方 */}
+      <section className="py-12 md:py-20 px-6 border-b border-[#1f1f1f]">
+        <div className="max-w-2xl mx-auto">
+          <FadeIn className="text-center mb-14">
+            <p className="text-xs tracking-[0.5em] text-[#c0392b] mb-3" style={{ fontFamily: 'var(--font-noto-serif)' }}>HOW TO EAT</p>
+            <h2 className="text-3xl font-black text-[#f0ede8] tracking-wide mb-4" style={{ fontFamily: 'var(--font-noto-serif)' }}>おすすめの食べ方</h2>
+            <div className="w-12 h-px bg-[#c0392b] mx-auto" />
+          </FadeIn>
+
+          <div className="relative">
+            <div className="absolute left-8 top-0 bottom-0 w-px bg-[#1f1f1f]" />
+            {[
+              { title: 'まずはスープをひとくち', sub: '深い旨味をそのまま感じてください' },
+              { title: '麺を食べる', sub: 'このとき具は食べすぎないのがコツ！' },
+              { title: '味変！柚子胡椒をプラス', sub: '机の上の柚子胡椒を入れると絶品' },
+              { title: '麺を食べ終えたら…', sub: 'ご飯をスープにドボン！' },
+              { title: 'ここでチーズをトッピング', sub: 'とろけるチーズが絶妙にマッチ' },
+              { title: '一滴も残さず完食！', sub: '心も体もととのいます' },
+            ].map((step, i) => (
+              <FadeIn key={i} delay={i * 60}>
+                <div className="flex gap-6 mb-8 relative">
+                  <div className="w-16 shrink-0 flex flex-col items-center">
+                    <div className="w-8 h-8 rounded-full bg-[#c0392b] flex items-center justify-center z-10">
+                      <span className="text-xs font-black text-[#f0ede8]" style={{ fontFamily: 'var(--font-noto-serif)' }}>
+                        {String(i + 1).padStart(2, '0')}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="pb-2">
+                    <p className="text-base font-bold text-[#f0ede8] mb-1" style={{ fontFamily: 'var(--font-noto-serif)' }}>
+                      {step.title}
+                    </p>
+                    <p className="text-sm text-[#888]" style={{ fontFamily: 'var(--font-noto-serif)' }}>
+                      {step.sub}
+                    </p>
+                  </div>
                 </div>
               </FadeIn>
             ))}
