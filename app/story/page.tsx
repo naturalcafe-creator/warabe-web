@@ -252,19 +252,15 @@ export default function StoryPage() {
                   <span className="text-xs text-[#c0392b] border border-[#c0392b] px-2 py-0.5" style={{ fontFamily: 'var(--font-noto-serif)' }}>NOW</span>
                 </div>
                 <p className="text-lg font-black text-[#f0ede8] mb-1" style={{ fontFamily: 'var(--font-noto-serif)' }}>ポップアップ出店</p>
-                <p className="text-sm text-[#c0392b] mb-6 tracking-wider" style={{ fontFamily: 'var(--font-noto-serif)' }}>2026年6月27日（土）</p>
-                <div className="grid grid-cols-3 gap-4 border-t border-[#c0392b]/20 pt-5">
+                <p className="text-sm text-[#c0392b] mb-6 tracking-wider" style={{ fontFamily: 'var(--font-noto-serif)' }}>大衆酒場 くりたろう</p>
+                <div className="grid grid-cols-2 gap-4 border-t border-[#c0392b]/20 pt-5">
                   <div>
-                    <p className="text-xs text-[#666] mb-1" style={{ fontFamily: 'var(--font-noto-serif)' }}>場所</p>
-                    <p className="text-sm text-[#f0ede8] font-bold leading-snug" style={{ fontFamily: 'var(--font-noto-serif)' }}>大衆酒場<br />くりたろう</p>
+                    <p className="text-xs text-[#666] mb-1" style={{ fontFamily: 'var(--font-noto-serif)' }}>第一波</p>
+                    <p className="text-sm text-[#f0ede8] font-bold leading-snug" style={{ fontFamily: 'var(--font-noto-serif)' }}>完売御礼<br />（6/27）</p>
                   </div>
                   <div>
-                    <p className="text-xs text-[#666] mb-1" style={{ fontFamily: 'var(--font-noto-serif)' }}>時間</p>
-                    <p className="text-sm text-[#f0ede8] font-bold" style={{ fontFamily: 'var(--font-noto-serif)' }}>11:00<br />〜14:00</p>
-                  </div>
-                  <div>
-                    <p className="text-xs text-[#666] mb-1" style={{ fontFamily: 'var(--font-noto-serif)' }}>数量</p>
-                    <p className="text-sm text-[#f0ede8] font-bold" style={{ fontFamily: 'var(--font-noto-serif)' }}>限定<br />40食</p>
+                    <p className="text-xs text-[#666] mb-1" style={{ fontFamily: 'var(--font-noto-serif)' }}>第二波</p>
+                    <p className="text-sm text-[#f0ede8] font-bold leading-snug" style={{ fontFamily: 'var(--font-noto-serif)' }}>7月末<br />予定</p>
                   </div>
                 </div>
               </div>

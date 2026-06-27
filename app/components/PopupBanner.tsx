@@ -1,14 +1,13 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import Link from 'next/link'
 
 export default function PopupBanner() {
   const [visible, setVisible] = useState(false)
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
-    const dismissed = sessionStorage.getItem('popup-627-dismissed')
+    const dismissed = sessionStorage.getItem('popup-2nd-wave-dismissed')
     if (!dismissed) {
       const timer = setTimeout(() => {
         setVisible(true)
@@ -21,7 +20,7 @@ export default function PopupBanner() {
   function dismiss() {
     setMounted(false)
     setTimeout(() => {
-      sessionStorage.setItem('popup-627-dismissed', '1')
+      sessionStorage.setItem('popup-2nd-wave-dismissed', '1')
       setVisible(false)
     }, 300)
   }
@@ -66,7 +65,7 @@ export default function PopupBanner() {
 
           {/* ラベル */}
           <p className="text-sm tracking-[0.2em] text-[#c0392b] font-bold mb-5" style={{ fontFamily: 'var(--font-noto-serif)' }}>
-            本日開催中
+            第一陣／第一波 完売御礼
           </p>
 
           {/* メインコピー */}
@@ -74,38 +73,20 @@ export default function PopupBanner() {
             className="text-3xl font-black text-[#f0ede8] leading-snug mb-5"
             style={{ fontFamily: 'var(--font-noto-serif)' }}
           >
-            わらべの<br />第一陣始まる。
+            第二波、<br />調整中。
           </p>
 
           {/* 詳細 */}
           <div className="border-t border-[#2a2a2a] pt-5 space-y-4 mb-6">
             <div className="flex justify-between items-baseline">
-              <p className="text-sm text-[#888]" style={{ fontFamily: 'var(--font-noto-serif)' }}>日付</p>
-              <p className="text-sm text-[#f0ede8] font-bold" style={{ fontFamily: 'var(--font-noto-serif)' }}>6月27日（土）</p>
+              <p className="text-sm text-[#888]" style={{ fontFamily: 'var(--font-noto-serif)' }}>次回</p>
+              <p className="text-sm text-[#f0ede8] font-bold" style={{ fontFamily: 'var(--font-noto-serif)' }}>7月末予定</p>
             </div>
             <div className="flex justify-between items-baseline">
               <p className="text-sm text-[#888]" style={{ fontFamily: 'var(--font-noto-serif)' }}>場所</p>
               <p className="text-sm text-[#f0ede8] font-bold" style={{ fontFamily: 'var(--font-noto-serif)' }}>大衆酒場 くりたろう</p>
             </div>
-            <div className="flex justify-between items-baseline">
-              <p className="text-sm text-[#888]" style={{ fontFamily: 'var(--font-noto-serif)' }}>時間</p>
-              <p className="text-sm text-[#f0ede8] font-bold" style={{ fontFamily: 'var(--font-noto-serif)' }}>11:00 〜 14:00</p>
-            </div>
-            <div className="flex justify-between items-baseline">
-              <p className="text-sm text-[#888]" style={{ fontFamily: 'var(--font-noto-serif)' }}>数量</p>
-              <p className="text-sm font-black text-[#c0392b]" style={{ fontFamily: 'var(--font-noto-serif)' }}>限定 40食</p>
-            </div>
           </div>
-
-          {/* メニュー CTA */}
-          <Link
-            href="/popup-627"
-            onClick={dismiss}
-            className="flex items-center justify-center gap-2 w-full py-3 mb-3 bg-[#c0392b] text-[#f0ede8] text-xs tracking-[0.3em] font-bold hover:bg-[#e74c3c] transition-colors"
-            style={{ fontFamily: 'var(--font-noto-serif)' }}
-          >
-            メニューを見る
-          </Link>
 
           {/* Instagram CTA */}
           <a
