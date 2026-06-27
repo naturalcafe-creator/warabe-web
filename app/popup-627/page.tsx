@@ -57,9 +57,31 @@ export default function Popup627Page() {
 
       {/* マーキー */}
       <Marquee
-        items={['限定40食', '11:00 〜 14:00', '大衆酒場 くりたろう', '無辛〜Lv.12', 'もちもち麺', 'POPUP 6/27']}
+        items={['第一波 完売御礼', '第二波 7月末予定', '大衆酒場 くりたろう', '無辛〜Lv.12', 'もちもち麺']}
         duration={22}
       />
+
+      {/* 完売御礼 */}
+      <section className="py-12 md:py-16 px-6 bg-[#0a0a0a] border-b border-[#1f1f1f]">
+        <div className="max-w-3xl mx-auto">
+          <FadeIn>
+            <div className="bg-[#161616] border border-[#c0392b]/30 p-6 md:p-10 text-center">
+              <p className="text-xs tracking-[0.4em] text-[#c0392b] mb-4" style={{ fontFamily: 'var(--font-noto-serif)' }}>
+                第一陣／第一波 完売御礼
+              </p>
+              <p className="text-lg md:text-xl font-black text-[#f0ede8] leading-loose mb-4" style={{ fontFamily: 'var(--font-noto-serif)' }}>
+                ご来店ありがとうございました。
+              </p>
+              <p className="text-sm text-[#ddd] leading-loose mb-2" style={{ fontFamily: 'var(--font-noto-serif)' }}>
+                第二波は7月末を予定（調整中）。
+              </p>
+              <p className="text-xs text-[#888]" style={{ fontFamily: 'var(--font-noto-serif)' }}>
+                詳細は公式Instagramにて。
+              </p>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
 
       {/* メニュー注文の流れ */}
       <section className="py-14 md:py-20 px-6">
